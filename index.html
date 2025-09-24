@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Full Blood Count Interpretation for Primary Care</title>
-    <link rel="stylesheet" href="medical-textbook-styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Full Blood Count (FBC) Interpretation – Integrated Primary Care Guide</title>
+    <!-- External stylesheet & script hooks (kept from original docs) -->
+    <link rel="stylesheet" href="medical-textbook-styles.css" />
 </head>
 <body>
     <div class="textbook-page">
+        <!-- Download button preserved -->
         <button class="download-btn" onclick="downloadPDF()">
             <svg class="download-icon" fill="currentColor" viewBox="0 0 20 20">
                 <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"></path>
@@ -15,437 +17,458 @@
             Download PDF
         </button>
 
+        <!-- Unified Header -->
         <div class="page-header">
-            <h1>Reading the Full Blood Count</h1>
-            <div class="subtitle">Mastering FBC Interpretation Skills in Primary Care</div>
+            <h1>Full Blood Count (FBC) Interpretation</h1>
+            <div class="subtitle">A Structured, Pattern‑Based Primary Care Guide</div>
         </div>
 
         <div class="content">
-            <div class="section">
+            <!-- INTRODUCTION -->
+            <div class="section" id="introduction">
                 <div class="section-header">
-                    <div class="section-icon">🔍</div>
-                    <h2>Introduction: The Art of Reading Numbers</h2>
+                    <div class="section-icon">🩸</div>
+                    <h2>Introduction: Turning Numbers into Clinical Stories</h2>
                 </div>
-                <p>Every FBC tells a story. The skill lies not in memorising normal ranges, but in recognising patterns, understanding relationships between parameters, and translating numerical data into clinical meaning. This chapter teaches you to read FBC results like a detective examining clues, where each parameter provides evidence about what's happening inside your patient's bone marrow and circulation.</p>
-                
+                <p>
+                    The Full Blood Count (FBC) is a high‑yield test that reflects marrow function and peripheral events across three cell lines—red cells, white cells, and platelets. Interpretation is strongest when numerical data, blood film morphology, and clinical context are integrated. Read for <em>patterns</em>, not isolated values.
+                </p>
                 <div class="clinical-pearl">
                     <h3>Clinical Pearl</h3>
-                    <p><strong>"Never Read in Isolation":</strong> A single abnormal value means little - it's the pattern of abnormalities that reveals the diagnosis. Hb 95 g/L with MCV 65 fl tells a completely different story than Hb 95 g/L with MCV 110 fl, even though both represent anaemia.</p>
+                    <p><strong>"Triple Assessment"</strong>: Always assess <strong>red cells</strong> (anaemia), <strong>white cells</strong> (infection/inflammation), and <strong>platelets</strong> (bleeding/clotting risk) in sequence. Patterns across lines often reveal marrow pathology.</p>
                 </div>
 
                 <div class="reference-range-table">
-                    <h4>Essential FBC Normal Ranges (Adults)</h4>
+                    <h4>Essential Adult Reference Ranges</h4>
                     <table>
                         <thead>
                             <tr>
                                 <th>Parameter</th>
-                                <th>Male Range</th>
-                                <th>Female Range</th>
+                                <th>Male</th>
+                                <th>Female</th>
                                 <th>Units</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>Haemoglobin (Hb)</td>
-                                <td>130-175</td>
-                                <td>120-155</td>
-                                <td>g/L</td>
-                            </tr>
-                            <tr>
-                                <td>Mean Cell Volume (MCV)</td>
-                                <td>82-100</td>
-                                <td>82-100</td>
-                                <td>fl</td>
-                            </tr>
-                            <tr>
-                                <td>White Cell Count (WCC)</td>
-                                <td>4.0-11.0</td>
-                                <td>4.0-11.0</td>
-                                <td>×10⁹/L</td>
-                            </tr>
-                            <tr>
-                                <td>Platelets</td>
-                                <td>150-450</td>
-                                <td>150-450</td>
-                                <td>×10⁹/L</td>
-                            </tr>
-                            <tr>
-                                <td>Red Cell Distribution Width (RDW)</td>
-                                <td>11.5-15.0</td>
-                                <td>11.5-15.0</td>
-                                <td>%</td>
-                            </tr>
+                            <tr><td>Haemoglobin (Hb)</td><td>130–175</td><td>120–155</td><td>g/L</td></tr>
+                            <tr><td>Mean Cell Volume (MCV)</td><td>82–100</td><td>82–100</td><td>fL</td></tr>
+                            <tr><td>White Cell Count (WCC)</td><td>4.0–11.0</td><td>4.0–11.0</td><td>×10⁹/L</td></tr>
+                            <tr><td>Platelets</td><td>150–450</td><td>150–450</td><td>×10⁹/L</td></tr>
+                            <tr><td>Red Cell Distribution Width (RDW)</td><td>11.5–15.0</td><td>11.5–15.0</td><td>%</td></tr>
                         </tbody>
                     </table>
                 </div>
             </div>
 
-            <div class="section">
+            <!-- RAPID OVERVIEW & RED FLAGS -->
+            <div class="section" id="priority-assessment">
                 <div class="section-header">
-                    <div class="section-icon">🎯</div>
-                    <h2>Step 1: The Systematic Approach to Reading FBC</h2>
+                    <div class="section-icon">🚨</div>
+                    <h2>First Glance & Red Flags</h2>
                 </div>
-
                 <div class="assessment-flow">
                     <div class="flow-step">
-                        <h4>First Glance: The Overview</h4>
-                        <p>Scan quickly - are all three cell lines (red, white, platelets) normal, or are one, two, or all three abnormal? This immediate pattern recognition guides your entire approach.</p>
+                        <h3>Overview Scan</h3>
+                        <p>Are one, two, or all <strong>three cell lines</strong> abnormal? Multi‑lineage changes → think bone marrow pathology; isolated changes → often reactive or nutritional.</p>
                     </div>
                     <div class="flow-step">
-                        <h4>Red Cell Analysis: Size Matters</h4>
-                        <p>If Hb is low, immediately look at MCV. <80 fl = microcytic (think iron deficiency), >100 fl = macrocytic (think B12/folate), 80-100 fl = normocytic (think chronic disease or bleeding).</p>
-                    </div>
-                    <div class="flow-step">
-                        <h4>White Cell Differential: The Detail Story</h4>
-                        <p>Don't just look at total WCC - examine the differential. High neutrophils suggest infection, high lymphocytes may indicate viral infection or lymphoproliferative disorder.</p>
-                    </div>
-                    <div class="flow-step">
-                        <h4>Additional Clues: RDW and Blood Film</h4>
-                        <p>High RDW indicates variation in cell sizes - valuable in mixed deficiencies. Always request blood film comments when results don't fit the clinical picture.</p>
-                    </div>
-                </div>
-
-                <div class="clinical-pearl">
-                    <h3>Clinical Pearl</h3>
-                    <p><strong>"The MCV is Your Best Friend":</strong> In anaemia, MCV classification is 90% of your diagnosis. Microcytic = iron deficiency until proven otherwise. Macrocytic = B12/folate deficiency until proven otherwise. This simple rule will guide you correctly in the vast majority of cases.</p>
-                </div>
-            </div>
-
-            <div class="section">
-                <div class="section-header">
-                    <div class="section-icon">🧮</div>
-                    <h2>Step 2: Decoding Anaemia Patterns</h2>
-                </div>
-
-                <div class="interpretation-grid">
-                    <div class="interpretation-item">
-                        <h4>Microcytic Anaemia (MCV <80 fl)</h4>
-                        <p><strong>Classic Pattern:</strong> Hb ↓, MCV ↓, RDW ↑<br>
-                        <strong>Think:</strong> Iron deficiency (95% of cases)<br>
-                        <strong>Next Steps:</strong> Check ferritin, consider thalassaemia trait if ferritin normal<br>
-                        <strong>Red Flag:</strong> In men >50 or post-menopausal women, always investigate source of blood loss</p>
-                    </div>
-                    <div class="interpretation-item">
-                        <h4>Macrocytic Anaemia (MCV >100 fl)</h4>
-                        <p><strong>Classic Pattern:</strong> Hb ↓, MCV ↑, often with neutrophil hypersegmentation<br>
-                        <strong>Think:</strong> B12 or folate deficiency<br>
-                        <strong>Next Steps:</strong> Check B12 and folate levels<br>
-                        <strong>Red Flag:</strong> Neurological symptoms suggest B12 deficiency requiring urgent treatment</p>
-                    </div>
-                    <div class="interpretation-item">
-                        <h4>Normocytic Anaemia (MCV 80-100 fl)</h4>
-                        <p><strong>Classic Pattern:</strong> Hb ↓, MCV normal, variable RDW<br>
-                        <strong>Think:</strong> Chronic disease, acute blood loss, or mixed deficiency<br>
-                        <strong>Next Steps:</strong> Check inflammatory markers, haematinics<br>
-                        <strong>Red Flag:</strong> Sudden onset suggests acute bleeding</p>
-                    </div>
-                </div>
-
-                <div class="clinical-pearl">
-                    <h3>Clinical Pearl</h3>
-                    <p><strong>"The RDW Reveals Mixed Stories":</strong> Normal MCV with raised RDW (>15%) suggests mixed deficiency - some cells are small (iron deficient) and some large (B12/folate deficient), averaging out to normal. Always check all haematinics when RDW is elevated.</p>
-                </div>
-
-                <div class="visual-element">
-                    <h3>Reading Real Examples</h3>
-                    <div class="parameter-grid">
-                        <div class="parameter-card abnormal-low">
-                            <h4>Example 1: Classic Iron Deficiency</h4>
-                            <p>Hb 85 g/L, MCV 68 fl, RDW 18%<br>
-                            <strong>Interpretation:</strong> Severe microcytic anaemia with high variation - classic iron deficiency pattern</p>
-                        </div>
-                        <div class="parameter-card abnormal-high">
-                            <h4>Example 2: B12 Deficiency</h4>
-                            <p>Hb 95 g/L, MCV 115 fl, RDW 16%<br>
-                            <strong>Interpretation:</strong> Macrocytic anaemia - check B12/folate urgently, especially if neurological symptoms</p>
-                        </div>
-                        <div class="parameter-card critical">
-                            <h4>Example 3: Mixed Deficiency</h4>
-                            <p>Hb 90 g/L, MCV 88 fl, RDW 20%<br>
-                            <strong>Interpretation:</strong> Normal MCV but very high RDW suggests both iron and B12/folate deficiency</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="section">
-                <div class="section-header">
-                    <div class="section-icon">⚪</div>
-                    <h2>Step 3: White Cell Interpretation Skills</h2>
-                </div>
-
-                <div class="two-column">
-                    <div>
-                        <h4>Reading the White Cell Count</h4>
-                        <p>Total WCC alone tells you little - you must examine the differential count to understand what's happening:</p>
+                        <h3>Immediate Alerts (Same‑Day Action)</h3>
                         <ul>
-                            <li><strong>Neutrophilia (>7.5):</strong> Bacterial infection, inflammation, stress response</li>
-                            <li><strong>Lymphocytosis (>4.0):</strong> Viral infection, or in elderly patients, consider CLL</li>
-                            <li><strong>Eosinophilia (>0.4):</strong> Allergy, parasites, drug reactions</li>
-                            <li><strong>Neutropenia (<2.0):</strong> Viral infections, drug-induced, or haematological disorders</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4>Pattern Recognition in WCC</h4>
-                        <p>Look for these telling combinations:</p>
-                        <ul>
-                            <li><strong>High WCC + High neutrophils:</strong> Bacterial infection</li>
-                            <li><strong>High WCC + High lymphocytes:</strong> Viral infection or CLL in elderly</li>
-                            <li><strong>Low WCC + Low neutrophils:</strong> Viral infection or drug effect</li>
-                            <li><strong>Very high WCC (>30):</strong> Consider leukaemia, request urgent blood film</li>
+                            <li><strong>Hb &lt;70 g/L</strong> with symptoms → urgent assessment ± transfusion.</li>
+                            <li><strong>WCC &gt;50 ×10⁹/L</strong> or <strong>&lt;1.0 ×10⁹/L</strong> → urgent review; if <strong>&gt;100 ×10⁹/L</strong> risk of hyperviscosity.</li>
+                            <li><strong>Platelets &lt;50 ×10⁹/L</strong> (<20 ×10⁹/L = high bleeding risk) → urgent haematology.</li>
+                            <li><strong>Blast cells</strong> on film, <strong>pancytopenia</strong>, or <strong>leucoerythroblastic</strong> picture → same‑day haematology discussion.</li>
                         </ul>
                     </div>
                 </div>
-
                 <div class="clinical-pearl">
                     <h3>Clinical Pearl</h3>
-                    <p><strong>"Age Changes Everything with Lymphocytosis":</strong> Lymphocytosis >5.0 in a patient over 60 is chronic lymphocytic leukaemia until proven otherwise. In younger patients, think viral infection. Same number, completely different meaning based on age.</p>
-                </div>
-
-                <div class="red-flag-grid">
-                    <div class="red-flag-item">
-                        <div style="display: block; margin-bottom: 8px;"><strong>WCC >50 × 10⁹/L</strong></div>
-                        Possible leukaemia - urgent blood film and haematology referral
-                    </div>
-                    <div class="red-flag-item">
-                        <div style="display: block; margin-bottom: 8px;"><strong>WCC <1.0 × 10⁹/L</strong></div>
-                        Severe neutropenia - infection risk, urgent assessment needed
-                    </div>
-                    <div class="red-flag-item">
-                        <div style="display: block; margin-bottom: 8px;"><strong>Blast Cells Reported</strong></div>
-                        Any blast cells on film require immediate haematology discussion
-                    </div>
-                    <div class="red-flag-item">
-                        <div style="display: block; margin-bottom: 8px;"><strong>Lymphocytosis + Anaemia + Thrombocytopenia</strong></div>
-                        Pancytopenia pattern suggests haematological malignancy
-                    </div>
+                    <p><strong>"4‑Hour Rule"</strong>: Blasts, platelets &lt;20 ×10⁹/L, or WCC &gt;100 ×10⁹/L → senior review within 4 hours.</p>
                 </div>
             </div>
 
-            <div class="section">
+            <!-- SYSTEMATIC METHOD -->
+            <div class="section" id="systematic-approach">
+                <div class="section-header">
+                    <div class="section-icon">🎯</div>
+                    <h2>Systematic Method: Five Steps</h2>
+                </div>
+                <div class="assessment-flow">
+                    <div class="flow-step"><h3>1) Context</h3><p>Age, sex, pregnancy, comorbidities, meds. Adjust expectations (e.g., children, pregnant patients) and correlate with presentation.</p></div>
+                    <div class="flow-step"><h3>2) Red Cells</h3><p>If anaemic, let <strong>MCV</strong> drive the differential: microcytic (&lt;80 fL), normocytic (80–100 fL), macrocytic (&gt;100 fL). Add <strong>reticulocytes</strong> early.</p></div>
+                    <div class="flow-step"><h3>3) White Cells</h3><p>Total WCC + <strong>differential</strong> (neutrophils, lymphocytes, eosinophils, monocytes). Look for left shift/toxic granulation.</p></div>
+                    <div class="flow-step"><h3>4) Platelets</h3><p>Count + MPV; beware pseudothrombocytopenia (EDTA clumping). Consider reactive vs clonal causes.</p></div>
+                    <div class="flow-step"><h3>5) Pattern Recognition</h3><p>Cross‑line patterns (e.g., anaemia + thrombocytosis in chronic disease; pancytopenia in marrow failure).</p></div>
+                </div>
+                <div class="clinical-pearl">
+                    <h3>Clinical Pearl</h3>
+                    <p><strong>MCV &amp; RDW</strong> are high‑yield: MCV classifies; RDW (>15%) suggests mixed populations or evolving change.</p>
+                </div>
+            </div>
+
+            <!-- ANAEMIA -->
+            <div class="section" id="anaemia">
                 <div class="section-header">
                     <div class="section-icon">🔴</div>
-                    <h2>Step 4: Platelet Count Clinical Significance</h2>
+                    <h2>Anaemia by MCV: Diagnose with Purpose</h2>
                 </div>
-
                 <div class="parameter-grid">
-                    <div class="parameter-card normal">
-                        <h4>Normal Platelets (150-450)</h4>
-                        <p>No bleeding risk, normal clotting function. Values at lower end of normal (150-200) still provide adequate haemostasis for most procedures.</p>
-                    </div>
                     <div class="parameter-card abnormal-low">
-                        <h4>Mild Thrombocytopenia (100-150)</h4>
-                        <p>Usually no clinical significance. May see prolonged bleeding after trauma or surgery. Most commonly due to viral infections or medications.</p>
+                        <h4>Microcytic (&lt;80 fL)</h4>
+                        <p><strong>TAILS:</strong> <em>Thalassaemia</em>/haemoglobinopathies, <em>Anaemia of chronic disease</em>, <em>Iron deficiency</em> (most common), <em>Lead</em> (rare), <em>Sideroblastic</em>.</p>
+                        <ul>
+                            <li>Pattern: Hb ↓, MCV ↓, RDW ↑, platelets often ↑ (reactive).</li>
+                            <li>Next: Ferritin, transferrin saturation; consider GI loss (men &gt;50, post‑menopausal women).</li>
+                        </ul>
+                    </div>
+                    <div class="parameter-card normal">
+                        <h4>Normocytic (80–100 fL)</h4>
+                        <ul>
+                            <li><strong>High reticulocytes</strong> → haemolysis or acute blood loss.</li>
+                            <li><strong>Low/normal reticulocytes</strong> → chronic disease, renal disease, marrow failure.</li>
+                        </ul>
                     </div>
                     <div class="parameter-card abnormal-high">
-                        <h4>Moderate Thrombocytopenia (50-100)</h4>
-                        <p>Increased bleeding risk with surgery/procedures. Investigate underlying cause. May need platelet transfusion for major procedures.</p>
+                        <h4>Macrocytic (&gt;100 fL)</h4>
+                        <ul>
+                            <li><strong>Megaloblastic</strong>: B12/folate deficiency (± hypersegmented neutrophils).</li>
+                            <li><strong>Non‑megaloblastic</strong>: Alcohol, liver disease, hypothyroidism, reticulocytosis.</li>
+                        </ul>
+                        <p><em>B12</em> deficiency may present with neurological features (check methylmalonic acid if unclear).</p>
                     </div>
-                    <div class="parameter-card critical">
-                        <h4>Severe Thrombocytopenia (<50)</h4>
-                        <p>Spontaneous bleeding risk. Urgent haematology referral required. Patient needs immediate assessment and monitoring.</p>
-                    </div>
-                </div>
-
-                <div class="clinical-pearl">
-                    <h3>Clinical Pearl</h3>
-                    <p><strong>"Thrombocytosis as a Cancer Clue":</strong> Platelets >600 in patients over 60 can be the first sign of underlying malignancy, particularly colorectal or lung cancer. Don't dismiss high platelets as "reactive" - investigate for occult malignancy, especially if persistent.</p>
-                </div>
-
-                <div class="highlight-box">
-                    <h4>When Platelet Count Drives Clinical Decisions</h4>
-                    <ul>
-                        <li><strong><50:</strong> Hold anticoagulants, urgent haematology referral</li>
-                        <li><strong>50-100:</strong> Caution with procedures, investigate cause</li>
-                        <li><strong>>600:</strong> Consider underlying malignancy in older patients</li>
-                        <li><strong>>1000:</strong> Paradoxical bleeding risk due to platelet dysfunction</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="section">
-                <div class="section-header">
-                    <div class="section-icon">🧩</div>
-                    <h2>Step 5: Putting It All Together - Pattern Recognition</h2>
                 </div>
 
                 <div class="visual-element">
-                    <h3>Classic FBC Patterns and Their Meanings</h3>
-                    <div class="interpretation-grid">
-                        <div class="interpretation-item">
-                            <h4>Iron Deficiency Pattern</h4>
-                            <p><strong>Hb:</strong> Low<br>
-                            <strong>MCV:</strong> Low (<80)<br>
-                            <strong>RDW:</strong> High (>15%)<br>
-                            <strong>Platelets:</strong> Often elevated<br>
-                            <strong>Next step:</strong> Check ferritin</p>
-                        </div>
-                        <div class="interpretation-item">
-                            <h4>B12/Folate Deficiency</h4>
-                            <p><strong>Hb:</strong> Low<br>
-                            <strong>MCV:</strong> High (>100)<br>
-                            <strong>RDW:</strong> High<br>
-                            <strong>WCC:</strong> May be low<br>
-                            <strong>Next step:</strong> Check B12 and folate</p>
-                        </div>
-                        <div class="interpretation-item">
-                            <h4>Chronic Disease Anaemia</h4>
-                            <p><strong>Hb:</strong> Mildly low<br>
-                            <strong>MCV:</strong> Normal or slightly low<br>
-                            <strong>RDW:</strong> Normal<br>
-                            <strong>Pattern:</strong> Everything slightly off<br>
-                            <strong>Next step:</strong> Investigate underlying condition</p>
-                        </div>
-                        <div class="interpretation-item">
-                            <h4>Haematological Malignancy</h4>
-                            <p><strong>Pattern:</strong> Multiple abnormalities<br>
-                            <strong>Hb:</strong> Low<br>
-                            <strong>WCC:</strong> Very high or very low<br>
-                            <strong>Platelets:</strong> Low<br>
-                            <strong>Next step:</strong> Urgent blood film and referral</p>
-                        </div>
+                    <h3>Iron Studies at a Glance</h3>
+                    <div class="reference-range-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Condition</th><th>Serum Iron</th><th>Ferritin</th><th>Transferrin/TIBC</th><th>Transferrin Sat.</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td><strong>Iron Deficiency</strong></td><td>↓</td><td>↓</td><td>↑</td><td>↓</td></tr>
+                                <tr><td><strong>Chronic Disease</strong></td><td>↓</td><td>Normal/↑</td><td>↓</td><td>↓</td></tr>
+                                <tr><td><strong>Thalassaemia</strong></td><td>Normal/↑</td><td>Normal/↑</td><td>Normal</td><td>Normal/↑</td></tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
 
                 <div class="clinical-pearl">
                     <h3>Clinical Pearl</h3>
-                    <p><strong>"The Three Cell Line Rule":</strong> If all three cell lines (red cells, white cells, platelets) are abnormal, think bone marrow pathology. This is never a coincidence and always requires urgent investigation. Single cell line problems are usually nutritional or reactive.</p>
+                    <p><strong>"Normal MCV + High RDW"</strong> often = mixed deficiency (e.g., iron + B12/folate). Check all haematinics.</p>
                 </div>
 
-                <div class="decision-tree">
-                    <h4>Quick Decision Tree for Anaemia</h4>
-                    <div class="tree-node decision">
-                        <strong>Patient has anaemia (Hb below normal)</strong>
-                    </div>
-                    <div class="tree-node decision">
-                        <strong>Check MCV immediately</strong><br>
-                        This determines 90% of your diagnostic approach
-                    </div>
-                    <div class="tree-node action">
-                        <strong>MCV <80:</strong> Check ferritin → Treat iron deficiency → Investigate source if unexplained
-                    </div>
-                    <div class="tree-node action">
-                        <strong>MCV >100:</strong> Check B12/folate → Treat deficiency → Investigate malabsorption
-                    </div>
-                    <div class="tree-node action">
-                        <strong>MCV 80-100:</strong> Check RDW → If high, check all haematinics → If normal, investigate chronic disease
+                <div class="visual-element">
+                    <h3>Worked Examples</h3>
+                    <div class="parameter-grid">
+                        <div class="parameter-card abnormal-low">
+                            <h4>Example: Iron Deficiency</h4>
+                            <p>Hb 85 g/L, MCV 68 fL, RDW 18% → severe microcytosis with anisocytosis; investigate source.</p>
+                        </div>
+                        <div class="parameter-card abnormal-high">
+                            <h4>Example: B12 Deficiency</h4>
+                            <p>Hb 95 g/L, MCV 115 fL, RDW 16% → macrocytosis; assess neurological symptoms; treat promptly.</p>
+                        </div>
+                        <div class="parameter-card critical">
+                            <h4>Example: Mixed Deficiency</h4>
+                            <p>Hb 90 g/L, MCV 88 fL, RDW 20% → normal average size but wide spread; replace iron + B12/folate.</p>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="section">
+            <!-- WHITE CELLS -->
+            <div class="section" id="white-cells">
                 <div class="section-header">
-                    <div class="section-icon">⚠️</div>
-                    <h2>Step 6: Red Flags That Demand Immediate Action</h2>
+                    <div class="section-icon">⚪</div>
+                    <h2>White Cell Interpretation: Differential Tells the Tale</h2>
+                </div>
+                <div class="interpretation-grid">
+                    <div class="interpretation-item">
+                        <h4>Neutrophilia (&gt;7.7 ×10⁹/L)</h4>
+                        <ul>
+                            <li>Bacterial infection (± left shift, toxic granulation)</li>
+                            <li>Inflammation/necrosis, steroids, lithium, smoking</li>
+                        </ul>
+                    </div>
+                    <div class="interpretation-item">
+                        <h4>Lymphocytosis (&gt;4.0 ×10⁹/L)</h4>
+                        <ul>
+                            <li>Viral infections (pleomorphic lymphs)</li>
+                            <li>CLL/lymphoma in older adults (monomorphic)</li>
+                        </ul>
+                        <p><em>Age matters:</em> &gt;60 yrs with lymphocytosis → CLL until proven otherwise.</p>
+                    </div>
+                    <div class="interpretation-item">
+                        <h4>Eosinophilia (&gt;0.5 ×10⁹/L)</h4>
+                        <ul>
+                            <li>Allergy/asthma, drugs, parasites</li>
+                            <li>HES (&gt;1.5 with organ damage), selected malignancies</li>
+                        </ul>
+                    </div>
+                    <div class="interpretation-item">
+                        <h4>Monocytosis (&gt;0.88 ×10⁹/L)</h4>
+                        <ul>
+                            <li>Chronic infection/inflammation (TB, IBD, SLE, sarcoid)</li>
+                            <li>CMML, recovery from neutropenia</li>
+                        </ul>
+                    </div>
                 </div>
 
                 <div class="critical-values">
-                    <h3>Results That Require Same-Day Action</h3>
+                    <h3>⚠️ Critical White Cell Findings</h3>
                     <ul>
-                        <li><strong>Hb <70 g/L with symptoms:</strong> Consider immediate transfusion needs</li>
-                        <li><strong>WCC >50 or <1.0:</strong> Phone result to patient immediately, urgent referral</li>
-                        <li><strong>Platelets <50:</strong> Bleeding precautions, urgent haematology referral</li>
-                        <li><strong>Blast cells on film:</strong> Same-day haematology discussion</li>
-                        <li><strong>Pancytopenia:</strong> All three cell lines low - urgent bone marrow investigation needed</li>
-                        <li><strong>Any combination of severe abnormalities:</strong> Never normal - always investigate urgently</li>
+                        <li><strong>WCC &gt;100 ×10⁹/L</strong> → hyperviscosity risk; urgent haematology.</li>
+                        <li><strong>Neutropenia &lt;0.5 ×10⁹/L</strong> → sepsis risk; same‑day assessment.</li>
+                        <li><strong>Blast cells present</strong> → possible acute leukaemia; urgent referral.</li>
+                        <li><strong>Atypical lymphocytes &gt;20%</strong> → consider viral infection vs lymphoproliferative disorder.</li>
                     </ul>
                 </div>
 
                 <div class="clinical-pearl">
                     <h3>Clinical Pearl</h3>
-                    <p><strong>"Trust Your Clinical Instinct":</strong> If the FBC result doesn't fit with your clinical assessment of the patient, always request a blood film and consider discussing with haematology. Laboratory errors are rare, but atypical presentations of serious conditions are not.</p>
+                    <p><strong>Left Shift Context</strong>: Left shift + toxic change → bacterial infection; left shift without toxicity → stress response or CML (correlate clinically and with film).</p>
                 </div>
             </div>
 
-            <div class="section">
+            <!-- PLATELETS -->
+            <div class="section" id="platelets">
                 <div class="section-header">
-                    <div class="section-icon">📈</div>
-                    <h2>Summary: Mastering FBC Interpretation</h2>
+                    <div class="section-icon">🔸</div>
+                    <h2>Platelets: Bleeding & Clotting Risk</h2>
                 </div>
-
-                <div class="highlight-box">
-                    <h4>The Five-Step FBC Reading Method</h4>
-                    <ol>
-                        <li><strong>Overview Scan:</strong> Normal, one abnormal, or multiple abnormalities?</li>
-                        <li><strong>MCV Classification:</strong> If anaemic, let MCV guide your thinking</li>
-                        <li><strong>Pattern Recognition:</strong> Look for classic combinations</li>
-                        <li><strong>Clinical Correlation:</strong> Does the result fit the patient?</li>
-                        <li><strong>Action Planning:</strong> Investigation, treatment, or referral needed?</li>
-                    </ol>
-                </div>
-
-                <div class="visual-element">
-                    <div class="diagram">
-                        <div class="diagram-item">
-                            <h4>Master These Patterns</h4>
-                            <p>Iron deficiency: Low Hb + Low MCV + High RDW</p>
-                            <p>B12/Folate: Low Hb + High MCV + High RDW</p>
-                            <p>Chronic disease: Mild ↓ Hb + Normal MCV</p>
+                <div class="two-column">
+                    <div>
+                        <h3>Thrombocytopenia</h3>
+                        <div class="highlight-box">
+                            <p><strong>Bleeding Risk by Count</strong></p>
+                            <ul>
+                                <li>&gt;50 ×10⁹/L: usually asymptomatic</li>
+                                <li>30–50 ×10⁹/L: bleeding with trauma</li>
+                                <li>10–30 ×10⁹/L: spontaneous bruising/bleeding</li>
+                                <li>&lt;10 ×10⁹/L: serious bleeding risk (emergency)</li>
+                            </ul>
                         </div>
-                        <div class="diagram-item">
-                            <h4>Remember These Rules</h4>
-                            <p>MCV is your best diagnostic friend</p>
-                            <p>RDW reveals mixed deficiencies</p>
-                            <p>Multiple abnormalities = bone marrow problem</p>
+                        <h4>Mechanisms</h4>
+                        <ul>
+                            <li>↓ Production: B12/folate deficiency, chemo, marrow infiltration</li>
+                            <li>↑ Destruction: ITP, TTP, HIT, hypersplenism</li>
+                            <li>Sequestration: Splenomegaly</li>
+                            <li>Dilution: Massive transfusion</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Thrombocytosis</h3>
+                        <div class="highlight-box">
+                            <p><strong>Reactive (80–90%)</strong> vs <strong>Clonal</strong> (ET/MPNs)</p>
                         </div>
-                        <div class="diagram-item">
-                            <h4>Never Miss These</h4>
-                            <p>Blast cells = urgent haematology</p>
-                            <p>Pancytopenia = bone marrow failure</p>
-                            <p>Extreme values = immediate action</p>
-                        </div>
+                        <ul>
+                            <li>Reactive: infection/inflammation, malignancy, iron deficiency, post‑splenectomy, tissue damage</li>
+                            <li>Persistent platelets &gt;600 ×10⁹/L in older adults → consider occult malignancy</li>
+                            <li>&gt;1000 ×10⁹/L can paradoxically bleed (platelet dysfunction)</li>
+                        </ul>
                     </div>
                 </div>
-
+                <div class="visual-element">
+                    <h3>MPV (Mean Platelet Volume) Clues</h3>
+                    <div class="diagram">
+                        <div class="diagram-item"><strong>High MPV + Low Platelets</strong><p>Consumption/destruction &gt; production</p></div>
+                        <div class="diagram-item"><strong>Low MPV + Low Platelets</strong><p>Production failure</p></div>
+                        <div class="diagram-item"><strong>High MPV + High Platelets</strong><p>Consider myeloproliferative process</p></div>
+                    </div>
+                </div>
                 <div class="clinical-pearl">
                     <h3>Clinical Pearl</h3>
-                    <p><strong>"Practice Makes Pattern Recognition Perfect":</strong> The more FBCs you interpret systematically, the faster you'll recognise patterns. Start with MCV in anaemia, examine all three cell lines for abnormalities, and always correlate with clinical picture. These skills will serve you throughout your clinical career.</p>
+                    <p><strong>Clumping Trap</strong>: EDTA‑induced platelet clumping can mimic thrombocytopenia—check film or repeat in citrate.</p>
                 </div>
             </div>
 
+            <!-- PATTERN RECOGNITION -->
+            <div class="section" id="patterns">
+                <div class="section-header">
+                    <div class="section-icon">🧩</div>
+                    <h2>Pattern Recognition & Decision Framework</h2>
+                </div>
+                <div class="visual-element">
+                    <h3>Classic Patterns</h3>
+                    <div class="interpretation-grid">
+                        <div class="interpretation-item">
+                            <h4>Iron Deficiency</h4>
+                            <p>Hb ↓, MCV ↓, RDW ↑, platelets often ↑ → check ferritin, source of blood loss.</p>
+                        </div>
+                        <div class="interpretation-item">
+                            <h4>B12/Folate Deficiency</h4>
+                            <p>Hb ↓, MCV ↑, RDW ↑, ± WCC ↓ → check/replace B12/folate.</p>
+                        </div>
+                        <div class="interpretation-item">
+                            <h4>Chronic Disease</h4>
+                            <p>Mild Hb ↓, MCV normal/slightly ↓, RDW normal, platelets often ↑.</p>
+                        </div>
+                        <div class="interpretation-item">
+                            <h4>Haematological Malignancy</h4>
+                            <p>Multiple cell lines abnormal; blasts or leucoerythroblastic picture → urgent film & referral.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="decision-tree">
+                    <h3>Quick Anaemia Decision Tree</h3>
+                    <div class="tree-node decision"><strong>Low Hb?</strong> → Check MCV</div>
+                    <div class="tree-node action"><strong>MCV &lt;80</strong>: Ferritin & treatment; investigate source of loss.</div>
+                    <div class="tree-node action"><strong>MCV 80–100</strong>: RDW & retics; haematinics & chronic disease workup.</div>
+                    <div class="tree-node action"><strong>MCV &gt;100</strong>: B12/folate; consider alcohol, liver, thyroid, retics.</div>
+                </div>
+                <div class="risk-factors-visual">
+                    <div class="risk-factor">
+                        <h4>Pancytopenia</h4>
+                        <p>↓ Hb + ↓ WBC + ↓ Platelets → marrow failure, aplasia, acute leukaemia.</p>
+                    </div>
+                    <div class="risk-factor">
+                        <h4>Leucoerythroblastic</h4>
+                        <p>Immature myeloid/erythroid cells ± teardrops → marrow infiltration/fibrosis.</p>
+                    </div>
+                    <div class="risk-factor">
+                        <h4>Myeloproliferative</h4>
+                        <p>WBC ↑ + Platelets ↑ ± Hb ↑ → CML, PV, ET (correlate clinically).</p>
+                    </div>
+                </div>
+                <div class="clinical-pearl">
+                    <h3>Clinical Pearl</h3>
+                    <p><strong>"Three Cell Line Rule"</strong>: If RBC, WBC, and platelets are all abnormal, assume marrow pathology until proven otherwise.</p>
+                </div>
+            </div>
+
+            <!-- TREATMENT RESPONSE & MONITORING -->
+            <div class="section" id="treatment-monitoring">
+                <div class="section-header">
+                    <div class="section-icon">💊</div>
+                    <h2>Monitoring Treatment & Expected Timelines</h2>
+                </div>
+                <div class="interpretation-grid">
+                    <div class="interpretation-item">
+                        <h4>Iron Replacement</h4>
+                        <ul>
+                            <li>Days 7–10: reticulocytosis</li>
+                            <li>2–4 weeks: Hb rises</li>
+                            <li>6–8 weeks: MCV normalises</li>
+                            <li>3–6 months: ferritin replenished</li>
+                        </ul>
+                    </div>
+                    <div class="interpretation-item">
+                        <h4>B12/Folate Replacement</h4>
+                        <ul>
+                            <li>48–72 h: reticulocyte surge</li>
+                            <li>1 week: Hb rising</li>
+                            <li>2–4 weeks: MCV falling</li>
+                            <li>~8 weeks: haematological recovery</li>
+                        </ul>
+                    </div>
+                    <div class="interpretation-item">
+                        <h4>Infection on Antibiotics</h4>
+                        <ul>
+                            <li>24–48 h: neutrophils stabilise</li>
+                            <li>3–5 days: left shift resolves</li>
+                            <li>~1 week: WCC normalises</li>
+                        </ul>
+                    </div>
+                    <div class="interpretation-item">
+                        <h4>Chemotherapy Cycles</h4>
+                        <ul>
+                            <li>Days 7–14: neutrophil nadir</li>
+                            <li>Days 10–14: platelet nadir</li>
+                            <li>Days 14–21: recovery begins</li>
+                            <li>Day 21–28: back to baseline</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clinical-pearl">
+                    <h3>Clinical Pearl</h3>
+                    <p><strong>Reticulocyte Check</strong>: Absent retic response after starting therapy (iron/B12/folate) suggests ongoing loss, malabsorption, or wrong diagnosis.</p>
+                </div>
+            </div>
+
+            <!-- SUMMARY -->
+            <div class="section" id="summary">
+                <div class="section-header">
+                    <div class="section-icon">📋</div>
+                    <h2>Summary & Checklist</h2>
+                </div>
+                <div class="two-column">
+                    <div>
+                        <h4>Essential Steps</h4>
+                        <ul>
+                            <li>Screen for red flags & critical values.</li>
+                            <li>Classify anaemia by MCV; use RDW & retics.</li>
+                            <li>Interrogate differential WCC.</li>
+                            <li>Assess platelets & MPV; exclude clumping artefact.</li>
+                            <li>Recognise multi‑lineage patterns.</li>
+                            <li>Trend over time; correlate clinically.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Never Miss</h4>
+                        <ul>
+                            <li>Blasts, leucoerythroblastic films.</li>
+                            <li>Pancytopenia or extreme counts.</li>
+                            <li>Persistent thrombocytosis in older adults.</li>
+                            <li>Mixed deficiency signalled by high RDW.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="highlight-box">
+                    <h3>Bottom Line</h3>
+                    <p><strong>1. Be systematic.</strong> Read all three lines every time.</p>
+                    <p><strong>2. Context rules.</strong> Numbers + patient story + film.</p>
+                    <p><strong>3. Trend and act.</strong> Repeat if uncertain; refer early for multi‑lineage or rapidly progressive abnormalities.</p>
+                </div>
+            </div>
+
+            <!-- REFERENCES (merged & deduped) -->
             <div class="references-section">
-                <h3>🔗 Key Resources for FBC Interpretation</h3>
+                <h3>🔗 Key Guidelines & Resources</h3>
                 <div class="guideline-grid">
                     <div class="guideline-item">
-                        <strong>NICE Clinical Knowledge Summaries</strong><br>
-                        <em>Anaemia - Iron Deficiency</em> - 2024<br>
-                        <a href="https://cks.nice.org.uk/topics/anaemia-iron-deficiency/">Access Guidelines</a>
+                        <strong>NICE Guideline NG12</strong><br />
+                        <em>Suspected cancer: recognition and referral</em> (2023–2024)<br />
+                        <a href="https://www.nice.org.uk/guidance/ng12">Access</a>
                     </div>
                     <div class="guideline-item">
-                        <strong>British Society for Haematology</strong><br>
-                        <em>Investigation and management of iron deficiency</em> - 2023<br>
-                        <a href="https://onlinelibrary.wiley.com/doi/10.1111/bjh.18931">Access Guidelines</a>
+                        <strong>NICE CKS</strong><br />
+                        <em>Anaemia – Iron Deficiency</em> (2024)<br />
+                        <a href="https://cks.nice.org.uk/topics/anaemia-iron-deficiency/">Access</a>
                     </div>
                     <div class="guideline-item">
-                        <strong>WHO Guidelines</strong><br>
-                        <em>Haemoglobin concentrations for diagnosis of anaemia</em> - 2024<br>
-                        <a href="https://www.who.int/publications/i/item/9789241564960">Access Publication</a>
+                        <strong>British Society for Haematology</strong><br />
+                        <em>Investigation/management of iron deficiency & cytopenias</em> (2023–2024)<br />
+                        <a href="https://onlinelibrary.wiley.com/journal/13652141">Access</a>
                     </div>
                     <div class="guideline-item">
-                        <strong>Laboratory Medicine Best Practice</strong><br>
-                        <em>Full blood count interpretation guide</em> - 2024<br>
-                        <a href="https://www.pathology.lhsc.on.ca/education-resources/">Access Resources</a>
+                        <strong>WHO</strong><br />
+                        <em>Haemoglobin thresholds for anaemia</em> (2024)<br />
+                        <a href="https://www.who.int/publications/">Access</a>
                     </div>
                     <div class="guideline-item">
-                        <strong>Royal College of Pathologists</strong><br>
-                        <em>Blood count and film reporting guidelines</em> - 2023<br>
-                        <a href="https://www.rcpath.org/discover-pathology/news/new-banded-reporting-for-fbc.html">Access Guidelines</a>
+                        <strong>Royal College of Pathologists</strong><br />
+                        <em>FBC & blood film reporting</em> (2023)<br />
+                        <a href="https://www.rcpath.org/">Access</a>
                     </div>
                     <div class="guideline-item">
-                        <strong>NICE Guideline NG12</strong><br>
-                        <em>Suspected cancer: recognition and referral</em> - 2024<br>
-                        <a href="https://www.nice.org.uk/guidance/ng12">Access Guidelines</a>
+                        <strong>StatPearls</strong><br />
+                        <em>Complete Blood Count Interpretation</em> (Updated 2024)<br />
+                        <a href="https://www.ncbi.nlm.nih.gov/books/">Access</a>
                     </div>
                 </div>
             </div>
 
             <div class="page-number">
-                Chapter completed - Page 3 of 3<br>
-                Reading the Full Blood Count - Interpretation Skills for Primary Care
+                <p>FBC Interpretation – Integrated Primary Care Guide | Page 1 of 3</p>
             </div>
         </div>
     </div>
 
+    <!-- Script hook preserved from originals -->
     <script src="medical-textbook-scripts.js"></script>
 </body>
 </html>
