@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thyroid Function Tests Interpretation for Primary Care</title>
+    <link rel="stylesheet" href="medical-textbook-styles.css">
+</head>
+<body>
+    <div class="textbook-page">
+        <button class="download-btn" onclick="downloadPDF()">
+            <svg class="download-icon" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+            </svg>
+            Download PDF
+        </button>
+
+        <div class="page-header">
+            <h1>Mastering Thyroid Function Tests</h1>
+            <div class="subtitle">From TSH to Clinical Decision Making - The Thyroid's Chemical Story</div>
+        </div>
+
+        <div class="content">
+            <div class="section">
+                <div class="section-header">
+                    <div class="section-icon">🦋</div>
+                    <h2>Introduction: The Thyroid's Metabolic Orchestra</h2>
+                </div>
+                <p>Thyroid function tests are like listening to a metabolic orchestra where TSH conducts from the pituitary podium, free T4 plays the steady baseline melody, and T3 provides the high-energy flourishes. When this orchestra plays in harmony, metabolism hums along perfectly. When it goes awry, patients experience the full spectrum from the sluggish exhaustion of hypothyroidism to the racing anxiety of hyperthyroidism.</p>
+
+                <p>This chapter transforms you from someone who simply orders "thyroid function" into a clinician who understands the elegant feedback loops, recognizes subtle patterns of dysfunction, and knows when borderline results matter and when they don't. You'll learn to distinguish primary thyroid disease from secondary disorders, understand when subclinical disease needs treatment, and avoid the common pitfalls that lead to unnecessary anxiety and overtreatment.</p>
+
+                <div class="clinical-pearl">
+                    <h3>Clinical Pearl</h3>
+                    <p><strong>"TSH is the Sensitive Early Warning":</strong> TSH changes before T4 and T3 become obviously abnormal. A TSH of 8 mIU/L with normal T4 (subclinical hypothyroidism) represents earlier disease than a TSH of 8 with low T4 (overt hypothyroidism). TSH amplifies small changes in thyroid hormone levels, making it your most sensitive screening test.</p>
+                </div>
+
+                <div class="reference-range-table">
+                    <h4>Thyroid Function Test Normal Ranges and Patterns</h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Test</th>
+                                <th>Normal Range</th>
+                                <th>Units</th>
+                                <th>Clinical Significance</th>
+                                <th>Key Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>TSH</td>
+                                <td>0.4-4.0</td>
+                                <td>mIU/L</td>
+                                <td>Primary screening test</td>
+                                <td>Inverse relationship with T4/T3</td>
+                            </tr>
+                            <tr>
+                                <td>Free T4 (FT4)</td>
+                                <td>9-25</td>
+                                <td>pmol/L</td>
+                                <td>Active hormone level</td>
+                                <td>More accurate than total T4</td>
+                            </tr>
+                            <tr>
+                                <td>Free T3 (FT3)</td>
+                                <td>2.6-5.7</td>
+                                <td>pmol/L</td>
+                                <td>Most metabolically active</td>
+                                <td>Usually not first-line test</td>
+                            </tr>
+                            <tr>
+                                <td>Total T4</td>
+                                <td>58-154</td>
+                                <td>nmol/L</td>
+                                <td>Includes bound hormone</td>
+                                <td>Affected by binding proteins</td>
+                            </tr>
+                            <tr>
+                                <td>Total T3</td>
+                                <td>0.92-2.79</td>
+                                <td>nmol/L</td>
+                                <td>Includes bound hormone</td>
+                                <td>Less useful than free T3</td>
+                            </tr>
+                            <tr>
+                                <td>TPO Antibodies</td>
+                                <td><34</td>
+                                <td>kIU/L</td>
+                                <td>Autoimmune thyroiditis</td>
+                                <td>Indicates Hashimoto's disease</td>
+                            </tr>
+                            <tr>
+                                <td>TRAb (TSH Receptor)</td>
+                                <td><1.8</td>
+                                <td>IU/L</td>
+                                <td>Graves' disease marker</td>
+                                <td>Positive in 95% of Graves'</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <div class="section-icon">🚨</div>
+                    <h2>Priority Assessment: When Thyroid Tests Signal Emergency</h2>
+                </div>
+
+                <p>Most thyroid dysfunction develops slowly and can be managed in primary care. However, certain patterns represent medical emergencies requiring immediate hospital assessment—particularly thyroid storm in hyperthyroidism or myxedema coma in severe hypothyroidism. Recognition of these patterns and knowing when to act urgently versus when to investigate gradually can be life-saving.</p>
+
+                <div class="red-flag-grid">
+                    <div class="red-flag-item">
+                        <div style="display: block; margin-bottom: 8px;"><strong>Thyroid Storm Suspected</strong></div>
+                        TSH <0.1 with T4 >50 pmol/L + fever >38.5°C + tachycardia >130 + confusion—immediate hospital admission, beta-blockers, antithyroid drugs
+                    </div>
+                    <div class="red-flag-item">
+                        <div style="display: block; margin-bottom: 8px;"><strong>Myxedema Coma Risk</strong></div>
+                        TSH >20 with T4 <5 pmol/L + hypothermia + bradycardia + confusion—urgent hospital assessment, IV levothyroxine, steroid cover
+                    </div>
+                    <div class="red-flag-item">
+                        <div style="display: block; margin-bottom: 8px;"><strong>Severe Hyperthyroidism in Pregnancy</strong></div>
+                        TSH <0.1 with T4 >40 pmol/L in pregnant woman—urgent obstetric/endocrine referral, propylthiouracil preferred over carbimazole
+                    </div>
+                    <div class="red-flag-item">
+                        <div style="display: block; margin-bottom: 8px;"><strong>New Atrial Fibrillation + Hyperthyroidism</strong></div>
+                        TSH <0.1 with new AF—anticoagulation needed, urgent cardiology referral, treat thyrotoxicosis to restore sinus rhythm
+                    </div>
+                </div>
+
+                <div class="clinical-pearl">
+                    <h3>Clinical Pearl</h3>
+                    <p><strong>"The Subclinical Atrial Fibrillation Risk":</strong> Even subclinical hyperthyroidism (low TSH, normal T4/T3) increases atrial fibrillation risk by 60%. Any patient with new AF should have thyroid function checked urgently. Treating the hyperthyroidism often restores normal sinus rhythm and reduces stroke risk.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <div class="section-icon">🎯</div>
+                    <h2>Step 1: The TSH-First Strategy - NICE 2019 Approach</h2>
+                </div>
+
+                <p>NICE NG145 revolutionized thyroid testing by establishing TSH as the single best screening test for thyroid dysfunction. This evidence-based approach reduces unnecessary testing, focuses on clinically relevant abnormalities, and provides a systematic framework for interpretation that works in 95% of cases.</p>
+
+                <div class="assessment-flow">
+                    <div class="flow-step">
+                        <h4>Start with TSH Alone</h4>
+                        <p>TSH is the most sensitive initial test for thyroid dysfunction. It detects both hyper- and hypothyroidism before T4/T3 levels become obviously abnormal. Only order additional tests if TSH is outside normal range.</p>
+                    </div>
+                    <div class="flow-step">
+                        <h4>Use Reflex Testing Strategy</h4>
+                        <p>If TSH abnormal, labs automatically add free T4. If TSH very low (<0.1), may also add T3. This cascading approach ensures appropriate testing without overordering unnecessary tests.</p>
+                    </div>
+                    <div class="flow-step">
+                        <h4>Interpret the Pattern</h4>
+                        <p>High TSH = hypothyroidism (primary thyroid failure). Low TSH = hyperthyroidism (or over-treatment). Normal TSH with symptoms = usually not thyroid disease, consider other causes.</p>
+                    </div>
+                    <div class="flow-step">
+                        <h4>Consider Clinical Context</h4>
+                        <p>Pregnancy, medications (amiodarone, lithium), acute illness, and central thyroid disease can all affect interpretation. Always correlate biochemistry with clinical presentation.</p>
+                    </div>
+                </div>
+
+                <div class="visual-element">
+                    <h3>NICE 2019 TSH-Based Decision Tree</h3>
+                    <div class="decision-tree">
+                        <div class="tree-node decision">
+                            <strong>Patient with suspected thyroid dysfunction</strong>
+                        </div>
+                        <div class="tree-node decision">
+                            <strong>Order TSH as first-line test</strong><br>
+                            Most sensitive screening test for thyroid dysfunction
+                        </div>
+                        <div class="tree-node action">
+                            <strong>TSH normal (0.4-4.0):</strong> Thyroid dysfunction unlikely → Consider other causes of symptoms
+                        </div>
+                        <div class="tree-node action">
+                            <strong>TSH high (>4.0):</strong> Add free T4 → Assess degree of hypothyroidism → Consider treatment
+                        </div>
+                        <div class="tree-node action">
+                            <strong>TSH low (<0.4):</strong> Add free T4 ± T3 → Assess degree of hyperthyroidism → Investigate cause
+                        </div>
+                    </div>
+                </div>
+
+                <div class="parameter-grid">
+                    <div class="parameter-card normal">
+                        <h4>Normal TSH (0.4-4.0 mIU/L)</h4>
+                        <p><strong>Interpretation:</strong> Thyroid function likely normal<br>
+                        <strong>Action:</strong> No further thyroid testing needed<br>
+                        <strong>Exception:</strong> Central thyroid disease, recent medication changes<br>
+                        <strong>Clinical:</strong> Look for other causes of symptoms</p>
+                    </div>
+                    <div class="parameter-card abnormal-high">
+                        <h4>Raised TSH (>4.0 mIU/L)</h4>
+                        <p><strong>Interpretation:</strong> Primary hypothyroidism<br>
+                        <strong>Mild (4-10):</strong> Subclinical hypothyroidism<br>
+                        <strong>Severe (>10):</strong> Overt hypothyroidism<br>
+                        <strong>Action:</strong> Check free T4, consider treatment</p>
+                    </div>
+                    <div class="parameter-card abnormal-low">
+                        <h4>Suppressed TSH (<0.4 mIU/L)</h4>
+                        <p><strong>Interpretation:</strong> Hyperthyroidism or over-treatment<br>
+                        <strong>Mild (0.1-0.4):</strong> Subclinical hyperthyroidism<br>
+                        <strong>Severe (<0.1):</strong> Overt hyperthyroidism<br>
+                        <strong>Action:</strong> Check free T4 and T3, investigate cause</p>
+                    </div>
+                    <div class="parameter-card critical">
+                        <h4>Extreme TSH Values</h4>
+                        <p><strong>TSH >20:</strong> Severe hypothyroidism, urgent treatment<br>
+                        <strong>TSH <0.01:</strong> Severe hyperthyroidism, urgent assessment<br>
+                        <strong>Action:</strong> Same-day clinical review<br>
+                        <strong>Risk:</strong> Cardiac complications likely</p>
+                    </div>
+                </div>
+
+                <div class="clinical-pearl">
+                    <h3>Clinical Pearl</h3>
+                    <p><strong>"The 10 mIU/L Treatment Threshold":</strong> NICE recommends treating hypothyroidism when TSH ≥10 mIU/L on two separate occasions. For TSH 4-10 mIU/L, treat if symptomatic, pregnant, or have cardiovascular disease. This evidence-based approach prevents over-treatment of borderline results while ensuring those who benefit receive therapy.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <div class="section-icon">📉</div>
+                    <h2>Step 2: Hypothyroidism - The Metabolic Slowdown</h2>
+                </div>
+
+                <div class="interpretation-grid">
+                    <div class="interpretation-item">
+                        <h4>Subclinical Hypothyroidism</h4>
+                        <p><strong>Pattern:</strong> TSH 4-10 mIU/L, normal free T4<br>
+                        <strong>Prevalence:</strong> 5-10% of adults, more common in women<br>
+                        <strong>Symptoms:</strong> Often subtle or absent<br>
+                        <strong>Treatment:</strong> Consider if symptomatic, pregnant, or high cardiovascular risk</p>
+                    </div>
+                    <div class="interpretation-item">
+                        <h4>Overt Hypothyroidism</h4>
+                        <p><strong>Pattern:</strong> TSH >10 mIU/L, low free T4<br>
+                        <strong>Symptoms:</strong> Fatigue, weight gain, cold intolerance, constipation<br>
+                        <strong>Treatment:</strong> Levothyroxine replacement indicated<br>
+                        <strong>Monitoring:</strong> TSH every 6-8 weeks until stable</p>
+                    </div>
+                    <div class="interpretation-item">
+                        <h4>Severe Hypothyroidism</h4>
+                        <p><strong>Pattern:</strong> TSH >20 mIU/L, very low T4 <5 pmol/L<br>
+                        <strong>Symptoms:</strong> Severe fatigue, bradycardia, hypothermia<br>
+                        <strong>Complications:</strong> Heart failure, effusions, coma risk<br>
+                        <strong>Treatment:</strong> Urgent levothyroxine, consider hospital assessment</p>
+                    </div>
+                    <div class="interpretation-item">
+                        <h4>Central Hypothyroidism</h4>
+                        <p><strong>Pattern:</strong> Low/normal TSH with low T4<br>
+                        <strong>Cause:</strong> Pituitary or hypothalamic disease<br>
+                        <strong>Clues:</strong> Other pituitary hormone deficiencies<br>
+                        <strong>Action:</strong> Urgent endocrinology referral, MRI pituitary</p>
+                    </div>
+                </div>
+
+                <div class="visual-element">
+                    <h3>Hypothyroidism Treatment Initiation Guidelines</h3>
+                    <div class="parameter-grid">
+                        <div class="parameter-card normal">
+                            <h4>TSH 4-6.9 mIU/L</h4>
+                            <p><strong>Treatment if:</strong> Symptomatic + positive TPO antibodies<br>
+                            <strong>Or if:</strong> Pregnancy, trying to conceive<br>
+                            <strong>Monitor:</strong> TSH annually if not treating<br>
+                            <strong>Dose:</strong> 25-50 mcg levothyroxine daily</p>
+                        </div>
+                        <div class="parameter-card abnormal-low">
+                            <h4>TSH 7-9.9 mIU/L</h4>
+                            <p><strong>Treatment:</strong> Usually recommended<br>
+                            <strong>Especially if:</strong> Symptoms, cardiovascular disease<br>
+                            <strong>Start:</strong> 50 mcg levothyroxine (25 mcg if elderly/cardiac)<br>
+                            <strong>Monitor:</strong> TSH at 6-8 weeks</p>
+                        </div>
+                        <div class="parameter-card abnormal-high">
+                            <h4>TSH ≥10 mIU/L</h4>
+                            <p><strong>Treatment:</strong> Always recommended (NICE threshold)<br>
+                            <strong>Start:</strong> 50-100 mcg levothyroxine<br>
+                            <strong>Urgent if:</strong> Severe symptoms, cardiac complications<br>
+                            <strong>Target TSH:</strong> 0.4-2.5 mIU/L</p>
+                        </div>
+                        <div class="parameter-card critical">
+                            <h4>TSH >20 mIU/L</h4>
+                            <p><strong>Treatment:</strong> Urgent levothyroxine replacement<br>
+                            <strong>Dose:</strong> 100-150 mcg daily (if no cardiac disease)<br>
+                            <strong>Monitor:</strong> Weekly initially, watch for cardiac effects<br>
+                            <strong>Complications:</strong> Heart failure, myxedema coma risk</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="risk-factors-visual">
+                    <div class="risk-factor">
+                        <h4>Hypothyroidism Risk Factors</h4>
+                        <p><strong>Demographics:</strong> Female, age >60, family history</p>
+                        <p><strong>Autoimmune:</strong> Type 1 diabetes, celiac disease, vitiligo</p>
+                        <p><strong>Medications:</strong> Amiodarone, lithium, interferon</p>
+                        <p><strong>Previous:</strong> Thyroid surgery, radioiodine, neck irradiation</p>
+                    </div>
+                    <div class="risk-factor">
+                        <h4>Hashimoto's Disease Features</h4>
+                        <p><strong>Antibodies:</strong> Positive TPO antibodies (90% cases)</p>
+                        <p><strong>Goiter:</strong> Often present, may be nodular</p>
+                        <p><strong>Progression:</strong> Gradual onset over months to years</p>
+                        <p><strong>Associated:</strong> Other autoimmune conditions common</p>
+                    </div>
+                    <div class="risk-factor">
+                        <h4>Treatment Monitoring</h4>
+                        <p><strong>Initial:</strong> TSH every 6-8 weeks after dose changes</p>
+                        <p><strong>Stable:</strong> Annual TSH once optimal dose established</p>
+                        <p><strong>Target:</strong> TSH 0.4-2.5 mIU/L for most patients</p>
+                        <p><strong>Pregnancy:</strong> TSH <2.5 mIU/L in first trimester</p>
+                    </div>
+                    <div class="risk-factor">
+                        <h4>Special Situations</h4>
+                        <p><strong>Elderly:</strong> Start 25 mcg, titrate slowly</p>
+                        <p><strong>Cardiac disease:</strong> Start 25 mcg, monitor ECG</p>
+                        <p><strong>Pregnancy:</strong> Increase dose by 25-50%, urgent monitoring</p>
+                        <p><strong>Malabsorption:</strong> May need higher doses or liquid preparation</p>
+                    </div>
+                </div>
+
+                <div class="clinical-pearl">
+                    <h3>Clinical Pearl</h3>
+                    <p><strong>"The Levothyroxine Timing Rule":</strong> Levothyroxine absorption is reduced by 40-50% if taken with food, coffee, or calcium. Always advise taking on an empty stomach, 30-60 minutes before breakfast, with water only. This simple instruction prevents most treatment failures and reduces the need for dose escalation.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <div class="section-icon">📈</div>
+                    <h2>Step 3: Hyperthyroidism - The Metabolic Acceleration</h2>
+                </div>
+
+                <div class="two-column">
+                    <div>
+                        <h4>Understanding Hyperthyroidism Causes</h4>
+                        <p>Hyperthyroidism isn't one disease—it's a syndrome with multiple causes requiring different treatments:</p>
+                        <ul>
+                            <li><strong>Graves' disease (70%):</strong> Autoimmune, TSH receptor antibodies positive</li>
+                            <li><strong>Toxic multinodular goiter (20%):</strong> Usually older patients, nodular thyroid</li>
+                            <li><strong>Toxic adenoma (5%):</strong> Single hot nodule on scan</li>
+                            <li><strong>Thyroiditis (5%):</strong> Transient, often post-viral or post-partum</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Distinguishing True Hyperthyroidism</h4>
+                        <p>Not all low TSH represents hyperthyroidism needing treatment:</p>
+                        <ul>
+                            <li><strong>Subclinical hyperthyroidism:</strong> Low TSH, normal T4/T3</li>
+                            <li><strong>Non-thyroidal illness:</strong> Sick euthyroid syndrome</li>
+                            <li><strong>Medication effects:</strong> Over-replacement with levothyroxine</li>
+                            <li><strong>Pregnancy:</strong> hCG-mediated TSH suppression (normal)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="interpretation-grid">
+                    <div class="interpretation-item">
+                        <h4>Graves' Disease Pattern</h4>
+                        <p><strong>Biochemistry:</strong> TSH <0.1, elevated T4 and T3<br>
+                        <strong>Antibodies:</strong> TRAb positive (>95% cases)<br>
+                        <strong>Clinical:</strong> Diffuse goiter, eye signs, pretibial myxedema<br>
+                        <strong>Treatment:</strong> Antithyroid drugs, radioiodine, or surgery</p>
+                    </div>
+                    <div class="interpretation-item">
+                        <h4>Toxic Multinodular Goiter</h4>
+                        <p><strong>Biochemistry:</strong> TSH <0.1, T4/T3 elevated<br>
+                        <strong>Clinical:</strong> Nodular goiter, usually older patients<br>
+                        <strong>Scan:</strong> Multiple hot areas<br>
+                        <strong>Treatment:</strong> Radioiodine preferred, surgery if large</p>
+                    </div>
+                    <div class="interpretation-item">
+                        <h4>Thyroiditis Pattern</h4>
+                        <p><strong>Phase 1:</strong> TSH low, T4/T3 high (hyperthyroid)<br>
+                        <strong>Phase 2:</strong> TSH high, T4/T3 low (hypothyroid)<br>
+                        <strong>Phase 3:</strong> Recovery to normal (usually)<br>
+                        <strong>Treatment:</strong> Beta-blockers, avoid antithyroid drugs</p>
+                    </div>
+                    <div class="interpretation-item">
+                        <h4>Subclinical Hyperthyroidism</h4>
+                        <p><strong>Biochemistry:</strong> TSH <0.4, normal T4/T3<br>
+                        <strong>Symptoms:</strong> Often minimal or absent<br>
+                        <strong>Risks:</strong> Atrial fibrillation, osteoporosis<br>
+                        <strong>Treatment:</strong> Consider if >65 years or cardiovascular disease</p>
+                    </div>
+                </div>
+
+                <div class="assessment-flow">
+                    <div class="flow-step">
+                        <h4>Confirm Hyperthyroidism</h4>
+                        <p>Low TSH with elevated T4 and/or T3 confirms hyperthyroidism. If T4/T3 normal, consider subclinical hyperthyroidism or non-thyroidal illness.</p>
+                    </div>
+                    <div class="flow-step">
+                        <h4>Determine the Cause</h4>
+                        <p>Check TRAb to diagnose Graves' disease. If negative, consider thyroid scan to distinguish toxic nodular disease from thyroiditis.</p>
+                    </div>
+                    <div class="flow-step">
+                        <h4>Assess Severity and Complications</h4>
+                        <p>Check for atrial fibrillation (ECG), heart failure, and thyroid eye disease. Severe hyperthyroidism needs urgent treatment.</p>
+                    </div>
+                    <div class="flow-step">
+                        <h4>Initiate Appropriate Treatment</h4>
+                        <p>Beta-blockers for symptom control, antithyroid drugs for Graves' disease, radioiodine for toxic nodular disease. Refer to endocrinology.</p>
+                    </div>
+                </assessment-flow>
+
+                <div class="critical-values">
+                    <h3>Hyperthyroidism Treatment Thresholds</h3>
+                    <ul>
+                        <li><strong>TSH <0.1 + symptomatic:</strong> Treat regardless of T4/T3 levels</li>
+                        <li><strong>TSH <0.1 + asymptomatic + >65 years:</strong> Consider treatment (AF risk)</li>
+                        <li><strong>T4 >40 pmol/L or T3 >10 pmol/L:</strong> Urgent treatment needed</li>
+                        <li><strong>New atrial fibrillation:</strong> Immediate anticoagulation and rate control</li>
+                        <li><strong>Thyroid storm risk:</strong> Fever, tachycardia >130, altered mental state</li>
+                        <li><strong>Pregnancy with hyperthyroidism:</strong> Urgent obstetric-endocrine referral</li>
+                    </ul>
+                </div>
+
+                <div class="clinical-pearl">
+                    <h3>Clinical Pearl</h3>
+                    <p><strong>"The T3 Toxicosis Clue":</strong> Some patients have isolated T3 elevation with normal T4—this is genuine hyperthyroidism requiring treatment. Always check T3 when TSH is suppressed, especially if T4 is normal but patient has hyperthyroid symptoms. T3 toxicosis is more common in iodine-deficient areas and nodular thyroid disease.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <div class="section-icon">🎭</div>
+                    <h2>Step 4: Special Situations and Tricky Patterns</h2>
+                </div>
+
+                <div class="parameter-grid">
+                    <div class="parameter-card normal">
+                        <h4>Pregnancy Thyroid Changes</h4>
+                        <p><strong>Normal changes:</strong> TSH falls in first trimester due to hCG<br>
+                        <strong>Reference ranges:</strong> Different for each trimester<br>
+                        <strong>Hypothyroidism:</strong> TSH >2.5 in first trimester<br>
+                        <strong>Hyperthyroidism:</strong> Distinguished from hyperemesis gravidarum</p>
+                    </div>
+                    <div class="parameter-card abnormal-low">
+                        <h4>Non-Thyroidal Illness</h4>
+                        <p><strong>Pattern:</strong> Low T3, low/normal T4, variable TSH<br>
+                        <strong>Cause:</strong> Severe acute illness, starvation<br>
+                        <strong>Recovery:</strong> Usually normalizes as illness resolves<br>
+                        <strong>Treatment:</strong> Generally not needed, treat underlying illness</p>
+                    </div>
+                    <div class="parameter-card abnormal-high">
+                        <h4>Amiodarone Effects</h4>
+                        <p><strong>Type 1:</strong> Hyperthyroidism in nodular goiter<br>
+                        <strong>Type 2:</strong> Destructive thyroiditis<br>
+                        <strong>Monitoring:</strong> TFTs every 6 months on amiodarone<br>
+                        <strong>Management:</strong> Complex, needs specialist input</p>
+                    </div>
+                    <div class="parameter-card critical">
+                        <h4>Central Thyroid Disease</h4>
+                        <p><strong>Pattern:</strong> Low T4 with low/normal TSH<br>
+                        <strong>Cause:</strong> Pituitary or hypothalamic disease<br>
+                        <strong>Clues:</strong> Other pituitary hormone deficiencies<br>
+                        <strong>Action:</strong> Urgent endocrinology referral, pituitary MRI</p>
+                    </div>
+                </div>
+
+                <div class="risk-factors-visual">
+                    <div class="risk-factor">
+                        <h4>Drug-Induced Thyroid Dysfunction</h4>
+                        <p><strong>Hypothyroidism:</strong> Amiodarone, lithium, interferon</p>
+                        <p><strong>Hyperthyroidism:</strong> Amiodarone, iodine contrast, levothyroxine</p>
+                        <p><strong>Monitoring:</strong> Baseline and regular TFTs on these drugs</p>
+                        <p><strong>Action:</strong> Discuss with prescriber before stopping</p>
+                    </div>
+                    <div class="risk-factor">
+                        <h4>Thyroid Disease in Elderly</h4>
+                        <p><strong>Presentation:</strong> Often atypical or subtle symptoms</p>
+                        <p><strong>Hyperthyroidism:</strong> May present as depression, AF, heart failure</p>
+                        <p><strong>Treatment:</strong> Start lower doses, monitor carefully</p>
+                        <p><strong>Targets:</strong> May accept slightly higher TSH (up to 6 mIU/L)</p>
+                    </div>
+                    <div class="risk-factor">
+                        <h4>Subclinical Disease Decisions</h4>
+                        <p><strong>Subclinical hypothyroidism:</strong> Treat if TSH >10, symptoms, or pregnancy</p>
+                        <p><strong>Subclinical hyperthyroidism:</strong> Treat if >65, cardiovascular disease, osteoporosis</p>
+                        <p><strong>Monitoring:</strong> 6-monthly if not treating</p>
+                        <p><strong>Antibodies:</strong> TPO positive increases progression risk</p>
+                    </div>
+                    <div class="risk-factor">
+                        <h4>Thyroid Antibody Interpretation</h4>
+                        <p><strong>TPO antibodies:</strong> Hashimoto's disease (90% sensitivity)</p>
+                        <p><strong>TRAb:</strong> Graves' disease (95% specificity)</p>
+                        <p><strong>Thyroglobulin antibodies:</strong> Less specific, often with TPO</p>
+                        <p><strong>Clinical use:</strong> Confirm autoimmune cause, predict progression</p>
+                    </div>
+                </risk-factors-visual>
+
+                <div class="clinical-pearl">
+                    <h3>Clinical Pearl</h3>
+                    <p><strong>"The Sick Euthyroid Trap":</strong> Severely ill patients often have low T3, low/normal T4, and variable TSH (sick euthyroid syndrome). This is an adaptive response, not thyroid disease. Don't start thyroid hormone replacement in critically ill patients based on these results—treat the underlying illness and recheck TFTs after recovery.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <div class="section-icon">🔄</div>
+                    <h2>Step 5: Monitoring and Follow-up Strategies</h2>
+                </div>
+
+                <div class="visual-element">
+                    <h3>Thyroid Function Monitoring Timeline</h3>
+                    <div class="assessment-flow">
+                        <div class="flow-step">
+                            <h4>Hypothyroidism Treatment Monitoring</h4>
+                            <p>TSH at 6-8 weeks after starting or changing levothyroxine dose. Continue adjusting until TSH 0.4-2.5 mIU/L. Then annual monitoring once stable dose achieved.</p>
+                        </div>
+                        <div class="flow-step">
+                            <h4>Hyperthyroidism Treatment Monitoring</h4>
+                            <p>TSH, FT4, FT3 every 6 weeks during antithyroid drug treatment. Once in remission, TSH every 3 months. Watch for relapse after stopping treatment.</p>
+                        </div>
+                        <div class="flow-step">
+                            <h4>Subclinical Disease Monitoring</h4>
+                            <p>If not treating subclinical hypothyroidism: TSH annually (or every 2-3 years if no symptoms). If subclinical hyperthyroidism: TSH every 6 months, watch for progression.</p>
+                        </div>
+                        <div class="flow-step">
+                            <h4>High-Risk Patient Monitoring</h4>
+                            <p>Pregnancy: TSH each trimester. Amiodarone: TSH every 6 months. Post-radioiodine: TSH at 6-8 weeks, then 6-monthly lifelong (hypothyroidism risk).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="highlight-box">
+                    <h4>When to Refer to Endocrinology</h4>
+                    <ul>
+                        <li><strong>New hyperthyroidism:</strong> All cases need specialist assessment for cause and treatment</li>
+                        <li><strong>Thyroid eye disease:</strong> Urgent referral if sight-threatening features</li>
+                        <li><strong>Pregnancy with thyroid disease:</strong> Joint obstetric-endocrine care needed</li>
+                        <li><strong>Difficult-to-treat cases:</strong> Poor response to standard treatment</li>
+                        <li><strong>Central thyroid disease:</strong> Low T4 with low/normal TSH</li>
+                        <li><strong>Complex drug interactions:</strong> Amiodarone-induced thyroid dysfunction</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <div class="section-icon">💡</div>
+                    <h2>Common Pitfalls and How to Avoid Them</h2>
+                </div>
+
+                <div class="interpretation-grid">
+                    <div class="interpretation-item">
+                        <h4>The Normal TSH Overconfidence</h4>
+                        <p><strong>Mistake:</strong> Assuming normal TSH excludes all thyroid disease<br>
+                        <strong>Reality:</strong> Central thyroid disease has low T4 with normal/low TSH<br>
+                        <strong>Solution:</strong> Consider T4 if pituitary disease suspected<br>
+                        <strong>Clues:</strong> Other pituitary hormone deficiencies</p>
+                    </div>
+                    <div class="interpretation-item">
+                        <h4>The Subclinical Overtreatment</h4>
+                        <p><strong>Mistake:</strong> Treating all TSH 4-10 mIU/L with normal T4<br>
+                        <strong>Reality:</strong> Many are asymptomatic and don't benefit<br>
+                        <strong>Solution:</strong> Follow NICE threshold of TSH ≥10 mIU/L<br>
+                        <strong>Consider treatment:</strong> If symptomatic, pregnant, or high CV risk</p>
+                    </div>
+                    <div class="interpretation-item">
+                        <h4>The Pregnancy TSH Panic</h4>
+                        <p><strong>Mistake:</strong> Using non-pregnant reference ranges in pregnancy<br>
+                        <strong>Reality:</strong> TSH naturally falls in first trimester due to hCG<br>
+                        <strong>Solution:</strong> Use trimester-specific reference ranges<br>
+                        <strong>Target:</strong> TSH <2.5 mIU/L in first trimester</p>
+                    </div>
+                    <div class="interpretation-item">
+                        <h4>The Sick Patient Thyroid Testing</h4>
+                        <p><strong>Mistake:</strong> Ordering TFTs in acutely unwell patients<br>
+                        <strong>Reality:</strong> Sick euthyroid syndrome gives misleading results<br>
+                        <strong>Solution:</strong> Avoid TFTs in acute illness unless thyroid storm suspected<br>
+                        <strong>Timing:</strong> Recheck 6-8 weeks after recovery</p>
+                    </div>
+                </div>
+
+                <div class="highlight-box">
+                    <h4>Red Flags in Thyroid Function Testing</h4>
+                    <ul>
+                        <li><strong>TSH and T4 moving in same direction:</strong> Consider central thyroid disease, non-thyroidal illness</li>
+                        <li><strong>Normal TSH with obvious hypo/hyperthyroid symptoms:</strong> Recheck timing, consider other diagnoses</li>
+                        <li><strong>Extreme TSH values (>20 or <0.01):</strong> Need urgent clinical assessment and treatment</li>
+                        <li><strong>Discordant biochemistry and clinical picture:</strong> Consider drug effects, recent illness</li>
+                        <li><strong>Poor treatment response:</strong> Check compliance, absorption, drug interactions</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <div class="section-icon">📈</div>
+                    <h2>Summary: The Five-Step Thyroid Function Mastery Method</h2>
+                </div>
+
+                <div class="visual-element">
+                    <div class="diagram">
+                        <div class="diagram-item">
+                            <h4>1. TSH First Strategy</h4>
+                            <p>Start with TSH as most sensitive screening test</p>
+                        </div>
+                        <div class="diagram-item">
+                            <h4>2. Pattern Recognition</h4>
+                            <p>High TSH = hypothyroidism, Low TSH = hyperthyroidism</p>
+                        </div>
+                        <div class="diagram-item">
+                            <h4>3. Clinical Correlation</h4>
+                            <p>Combine biochemistry with symptoms and examination</p>
+                        </div>
+                        <div class="diagram-item">
+                            <h4>4. Treatment Thresholds</h4>
+                            <p>Use evidence-based NICE thresholds for intervention</p>
+                        </div>
+                        <div class="diagram-item">
+                            <h4>5. Monitoring Strategy</h4>
+                            <p>Regular follow-up with appropriate intervals and targets</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="two-column">
+                    <div>
+                        <h4>Key Numbers to Remember</h4>
+                        <p><strong>TSH ≥10 mIU/L:</strong> NICE treatment threshold for hypothyroidism</p>
+                        <p><strong>TSH <0.1 mIU/L:</strong> Significant hyperthyroidism needing treatment</p>
+                        <p><strong>TSH 0.4-2.5 mIU/L:</strong> Target range for levothyroxine therapy</p>
+                        <p><strong>TSH <2.5 mIU/L:</strong> Target in first trimester of pregnancy</p>
+                    </div>
+                    <div>
+                        <h4>Clinical Decision Points</h4>
+                        <p><strong>Emergency referral:</strong> Thyroid storm, myxedema coma</p>
+                        <p><strong>Urgent referral:</strong> All new hyperthyroidism, pregnancy + thyroid disease</p>
+                        <p><strong>Routine referral:</strong> Central thyroid disease, difficult cases</p>
+                        <p><strong>Monitor only:</strong> Subclinical disease not meeting treatment criteria</p>
+                    </div>
+                </div>
+
+                <div class="clinical-pearl">
+                    <h3>Clinical Pearl</h3>
+                    <p><strong>"The Thyroid's Slow Dance":</strong> Thyroid function changes slowly—allow 6-8 weeks between dose adjustments for full effect. TSH has a long half-life, so early retesting gives false reassurance. Patient symptoms may improve before TSH normalizes, so don't chase perfect numbers if the patient feels well. Steady, patient titration beats aggressive dosing every time.</p>
+                </div>
+
+                <div class="highlight-box">
+                    <h4>Take Home Messages for Thyroid Function Tests</h4>
+                    <ul>
+                        <li><strong>TSH first strategy:</strong> Most sensitive single test for thyroid dysfunction</li>
+                        <li><strong>Evidence-based thresholds:</strong> TSH ≥10 mIU/L for hypothyroidism treatment (NICE)</li>
+                        <li><strong>Pattern recognition:</strong> High TSH = hypothyroidism, Low TSH = hyperthyroidism</li>
+                        <li><strong>Clinical correlation essential:</strong> Biochemistry must fit with clinical picture</li>
+                        <li><strong>Avoid overtreatment:</strong> Not all abnormal results need intervention</li>
+                        <li><strong>Pregnancy changes everything:</strong> Different reference ranges and treatment targets</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="references-section">
+                <h3>🔗 Clinical Guidelines & Evidence Base</h3>
+                <div class="guideline-grid">
+                    <div class="guideline-item">
+                        <strong>NICE Guideline NG145</strong><br>
+                        <em>Thyroid disease: assessment and management</em> - 2019<br>
+                        <a href="https://www.nice.org.uk/guidance/ng145">Access Guidelines</a>
+                    </div>
+                    <div class="guideline-item">
+                        <strong>British Thyroid Foundation</strong><br>
+                        <em>Guidelines and Statements</em> - Updated 2024<br>
+                        <a href="https://www.btf-thyroid.org/guidelines-and-statements">Access Guidelines</a>
+                    </div>
+                    <div class="guideline-item">
+                        <strong>American Thyroid Association</strong><br>
+                        <em>Guidelines for the Treatment of Hypothyroidism</em> - 2014<br>
+                        <a href="https://www.thyroid.org/guidelines/">Access Guidelines</a>
+                    </div>
+                    <div class="guideline-item">
+                        <strong>European Thyroid Association</strong><br>
+                        <em>Guidelines for the Management of Subclinical Thyroid Dysfunction</em> - 2019<br>
+                        <a href="https://www.eurothyroid.com/guidelines/">Access Guidelines</a>
+                    </div>
+                    <div class="guideline-item">
+                        <strong>Royal College of Physicians</strong><br>
+                        <em>UK Guidelines for the Use of Thyroid Function Tests</em> - 2006 (Updated 2024)<br>
+                        <a href="https://www.rcplondon.ac.uk/">Access Guidelines</a>
+                    </div>
+                    <div class="guideline-item">
+                        <strong>Cochrane Review</strong><br>
+                        <em>Levothyroxine for subclinical hypothyroidism</em> - 2019<br>
+                        <a href="https://www.cochranelibrary.com/">Access Review</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="medical-textbook-scripts.js"></script>
+</body>
+</html>

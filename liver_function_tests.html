@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liver Function Tests Interpretation for Primary Care</title>
+    <link rel="stylesheet" href="medical-textbook-styles.css">
+</head>
+<body>
+    <div class="textbook-page">
+        <button class="download-btn" onclick="downloadPDF()">
+            <svg class="download-icon" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+            </svg>
+            Download PDF
+        </button>
+
+        <div class="page-header">
+            <h1>Decoding Liver Function Tests</h1>
+            <div class="subtitle">From Patterns to Pathology - Mastering Hepatic Detective Work</div>
+        </div>
+
+        <div class="content">
+            <div class="section">
+                <div class="section-header">
+                    <div class="section-icon">🫀</div>
+                    <h2>Introduction: The Liver's Chemical Fingerprint</h2>
+                </div>
+                <p>Liver function tests aren't really tests of liver function—they're tests of liver damage. Every elevated enzyme tells a story of cellular injury, every pattern points to a specific type of problem, and every result demands you ask: "Is this liver crying for help, or just clearing its throat?" The liver is remarkably resilient, silently compensating until 80% of function is lost, making these biochemical clues often your first and best window into hepatic health.</p>
+
+                <p>This chapter transforms you from someone who simply flags abnormal results into a hepatic detective who can distinguish hepatocellular from cholestatic injury, spot the early warning signs of serious liver disease, and know when to watch, when to investigate, and when to refer urgently. You'll learn to read the patterns that matter and avoid the pitfalls that mislead.</p>
+
+                <div class="clinical-pearl">
+                    <h3>Clinical Pearl</h3>
+                    <p><strong>"The Pattern is the Pathway":</strong> Never interpret liver tests in isolation. ALT 150 with ALP 80 suggests hepatocellular injury (think hepatitis, toxins, fatty liver), while ALT 80 with ALP 300 suggests cholestasis (think stones, strictures, tumors). The pattern tells you where to look, not just that something's wrong.</p>
+                </div>
+
+                <div class="reference-range-table">
+                    <h4>Liver Function Test Normal Ranges and Clinical Significance</h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Test</th>
+                                <th>Normal Range</th>
+                                <th>Units</th>
+                                <th>Primary Indication</th>
+                                <th>Key Clinical Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>ALT (Alanine Transaminase)</td>
+                                <td>19-25 (F), 29-33 (M)</td>
+                                <td>IU/L</td>
+                                <td>Hepatocellular injury</td>
+                                <td>More liver-specific than AST</td>
+                            </tr>
+                            <tr>
+                                <td>AST (Aspartate Transaminase)</td>
+                                <td>0-35</td>
+                                <td>IU/L</td>
+                                <td>Hepatocellular injury</td>
+                                <td>Also in muscle, heart</td>
+                            </tr>
+                            <tr>
+                                <td>ALP (Alkaline Phosphatase)</td>
+                                <td>30-120</td>
+                                <td>IU/L</td>
+                                <td>Cholestasis, bone disease</td>
+                                <td>Also in bone, placenta</td>
+                            </tr>
+                            <tr>
+                                <td>GGT (Gamma-GT)</td>
+                                <td>0-30</td>
+                                <td>IU/L</td>
+                                <td>Cholestasis, alcohol</td>
+                                <td>Most sensitive to biliary obstruction</td>
+                            </tr>
+                            <tr>
+                                <td>Bilirubin (Total)</td>
+                                <td>2-17</td>
+                                <td>μmol/L</td>
+                                <td>Liver function, hemolysis</td>
+                                <td>Conjugated vs unconjugated matters</td>
+                            </tr>
+                            <tr>
+                                <td>Albumin</td>
+                                <td>35-50</td>
+                                <td>g/L</td>
+                                <td>Synthetic function</td>
+                                <td>Long half-life (3 weeks)</td>
+                            </tr>
+                            <tr>
+                                <td>Prothrombin Time</td>
+                                <td>11-15</td>
+                                <td>seconds</td>
+                                <td>Synthetic function</td>
+                                <td>Short half-life, acute changes</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <div class="section-icon">🚨</div>
+                    <h2>Priority Assessment: When Liver Tests Signal Emergency</h2>
+                </div>
+
+                <p>Most abnormal liver tests reflect chronic, slowly evolving conditions. However, certain patterns demand immediate attention—either because they indicate acute hepatic failure or because they signal conditions where rapid intervention can be life-saving.</p>
+
+                <div class="red-flag-grid">
+                    <div class="red-flag-item">
+                        <div style="display: block; margin-bottom: 8px;"><strong>ALT/AST >1000 IU/L</strong></div>
+                        Acute hepatocellular injury—urgent hospital assessment needed, check paracetamol levels, viral hepatitis screen, consider acute hepatitis
+                    </div>
+                    <div class="red-flag-item">
+                        <div style="display: block; margin-bottom: 8px;"><strong>Prolonged PT + Low Albumin + Jaundice</strong></div>
+                        Acute liver failure pattern—emergency hepatology referral, monitor for encephalopathy, assess for liver transplant criteria
+                    </div>
+                    <div class="red-flag-item">
+                        <div style="display: block; margin-bottom: 8px;"><strong>High Bilirubin + High ALP + Pain</strong></div>
+                        Possible biliary obstruction—urgent imaging needed, consider cholangitis if fever, emergency surgical opinion may be required
+                    </div>
+                    <div class="red-flag-item">
+                        <div style="display: block; margin-bottom: 8px;"><strong>New Abnormal LFTs + Confusion</strong></div>
+                        Hepatic encephalopathy possible—urgent assessment for ammonia levels, exclude infection, consider lactulose therapy
+                    </div>
+                </div>
+
+                <div class="clinical-pearl">
+                    <h3>Clinical Pearl</h3>
+                    <p><strong>"The Paracetamol Rule":</strong> Any ALT >150 IU/L in the context of possible overdose (intentional or accidental) requires immediate paracetamol level measurement and urgent hepatology consultation. Paracetamol hepatotoxicity can be completely reversible with N-acetylcysteine if caught early, but becomes irreversible liver failure if missed.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <div class="section-icon">🧭</div>
+                    <h2>Step 1: The R-Ratio Method - Pattern Recognition Made Simple</h2>
+                </div>
+
+                <p>The R-ratio revolutionizes liver test interpretation by converting complex patterns into simple mathematical clarity. This evidence-based approach, endorsed by hepatology guidelines worldwide, tells you immediately whether you're dealing with hepatocellular injury, cholestasis, or mixed disease.</p>
+
+                <div class="assessment-flow">
+                    <div class="flow-step">
+                        <h4>Calculate the R-Ratio</h4>
+                        <p>R = (ALT ÷ ALT upper limit) ÷ (ALP ÷ ALP upper limit). This ratio normalizes both enzymes to their reference ranges, allowing direct comparison regardless of absolute values.</p>
+                    </div>
+                    <div class="flow-step">
+                        <h4>Interpret the Pattern</h4>
+                        <p>R >5 = Hepatocellular injury. R <2 = Cholestatic injury. R 2-5 = Mixed injury. Each pattern points to different causes and investigation pathways.</p>
+                    </div>
+                    <div class="flow-step">
+                        <h4>Apply Clinical Context</h4>
+                        <p>Combine R-ratio with clinical history, examination findings, and additional biochemistry. The pattern guides but doesn't replace clinical judgment.</p>
+                    </div>
+                    <div class="flow-step">
+                        <h4>Plan Investigation Strategy</h4>
+                        <p>Hepatocellular patterns need hepatitis screening, toxin history. Cholestatic patterns need imaging. Mixed patterns often need both approaches.</p>
+                    </div>
+                </div>
+
+                <div class="visual-element">
+                    <h3>R-Ratio Decision Framework</h3>
+                    <div class="decision-tree">
+                        <div class="tree-node decision">
+                            <strong>Abnormal ALT and/or ALP detected</strong>
+                        </div>
+                        <div class="tree-node decision">
+                            <strong>Calculate R-ratio: (ALT÷ALT ULN) ÷ (ALP÷ALP ULN)</strong>
+                        </div>
+                        <div class="tree-node action">
+                            <strong>R >5 (Hepatocellular):</strong> Check viral hepatitis, paracetamol, alcohol history, fatty liver markers
+                        </div>
+                        <div class="tree-node action">
+                            <strong>R <2 (Cholestatic):</strong> Abdominal ultrasound, check GGT, consider MRCP if ultrasound normal
+                        </div>
+                        <div class="tree-node action">
+                            <strong>R 2-5 (Mixed):</strong> Investigate both hepatocellular and cholestatic causes simultaneously
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clinical-pearl">
+                    <h3>Clinical Pearl</h3>
+                    <p><strong>"The GGT Amplifier":</strong> GGT is your cholestatic pattern amplifier. If ALP is elevated but you're unsure if it's liver or bone origin, an elevated GGT confirms hepatic source. GGT >3x upper limit with elevated ALP virtually guarantees biliary pathology. But remember—GGT is also the most sensitive marker of alcohol excess.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <div class="section-icon">🔍</div>
+                    <h2>Step 2: Hepatocellular Injury Pattern - When Cells Cry Out</h2>
+                </div>
+
+                <div class="interpretation-grid">
+                    <div class="interpretation-item">
+                        <h4>Acute Hepatocellular Injury</h4>
+                        <p><strong>Pattern:</strong> ALT/AST >400 IU/L, R-ratio >5<br>
+                        <strong>Think:</strong> Viral hepatitis, paracetamol, drug-induced<br>
+                        <strong>Urgency:</strong> High if >1000 IU/L<br>
+                        <strong>Next steps:</strong> Hepatitis screen, paracetamol level, drug history</p>
+                    </div>
+                    <div class="interpretation-item">
+                        <h4>Chronic Hepatocellular Injury</h4>
+                        <p><strong>Pattern:</strong> ALT/AST 50-400 IU/L, persistent elevation<br>
+                        <strong>Think:</strong> NAFLD, chronic hepatitis, alcohol<br>
+                        <strong>Urgency:</strong> Moderate, needs investigation<br>
+                        <strong>Next steps:</strong> Metabolic screen, liver ultrasound, alcohol history</p>
+                    </div>
+                    <div class="interpretation-item">
+                        <h4>AST:ALT Ratio >2</h4>
+                        <p><strong>Pattern:</strong> AST significantly higher than ALT<br>
+                        <strong>Think:</strong> Alcohol-related liver disease<br>
+                        <strong>Context:</strong> Usually with elevated GGT<br>
+                        <strong>Action:</strong> Explore alcohol history sensitively, consider intervention</p>
+                    </div>
+                    <div class="interpretation-item">
+                        <h4>Mild ALT Elevation</h4>
+                        <p><strong>Pattern:</strong> ALT 40-80 IU/L, often fluctuating<br>
+                        <strong>Think:</strong> NAFLD, metabolic syndrome, medications<br>
+                        <strong>Approach:</strong> Address lifestyle factors first<br>
+                        <strong>Follow-up:</strong> Repeat in 3-6 months, monitor trends</p>
+                    </div>
+                </div>
+
+                <div class="parameter-grid">
+                    <div class="parameter-card normal">
+                        <h4>Viral Hepatitis Pattern</h4>
+                        <p><strong>ALT:</strong> Often >500 IU/L<br>
+                        <strong>AST:</strong> Similar to ALT<br>
+                        <strong>Bilirubin:</strong> Variable elevation<br>
+                        <strong>Key:</strong> Check Hep A, B, C, EBV, CMV</p>
+                    </div>
+                    <div class="parameter-card abnormal-low">
+                        <h4>Drug-Induced Pattern</h4>
+                        <p><strong>ALT:</strong> Variable, can be massive<br>
+                        <strong>Timing:</strong> Days to weeks after drug start<br>
+                        <strong>Common drugs:</strong> Paracetamol, antibiotics, statins<br>
+                        <strong>Action:</strong> Stop suspected drug, monitor recovery</p>
+                    </div>
+                    <div class="parameter-card abnormal-high">
+                        <h4>NAFLD Pattern</h4>
+                        <p><strong>ALT:</strong> 40-150 IU/L typically<br>
+                        <strong>Associated:</strong> Obesity, diabetes, dyslipidemia<br>
+                        <strong>Ratio:</strong> AST:ALT usually <1<br>
+                        <strong>Investigation:</strong> Metabolic assessment, liver ultrasound</p>
+                    </div>
+                    <div class="parameter-card critical">
+                        <h4>Autoimmune Pattern</h4>
+                        <p><strong>ALT:</strong> Variable, often with other abnormalities<br>
+                        <strong>Clues:</strong> Young woman, other autoimmune disease<br>
+                        <strong>Tests:</strong> ANA, ASMA, anti-LKM antibodies<br>
+                        <strong>Urgency:</strong> Needs hepatology referral</p>
+                    </div>
+                </div>
+
+                <div class="clinical-pearl">
+                    <h3>Clinical Pearl</h3>
+                    <p><strong>"The Magnitude Message":</strong> ALT >1000 IU/L narrows your differential dramatically. Think paracetamol poisoning, acute viral hepatitis, ischaemic hepatitis, or drug-induced hepatitis. ALT >3000 IU/L is almost always paracetamol—check levels immediately even if patient denies ingestion. Chronic conditions rarely cause such massive elevation.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <div class="section-icon">🚰</div>
+                    <h2>Step 3: Cholestatic Injury Pattern - When Bile Can't Flow</h2>
+                </div>
+
+                <div class="two-column">
+                    <div>
+                        <h4>Understanding Cholestasis</h4>
+                        <p>Cholestasis means impaired bile flow, either from liver cell dysfunction (intrahepatic) or bile duct obstruction (extrahepatic). The key is determining the level of obstruction and the urgency of intervention required.</p>
+                        <ul>
+                            <li><strong>ALP elevation:</strong> Indicates cholestasis but can be from bone</li>
+                            <li><strong>GGT confirmation:</strong> Elevated GGT confirms hepatic source</li>
+                            <li><strong>Bilirubin pattern:</strong> Conjugated elevation in cholestasis</li>
+                            <li><strong>Clinical context:</strong> Pain, jaundice, pruritus are key symptoms</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Cholestatic Investigation Strategy</h4>
+                        <p>Your approach depends on severity and clinical presentation:</p>
+                        <ul>
+                            <li><strong>First-line:</strong> Abdominal ultrasound to detect bile duct dilatation</li>
+                            <li><strong>If normal USS:</strong> Consider MRCP for detailed biliary imaging</li>
+                            <li><strong>If severe:</strong> ERCP may be needed for intervention</li>
+                            <li><strong>Always consider:</strong> Medications, primary biliary cholangitis, PSC</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="interpretation-grid">
+                    <div class="interpretation-item">
+                        <h4>Bile Duct Obstruction</h4>
+                        <p><strong>Pattern:</strong> ALP >300, GGT >200, dilated ducts on imaging<br>
+                        <strong>Causes:</strong> Gallstones, strictures, pancreatic cancer<br>
+                        <strong>Symptoms:</strong> Jaundice, pale stools, dark urine, pain<br>
+                        <strong>Action:</strong> Urgent imaging, consider ERCP, surgical opinion</p>
+                    </div>
+                    <div class="interpretation-item">
+                        <h4>Primary Biliary Cholangitis</h4>
+                        <p><strong>Pattern:</strong> ALP >2x normal, positive AMA antibodies<br>
+                        <strong>Demographics:</strong> Middle-aged women predominantly<br>
+                        <strong>Symptoms:</strong> Fatigue, pruritus, may be asymptomatic<br>
+                        <strong>Action:</strong> AMA testing, hepatology referral, UDCA treatment</p>
+                    </div>
+                    <div class="interpretation-item">
+                        <h4>Primary Sclerosing Cholangitis</h4>
+                        <p><strong>Pattern:</strong> ALP >3x normal, young men often<br>
+                        <strong>Association:</strong> Inflammatory bowel disease (70% have IBD)<br>
+                        <strong>Imaging:</strong> MRCP shows biliary strictures and dilatations<br>
+                        <strong>Action:</strong> IBD screen, MRCP, hepatology referral</p>
+                    </div>
+                    <div class="interpretation-item">
+                        <h4>Drug-Induced Cholestasis</h4>
+                        <p><strong>Pattern:</strong> ALP elevation, recent drug history<br>
+                        <strong>Common drugs:</strong> Antibiotics, phenytoin, anabolic steroids<br>
+                        <strong>Timing:</strong> Weeks to months after drug initiation<br>
+                        <strong>Action:</strong> Stop suspected drug, monitor for improvement</p>
+                    </div>
+                </div>
+
+                <div class="visual-element">
+                    <h3>Cholestatic Investigation Flowchart</h3>
+                    <div class="assessment-flow">
+                        <div class="flow-step">
+                            <h4>Confirm Cholestatic Pattern</h4>
+                            <p>ALP >1.5x ULN + GGT >1.5x ULN = definite cholestasis. If GGT normal, consider bone source for ALP elevation.</p>
+                        </div>
+                        <div class="flow-step">
+                            <h4>Assess Severity and Symptoms</h4>
+                            <p>Jaundice + pain + fever = possible cholangitis (emergency). Gradual onset + pruritus = chronic cholestatic disease.</p>
+                        </div>
+                        <div class="flow-step">
+                            <h4>First-Line Imaging</h4>
+                            <p>Abdominal ultrasound to assess bile duct caliber, gallstones, liver texture. Quick, non-invasive, good first step.</p>
+                        </div>
+                        <div class="flow-step">
+                            <h4>Targeted Further Investigation</h4>
+                            <p>Dilated ducts → MRCP/ERCP. Normal ducts → Consider PBC (AMA), PSC (MRCP), drug history.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clinical-pearl">
+                    <h3>Clinical Pearl</h3>
+                    <p><strong>"Charcot's Triad Plus":</strong> Jaundice + right upper quadrant pain + fever = cholangitis until proven otherwise. Add hypotension and confusion (Reynolds' pentad) and you have a surgical emergency. Don't wait for all five signs—two out of three warrants urgent investigation and empirical antibiotics.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <div class="section-icon">⚖️</div>
+                    <h2>Step 4: Liver Synthetic Function - The True Test</h2>
+                </div>
+
+                <p>While enzymes tell you about liver damage, synthetic function tests reveal how much liver function remains. These tests—albumin, prothrombin time, and bilirubin—are your window into the liver's ability to perform its life-sustaining functions.</p>
+
+                <div class="parameter-grid">
+                    <div class="parameter-card normal">
+                        <h4>Albumin - The Slow Indicator</h4>
+                        <p><strong>Normal:</strong> 35-50 g/L<br>
+                        <strong>Half-life:</strong> 3 weeks<br>
+                        <strong>Low albumin:</strong> Chronic liver disease, malnutrition<br>
+                        <strong>Limitation:</strong> Also low in kidney disease, inflammation</p>
+                    </div>
+                    <div class="parameter-card abnormal-low">
+                        <h4>Prothrombin Time - The Quick Check</h4>
+                        <p><strong>Normal:</strong> 11-15 seconds<br>
+                        <strong>Half-life:</strong> Hours<br>
+                        <strong>Prolonged PT:</strong> Acute liver dysfunction, vitamin K deficiency<br>
+                        <strong>Key test:</strong> Most sensitive to acute liver failure</p>
+                    </div>
+                    <div class="parameter-card abnormal-high">
+                        <h4>Bilirubin - The Visible Sign</h4>
+                        <p><strong>Normal:</strong> <17 μmol/L<br>
+                        <strong>Unconjugated:</strong> Hemolysis, Gilbert's syndrome<br>
+                        <strong>Conjugated:</strong> Liver disease, biliary obstruction<br>
+                        <strong>Jaundice visible:</strong> >40 μmol/L</p>
+                    </div>
+                    <div class="parameter-card critical">
+                        <h4>Combined Dysfunction</h4>
+                        <p><strong>Low albumin + Prolonged PT:</strong> Chronic liver failure<br>
+                        <strong>High bilirubin + Prolonged PT:</strong> Acute liver failure<br>
+                        <strong>All three abnormal:</strong> Decompensated liver disease<br>
+                        <strong>Action:</strong> Urgent hepatology referral</p>
+                    </div>
+                </div>
+
+                <div class="highlight-box">
+                    <h4>Child-Pugh Score for Liver Function Assessment</h4>
+                    <table style="width: 100%; border-collapse: collapse; margin-top: 15px;">
+                        <thead>
+                            <tr style="background: #f8f9fa;">
+                                <th style="padding: 10px; border: 1px solid #dee2e6;">Parameter</th>
+                                <th style="padding: 10px; border: 1px solid #dee2e6;">1 Point</th>
+                                <th style="padding: 10px; border: 1px solid #dee2e6;">2 Points</th>
+                                <th style="padding: 10px; border: 1px solid #dee2e6;">3 Points</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="padding: 8px; border: 1px solid #dee2e6;">Bilirubin (μmol/L)</td>
+                                <td style="padding: 8px; border: 1px solid #dee2e6;"><34</td>
+                                <td style="padding: 8px; border: 1px solid #dee2e6;">34-51</td>
+                                <td style="padding: 8px; border: 1px solid #dee2e6;">>51</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 8px; border: 1px solid #dee2e6;">Albumin (g/L)</td>
+                                <td style="padding: 8px; border: 1px solid #dee2e6;">>35</td>
+                                <td style="padding: 8px; border: 1px solid #dee2e6;">28-35</td>
+                                <td style="padding: 8px; border: 1px solid #dee2e6;"><28</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 8px; border: 1px solid #dee2e6;">PT prolongation (sec)</td>
+                                <td style="padding: 8px; border: 1px solid #dee2e6;"><4</td>
+                                <td style="padding: 8px; border: 1px solid #dee2e6;">4-6</td>
+                                <td style="padding: 8px; border: 1px solid #dee2e6;">>6</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 8px; border: 1px solid #dee2e6;">Ascites</td>
+                                <td style="padding: 8px; border: 1px solid #dee2e6;">None</td>
+                                <td style="padding: 8px; border: 1px solid #dee2e6;">Slight</td>
+                                <td style="padding: 8px; border: 1px solid #dee2e6;">Moderate</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 8px; border: 1px solid #dee2e6;">Encephalopathy</td>
+                                <td style="padding: 8px; border: 1px solid #dee2e6;">None</td>
+                                <td style="padding: 8px; border: 1px solid #dee2e6;">Grade 1-2</td>
+                                <td style="padding: 8px; border: 1px solid #dee2e6;">Grade 3-4</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p style="margin-top: 15px;"><strong>Class A:</strong> 5-6 points (good prognosis)<br>
+                    <strong>Class B:</strong> 7-9 points (moderate prognosis)<br>
+                    <strong>Class C:</strong> 10-15 points (poor prognosis)</p>
+                </div>
+
+                <div class="clinical-pearl">
+                    <h3>Clinical Pearl</h3>
+                    <p><strong>"The Gilbert's Syndrome Trap":</strong> Isolated unconjugated bilirubin elevation (usually 20-60 μmol/L) with normal other LFTs is Gilbert's syndrome in 5% of the population. It's benign, worsens with fasting/illness, and needs no treatment. Confirm with genetic testing if needed, but don't over-investigate this common variant.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <div class="section-icon">🔄</div>
+                    <h2>Step 5: Investigation Pathways - Systematic Detective Work</h2>
+                </div>
+
+                <div class="risk-factors-visual">
+                    <div class="risk-factor">
+                        <h4>Hepatocellular Investigation</h4>
+                        <p><strong>First line:</strong> Hep A/B/C screen, paracetamol level</p>
+                        <p><strong>Second line:</strong> Autoimmune screen (ANA, ASMA, anti-LKM)</p>
+                        <p><strong>Metabolic:</strong> Iron studies, caeruloplasmin, α1-antitrypsin</p>
+                        <p><strong>Imaging:</strong> Liver ultrasound, consider MRI</p>
+                    </div>
+                    <div class="risk-factor">
+                        <h4>Cholestatic Investigation</h4>
+                        <p><strong>First line:</strong> Abdominal ultrasound, review medications</p>
+                        <p><strong>If ducts normal:</strong> AMA (PBC), MRCP (PSC)</p>
+                        <p><strong>If ducts dilated:</strong> MRCP or ERCP for intervention</p>
+                        <p><strong>Specialist tests:</strong> ANCA (PSC), IgG4 (autoimmune pancreatitis)</p>
+                    </div>
+                    <div class="risk-factor">
+                        <h4>Mixed Pattern Investigation</h4>
+                        <p><strong>Approach:</strong> Combine both hepatocellular and cholestatic investigations</p>
+                        <p><strong>Priority:</strong> Rule out acute causes first</p>
+                        <p><strong>Common causes:</strong> NAFLD with fibrosis, drug-induced liver injury</p>
+                        <p><strong>Consider:</strong> Liver biopsy if diagnosis unclear</p>
+                    </div>
+                    <div class="risk-factor">
+                        <h4>Synthetic Dysfunction</h4>
+                        <p><strong>Urgent:</strong> Check for acute liver failure</p>
+                        <p><strong>Chronic:</strong> Assess for decompensated cirrhosis</p>
+                        <p><strong>Monitoring:</strong> Child-Pugh score, MELD score</p>
+                        <p><strong>Referral:</strong> Hepatology for all cases</p>
+                    </div>
+                </div>
+
+                <div class="critical-values">
+                    <h3>When to Refer to Hepatology</h3>
+                    <ul>
+                        <li><strong>Acute liver injury:</strong> ALT/AST >400 IU/L or >5x upper limit normal</li>
+                        <li><strong>Suspected cirrhosis:</strong> Low albumin + prolonged PT + clinical signs</li>
+                        <li><strong>Autoimmune liver disease:</strong> Positive autoantibodies, young patients</li>
+                        <li><strong>Unexplained chronic elevation:</strong> Persistent abnormal LFTs >6 months</li>
+                        <li><strong>Complicated cases:</strong> Multiple comorbidities, drug interactions</li>
+                        <li><strong>Specialist treatment needed:</strong> PBC, PSC, Wilson's disease, hemochromatosis</li>
+                    </ul>
+                </div>
+
+                <div class="clinical-pearl">
+                    <h3>Clinical Pearl</h3>
+                    <p><strong>"The Six-Month Rule":</strong> Any persistent elevation of liver enzymes for >6 months, even mild, warrants systematic investigation. The liver doesn't stay mildly abnormal forever without cause. Don't just repeat tests hoping they'll normalize—find out why they're elevated and address the underlying problem.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <div class="section-icon">⚡</div>
+                    <h2>Step 6: Common Pitfalls and How to Avoid Them</h2>
+                </div>
+
+                <div class="interpretation-grid">
+                    <div class="interpretation-item">
+                        <h4>The Bone ALP Confusion</h4>
+                        <p><strong>Problem:</strong> Elevated ALP assumed to be liver-related<br>
+                        <strong>Reality:</strong> ALP also comes from bone, especially in growing children<br>
+                        <strong>Solution:</strong> Check GGT—if normal, ALP likely bone origin<br>
+                        <strong>Clues:</strong> Recent fractures, Paget's disease, bone metastases</p>
+                    </div>
+                    <div class="interpretation-item">
+                        <h4>The Statin Panic</h4>
+                        <p><strong>Problem:</strong> Stopping statins for minor ALT elevation<br>
+                        <strong>Reality:</strong> Statins rarely cause significant hepatotoxicity<br>
+                        <strong>Solution:</strong> Continue statin unless ALT >3x upper limit<br>
+                        <strong>Benefits:</strong> Cardiovascular benefits usually outweigh risks</p>
+                    </div>
+                    <div class="interpretation-item">
+                        <h4>The Alcohol Assumption</h4>
+                        <p><strong>Problem:</strong> Attributing all liver problems to alcohol<br>
+                        <strong>Reality:</strong> NAFLD is now the commonest cause of abnormal LFTs<br>
+                        <strong>Solution:</strong> Screen for metabolic syndrome even in non-drinkers<br>
+                        <strong>Key:</strong> AST:ALT >2 suggests alcohol, <1 suggests NAFLD</p>
+                    </div>
+                    <div class="interpretation-item">
+                        <h4>The Normal PT Reassurance</h4>
+                        <p><strong>Problem:</strong> Assuming normal PT means good liver function<br>
+                        <strong>Reality:</strong> PT only prolonged in advanced disease<br>
+                        <strong>Solution:</strong> Don't ignore abnormal enzymes because PT normal<br>
+                        <strong>Remember:</strong> Liver damage occurs long before function fails</p>
+                    </div>
+                </div>
+
+                <div class="highlight-box">
+                    <h4>Red Flag Combinations to Never Miss</h4>
+                    <ul>
+                        <li><strong>Young woman + High ALT + High immunoglobulins:</strong> Autoimmune hepatitis</li>
+                        <li><strong>High ALP + Pruritus + Middle-aged woman:</strong> Primary biliary cholangitis</li>
+                        <li><strong>High ALP + IBD history + Young man:</strong> Primary sclerosing cholangitis</li>
+                        <li><strong>Very high ALT + Paracetamol history:</strong> Paracetamol hepatotoxicity</li>
+                        <li><strong>High bilirubin + Low haptoglobin + High LDH:</strong> Hemolysis, not liver disease</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <div class="section-icon">📈</div>
+                    <h2>Summary: The Five-Step Liver Test Mastery Method</h2>
+                </div>
+
+                <div class="visual-element">
+                    <div class="diagram">
+                        <div class="diagram-item">
+                            <h4>1. Calculate R-Ratio</h4>
+                            <p>Determine hepatocellular vs cholestatic vs mixed pattern</p>
+                        </div>
+                        <div class="diagram-item">
+                            <h4>2. Assess Synthetic Function</h4>
+                            <p>Check albumin, PT, bilirubin for liver function</p>
+                        </div>
+                        <div class="diagram-item">
+                            <h4>3. Clinical Correlation</h4>
+                            <p>Combine patterns with symptoms, examination, history</p>
+                        </div>
+                        <div class="diagram-item">
+                            <h4>4. Targeted Investigation</h4>
+                            <p>Pattern-specific workup based on R-ratio result</p>
+                        </div>
+                        <div class="diagram-item">
+                            <h4>5. Monitor and Refer</h4>
+                            <p>Serial monitoring, hepatology referral when indicated</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="two-column">
+                    <div>
+                        <h4>Key Numbers to Remember</h4>
+                        <p><strong>R-ratio >5:</strong> Hepatocellular pattern</p>
+                        <p><strong>R-ratio <2:</strong> Cholestatic pattern</p>
+                        <p><strong>ALT >1000:</strong> Think paracetamol, viral hepatitis</p>
+                        <p><strong>AST:ALT >2:</strong> Suggests alcohol-related liver disease</p>
+                        <p><strong>ALP >300 + GGT >200:</strong> Significant cholestasis</p>
+                    </div>
+                    <div>
+                        <h4>Clinical Decision Points</h4>
+                        <p><strong>Emergency referral:</strong> ALT >1000 or prolonged PT + low albumin</p>
+                        <p><strong>Hepatology referral:</strong> Persistent abnormal LFTs >6 months</p>
+                        <p><strong>Repeat testing:</strong> 2-6 weeks for acute changes</p>
+                        <p><strong>Lifestyle intervention:</strong> NAFLD pattern with metabolic syndrome</p>
+                    </div>
+                </div>
+
+                <div class="clinical-pearl">
+                    <h3>Clinical Pearl</h3>
+                    <p><strong>"The Liver's Silent Strength":</strong> The liver can lose 80% of its function before you see decompensation. Abnormal liver enzymes are early warning signs, not late-stage findings. Take mild elevations seriously—they often represent the beginning of the story, not a trivial finding. Early intervention can prevent progression to irreversible damage.</p>
+                </div>
+
+                <div class="highlight-box">
+                    <h4>Take Home Messages for Liver Test Interpretation</h4>
+                    <ul>
+                        <li><strong>Pattern recognition:</strong> Use R-ratio to classify injury type systematically</li>
+                        <li><strong>Don't ignore mild elevations:</strong> Persistent abnormal LFTs >6 months need investigation</li>
+                        <li><strong>Synthetic function matters:</strong> Albumin and PT tell you about liver function, not just damage</li>
+                        <li><strong>Clinical context crucial:</strong> Combine biochemistry with symptoms and examination findings</li>
+                        <li><strong>Know when to refer:</strong> Acute severe hepatitis and chronic unexplained abnormalities</li>
+                        <li><strong>NAFLD is common:</strong> Screen for metabolic syndrome in patients with hepatocellular pattern</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="references-section">
+                <h3>🔗 Clinical Guidelines & Evidence Base</h3>
+                <div class="guideline-grid">
+                    <div class="guideline-item">
+                        <strong>British Society of Gastroenterology</strong><br>
+                        <em>Guidelines on the management of abnormal liver blood tests</em> - 2017<br>
+                        <a href="https://www.bsg.org.uk/resource/guidelines-on-the-management-of-abnormal-liver-blood-tests.html">Access Guidelines</a>
+                    </div>
+                    <div class="guideline-item">
+                        <strong>NENC Hepatology Network</strong><br>
+                        <em>Abnormal Liver Blood Test Guidelines</em> - Updated August 2024<br>
+                        <a href="https://ntag.nhs.uk/wp-content/uploads/2024/08/Abnormal-Liver-blood-test-Guidelines-NENC-Hepatology-Network-V3.1-01-08-2024.pdf">Access Guidelines</a>
+                    </div>
+                    <div class="guideline-item">
+                        <strong>NICE Quality Standard QS152</strong><br>
+                        <em>Liver disease quality standards</em> - 2017<br>
+                        <a href="https://www.nice.org.uk/guidance/qs152">Access Standards</a>
+                    </div>
+                    <div class="guideline-item">
+                        <strong>American College of Gastroenterology</strong><br>
+                        <em>Evaluation of Abnormal Liver Chemistries</em> - 2017<br>
+                        <a href="https://journals.lww.com/ajg/Fulltext/2017/01000/ACG_Clinical_Guideline__Evaluation_of_Abnormal.25.aspx">Access Guideline</a>
+                    </div>
+                    <div class="guideline-item">
+                        <strong>NICE Guideline NG49</strong><br>
+                        <em>Non-alcoholic fatty liver disease assessment and management</em> - 2016<br>
+                        <a href="https://www.nice.org.uk/guidance/ng49">Access Guidelines</a>
+                    </div>
+                    <div class="guideline-item">
+                        <strong>European Association for Study of Liver</strong><br>
+                        <em>EASL Clinical Practice Guidelines</em> - Various conditions<br>
+                        <a href="https://easl.eu/publication/easl-clinical-practice-guidelines/">Access Guidelines</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="medical-textbook-scripts.js"></script>
+</body>
+</html>

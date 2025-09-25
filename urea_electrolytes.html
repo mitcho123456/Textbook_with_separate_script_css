@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urea & Electrolytes Interpretation for Primary Care</title>
+    <link rel="stylesheet" href="medical-textbook-styles.css">
+</head>
+<body>
+    <div class="textbook-page">
+        <button class="download-btn" onclick="downloadPDF()">
+            <svg class="download-icon" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+            </svg>
+            Download PDF
+        </button>
+
+        <div class="page-header">
+            <h1>Mastering Urea & Electrolytes</h1>
+            <div class="subtitle">From Kidney Function to Electrolyte Balance - Essential Clinical Chemistry</div>
+        </div>
+
+        <div class="content">
+            <div class="section">
+                <div class="section-header">
+                    <div class="section-icon">🫘</div>
+                    <h2>Introduction: The Body's Chemical Balance Sheet</h2>
+                </div>
+                <p>Urea and electrolytes aren't just numbers on a lab report—they're a window into your patient's fluid balance, kidney function, and metabolic state. Every result tells part of a larger story: creatinine whispers about kidney health, sodium shouts about fluid status, potassium warns about cardiac risk, and urea reveals the balance between production and clearance. Understanding these relationships transforms you from someone who flags abnormal values into a clinician who can predict problems before they become critical.</p>
+
+                <p>This chapter teaches you to read U&Es like a detective examining clues. You'll learn to spot acute kidney injury before it becomes irreversible, recognize dangerous electrolyte imbalances before they cause arrhythmias, and understand when mild abnormalities signal major underlying pathology. Most importantly, you'll know when to act immediately and when to observe carefully.</p>
+
+                <div class="clinical-pearl">
+                    <h3>Clinical Pearl</h3>
+                    <p><strong>"The eGFR Revolution":</strong> Don't just look at creatinine—eGFR is what matters. A creatinine of 120 μmol/L might be normal for a 25-year-old muscular man (eGFR >90) but represents severe kidney disease in a 75-year-old woman (eGFR <30). Always interpret creatinine in the context of age, sex, and muscle mass via eGFR calculation.</p>
+                </div>
+
+                <div class="reference-range-table">
+                    <h4>Urea & Electrolytes Normal Ranges and Clinical Significance</h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Parameter</th>
+                                <th>Normal Range</th>
+                                <th>Units</th>
+                                <th>Primary Clinical Significance</th>
+                                <th>Critical Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Sodium (Na+)</td>
+                                <td>135-145</td>
+                                <td>mmol/L</td>
+                                <td>Fluid balance, osmolality</td>
+                                <td><125 or >155</td>
+                            </tr>
+                            <tr>
+                                <td>Potassium (K+)</td>
+                                <td>3.5-5.0</td>
+                                <td>mmol/L</td>
+                                <td>Cardiac rhythm, muscle function</td>
+                                <td><2.5 or >6.5</td>
+                            </tr>
+                            <tr>
+                                <td>Urea</td>
+                                <td>2.5-7.8</td>
+                                <td>mmol/L</td>
+                                <td>Kidney function, protein metabolism</td>
+                                <td>>50 (uremic symptoms)</td>
+                            </tr>
+                            <tr>
+                                <td>Creatinine</td>
+                                <td>60-110 (F), 70-130 (M)</td>
+                                <td>μmol/L</td>
+                                <td>Kidney function, muscle mass</td>
+                                <td>Doubling from baseline</td>
+                            </tr>
+                            <tr>
+                                <td>eGFR</td>
+                                <td>>60</td>
+                                <td>mL/min/1.73m²</td>
+                                <td>True kidney function</td>
+                                <td><15 (pre-dialysis)</td>
+                            </tr>
+                            <tr>
+                                <td>Chloride (Cl-)</td>
+                                <td>95-108</td>
+                                <td>mmol/L</td>
+                                <td>Acid-base balance</td>
+                                <td><85 or >115</td>
+                            </tr>
+                            <tr>
+                                <td>Bicarbonate (HCO3-)</td>
+                                <td>22-29</td>
+                                <td>mmol/L</td>
+                                <td>Acid-base status</td>
+                                <td><15 or >35</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <div class="section-icon">🚨</div>
+                    <h2>Priority Assessment: When U&Es Signal Emergency</h2>
+                </div>
+
+                <p>Most electrolyte abnormalities develop gradually and can be corrected safely over hours or days. However, certain patterns represent immediate threats to life—particularly cardiac arrhythmias from potassium imbalance or cerebral edema from sodium disorders. Recognizing these patterns and knowing when to act immediately versus when to investigate further can be life-saving.</p>
+
+                <div class="red-flag-grid">
+                    <div class="red-flag-item">
+                        <div style="display: block; margin-bottom: 8px;"><strong>Potassium >6.5 mmol/L or <2.5 mmol/L</strong></div>
+                        Life-threatening arrhythmia risk—urgent ECG, cardiac monitoring, immediate treatment with calcium gluconate (high K+) or IV potassium (low K+)
+                    </div>
+                    <div class="red-flag-item">
+                        <div style="display: block; margin-bottom: 8px;"><strong>Sodium <125 mmol/L with symptoms</strong></div>
+                        Cerebral edema risk—seizures, coma possible. Assess chronicity urgently—acute needs immediate but careful correction with hypertonic saline
+                    </div>
+                    <div class="red-flag-item">
+                        <div style="display: block; margin-bottom: 8px;"><strong>Creatinine doubled from baseline</strong></div>
+                        Acute kidney injury—urgent assessment needed, check for reversible causes, monitor fluid balance, stop nephrotoxic drugs
+                    </div>
+                    <div class="red-flag-item">
+                        <div style="display: block; margin-bottom: 8px;"><strong>Bicarbonate <15 mmol/L</strong></div>
+                        Severe metabolic acidosis—check lactate, ketones, salicylate. Consider urgent dialysis if pH <7.1, seek intensive care input
+                    </div>
+                </div>
+
+                <div class="clinical-pearl">
+                    <h3>Clinical Pearl</h3>
+                    <p><strong>"The Potassium Paradox":</strong> Severe hyperkalemia may show no ECG changes until sudden cardiac arrest, while mild hyperkalemia can cause dramatic ECG changes in some patients. Never rely on ECG alone to assess potassium urgency—treat the number, not just the trace. Any K+ >6.0 mmol/L needs immediate treatment regardless of ECG findings.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <div class="section-icon">🫀</div>
+                    <h2>Step 1: Kidney Function Assessment - Beyond Creatinine</h2>
+                </div>
+
+                <p>Kidney function assessment has evolved far beyond simply checking if creatinine is elevated. The combination of eGFR, creatinine trends, and urea patterns tells you not just whether the kidneys are failing, but how quickly, why, and what you can do about it. Understanding these relationships is crucial for early detection and intervention.</p>
+
+                <div class="assessment-flow">
+                    <div class="flow-step">
+                        <h4>Always Check eGFR First</h4>
+                        <p>eGFR adjusts creatinine for age, sex, and ethnicity, giving true kidney function. Use CKD-EPI equation (standard in UK labs). eGFR >60 = normal kidney function, 30-60 = moderate CKD, <30 = severe CKD requiring specialist care.</p>
+                    </div>
+                    <div class="flow-step">
+                        <h4>Assess Chronicity vs Acuity</h4>
+                        <p>Compare with previous results. Rising creatinine over months = chronic kidney disease. Doubling in days = acute kidney injury. Mixed pattern suggests acute-on-chronic deterioration needing urgent assessment.</p>
+                    </div>
+                    <div class="flow-step">
+                        <h4>Examine the Urea:Creatinine Ratio</h4>
+                        <p>Normal ratio ~10:1. High ratio (>20:1) suggests prerenal AKI, dehydration, or GI bleeding. Low ratio suggests liver disease or low protein intake. This ratio helps identify the cause of kidney dysfunction.</p>
+                    </div>
+                    <div class="flow-step">
+                        <h4>Clinical Context Integration</h4>
+                        <p>Combine biochemistry with symptoms (oliguria, edema), examination (fluid status, blood pressure), and drug history (ACE inhibitors, NSAIDs, diuretics). Numbers alone don't make diagnoses.</p>
+                    </div>
+                </div>
+
+                <div class="visual-element">
+                    <h3>NICE 2024 AKI Detection and Staging</h3>
+                    <div class="parameter-grid">
+                        <div class="parameter-card normal">
+                            <h4>AKI Stage 1</h4>
+                            <p><strong>Creatinine:</strong> 1.5-1.9x baseline or ≥26 μmol/L rise<br>
+                            <strong>Urine:</strong> <0.5 mL/kg/hr for 6-12 hours<br>
+                            <strong>Action:</strong> Daily monitoring, review medications</p>
+                        </div>
+                        <div class="parameter-card abnormal-low">
+                            <h4>AKI Stage 2</h4>
+                            <p><strong>Creatinine:</strong> 2.0-2.9x baseline<br>
+                            <strong>Urine:</strong> <0.5 mL/kg/hr for ≥12 hours<br>
+                            <strong>Action:</strong> Nephrology consultation, consider causes</p>
+                        </div>
+                        <div class="parameter-card abnormal-high">
+                            <h4>AKI Stage 3</h4>
+                            <p><strong>Creatinine:</strong> ≥3.0x baseline or ≥354 μmol/L<br>
+                            <strong>Urine:</strong> <0.3 mL/kg/hr for ≥24 hours<br>
+                            <strong>Action:</strong> Urgent nephrology, consider dialysis</p>
+                        </div>
+                        <div class="parameter-card critical">
+                            <h4>Kidney Replacement Therapy</h4>
+                            <p><strong>Indications:</strong> Life-threatening complications<br>
+                            <strong>Not just:</strong> Isolated urea/creatinine values<br>
+                            <strong>Consider:</strong> Fluid overload, acidosis, hyperkalemia</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clinical-pearl">
+                    <h3>Clinical Pearl</h3>
+                    <p><strong>"The Medication Review Imperative":</strong> Every patient with AKI needs immediate medication review. Stop nephrotoxic drugs (NSAIDs, gentamicin), hold ACE inhibitors and diuretics temporarily, and adjust doses for reduced kidney function. Many cases of AKI are medication-related and completely reversible with prompt action.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <div class="section-icon">⚡</div>
+                    <h2>Step 2: Sodium Disorders - The Osmotic Balancing Act</h2>
+                </div>
+
+                <div class="interpretation-grid">
+                    <div class="interpretation-item">
+                        <h4>Hyponatremia (<135 mmol/L)</h4>
+                        <p><strong>Mild (130-135):</strong> Often asymptomatic, investigate cause<br>
+                        <strong>Moderate (125-129):</strong> Nausea, confusion, falls risk<br>
+                        <strong>Severe (<125):</strong> Seizures, coma, cerebral edema<br>
+                        <strong>Key:</strong> Assess volume status and urine osmolality</p>
+                    </div>
+                    <div class="interpretation-item">
+                        <h4>Hypernatremia (>145 mmol/L)</h4>
+                        <p><strong>Mild (146-150):</strong> Thirst, restlessness<br>
+                        <strong>Moderate (151-160):</strong> Confusion, muscle twitching<br>
+                        <strong>Severe (>160):</strong> Seizures, coma, cerebral hemorrhage<br>
+                        <strong>Cause:</strong> Usually water loss > sodium loss</p>
+                    </div>
+                    <div class="interpretation-item">
+                        <h4>SIADH Pattern</h4>
+                        <p><strong>Biochemistry:</strong> Low Na+, low serum osmolality, high urine osmolality<br>
+                        <strong>Clinical:</strong> Euvolemic, no edema<br>
+                        <strong>Causes:</strong> CNS disease, lung disease, drugs, malignancy<br>
+                        <strong>Treatment:</strong> Fluid restriction, treat underlying cause</p>
+                    </div>
+                    <div class="interpretation-item">
+                        <h4>Dehydration Pattern</h4>
+                        <p><strong>Biochemistry:</strong> High Na+, high serum osmolality<br>
+                        <strong>Clinical:</strong> Dry mucous membranes, reduced skin turgor<br>
+                        <strong>Causes:</strong> Inadequate fluid intake, diabetes insipidus<br>
+                        <strong>Treatment:</strong> Gradual rehydration with hypotonic fluids</p>
+                    </div>
+                </div>
+
+                <div class="risk-factors-visual">
+                    <div class="risk-factor">
+                        <h4>Hyponatremia Causes</h4>
+                        <p><strong>Hypovolemic:</strong> Diuretics, diarrhea, vomiting, burns</p>
+                        <p><strong>Euvolemic:</strong> SIADH, hypothyroidism, adrenal insufficiency</p>
+                        <p><strong>Hypervolemic:</strong> Heart failure, liver failure, kidney failure</p>
+                    </div>
+                    <div class="risk-factor">
+                        <h4>SIADH Common Causes</h4>
+                        <p><strong>CNS:</strong> Stroke, head injury, meningitis, tumors</p>
+                        <p><strong>Pulmonary:</strong> Pneumonia, lung cancer, TB</p>
+                        <p><strong>Drugs:</strong> SSRIs, carbamazepine, thiazides, PPIs</p>
+                    </div>
+                    <div class="risk-factor">
+                        <h4>Hypernatremia Causes</h4>
+                        <p><strong>Water loss:</strong> Diabetes insipidus, diarrhea, sweating</p>
+                        <p><strong>Sodium excess:</strong> IV hypertonic saline, salt poisoning</p>
+                        <p><strong>Impaired thirst:</strong> Elderly, dementia, unconscious patients</p>
+                    </div>
+                    <div class="risk-factor">
+                        <h4>Critical Correction Rules</h4>
+                        <p><strong>Chronic hyponatremia:</strong> Correct <8 mmol/L per 24h</p>
+                        <p><strong>Acute severe:</strong> Can correct faster but watch for CPM</p>
+                        <p><strong>Hypernatremia:</strong> Correct <10 mmol/L per 24h</p>
+                    </div>
+                </div>
+
+                <div class="clinical-pearl">
+                    <h3>Clinical Pearl</h3>
+                    <p><strong>"The Central Pontine Myelinolysis Fear":</strong> Correcting chronic hyponatremia too rapidly (>8 mmol/L per 24 hours) can cause irreversible brainstem damage. If sodium is chronically low (>48 hours), go slow. Use 3% saline only for acute severe hyponatremia with neurological symptoms, and monitor hourly. When in doubt, correct conservatively.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <div class="section-icon">⚡</div>
+                    <h2>Step 3: Potassium - The Cardiac Critical Parameter</h2>
+                </div>
+
+                <p>Potassium disorders are among the most immediately life-threatening electrolyte abnormalities. Both hyperkalemia and hypokalemia can cause fatal arrhythmias, but the clinical presentation can be deceptively mild until sudden cardiovascular collapse. Understanding the causes, recognizing the ECG changes, and knowing the urgent treatment protocols is essential for every clinician.</p>
+
+                <div class="parameter-grid">
+                    <div class="parameter-card normal">
+                        <h4>Normal Potassium (3.5-5.0 mmol/L)</h4>
+                        <p><strong>Physiology:</strong> 98% intracellular, crucial for membrane potential<br>
+                        <strong>ECG:</strong> Normal P-waves, QRS, and T-waves<br>
+                        <strong>Clinical:</strong> Normal muscle and cardiac function</p>
+                    </div>
+                    <div class="parameter-card abnormal-low">
+                        <h4>Hypokalemia (<3.5 mmol/L)</h4>
+                        <p><strong>Mild (3.0-3.4):</strong> Often asymptomatic, muscle weakness<br>
+                        <strong>Severe (<3.0):</strong> Paralysis, rhabdomyolysis risk<br>
+                        <strong>ECG:</strong> U-waves, T-wave flattening, ST depression<br>
+                        <strong>Risk:</strong> Digoxin toxicity, arrhythmias</p>
+                    </div>
+                    <div class="parameter-card abnormal-high">
+                        <h4>Hyperkalemia (>5.0 mmol/L)</h4>
+                        <p><strong>Mild (5.1-5.9):</strong> Usually asymptomatic<br>
+                        <strong>Moderate (6.0-6.4):</strong> ECG changes likely<br>
+                        <strong>Severe (>6.5):</strong> Life-threatening arrhythmia risk<br>
+                        <strong>ECG:</strong> Tall T-waves → wide QRS → sine wave</p>
+                    </div>
+                    <div class="parameter-card critical">
+                        <h4>Critical Hyperkalemia (>6.5 mmol/L)</h4>
+                        <p><strong>Immediate action:</strong> Calcium gluconate 10mL 10%<br>
+                        <strong>Shift K+ intracellular:</strong> Insulin + glucose, salbutamol<br>
+                        <strong>Remove K+:</strong> Calcium resonium, dialysis<br>
+                        <strong>Monitor:</strong> Continuous ECG, hourly K+ levels</p>
+                    </div>
+                </div>
+
+                <div class="visual-element">
+                    <h3>Hyperkalemia Emergency Management Protocol</h3>
+                    <div class="assessment-flow">
+                        <div class="flow-step">
+                            <h4>Immediate Assessment (K+ >6.0 mmol/L)</h4>
+                            <p>12-lead ECG immediately. Look for tall T-waves, wide QRS, absent P-waves. Any ECG changes or K+ >6.5 mmol/L = medical emergency requiring immediate treatment.</p>
+                        </div>
+                        <div class="flow-step">
+                            <h4>Cardiac Protection (First Priority)</h4>
+                            <p>Calcium gluconate 10mL 10% IV over 2-5 minutes. Protects heart from arrhythmias within minutes. Repeat if ECG changes persist. Effect lasts 30-60 minutes.</p>
+                        </div>
+                        <div class="flow-step">
+                            <h4>Shift Potassium Intracellular</h4>
+                            <p>Insulin 10 units + glucose 50mL 50% IV. Alternative: Salbutamol 10-20mg nebulized. Both shift K+ into cells within 15-30 minutes. Monitor glucose closely.</p>
+                        </div>
+                        <div class="flow-step">
+                            <h4>Remove Potassium from Body</h4>
+                            <p>Calcium resonium 15g PO/PR if GI tract working. Consider urgent dialysis if K+ >7.0 mmol/L or not responding to medical treatment. Stop all K+-sparing drugs.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="interpretation-grid">
+                    <div class="interpretation-item">
+                        <h4>Hyperkalemia Causes</h4>
+                        <p><strong>Decreased excretion:</strong> AKI, CKD, ACE inhibitors, spironolactone<br>
+                        <strong>Increased intake:</strong> K+ supplements, salt substitutes<br>
+                        <strong>Cell shift:</strong> Acidosis, tissue breakdown, succinylcholine<br>
+                        <strong>Pseudohyperkalemia:</strong> Hemolysis, thrombocytosis, delayed processing</p>
+                    </div>
+                    <div class="interpretation-item">
+                        <h4>Hypokalemia Causes</h4>
+                        <p><strong>GI losses:</strong> Diarrhea, vomiting, fistulas<br>
+                        <strong>Renal losses:</strong> Diuretics, hyperaldosteronism, RTA<br>
+                        <strong>Cell shift:</strong> Insulin, β2-agonists, alkalosis<br>
+                        <strong>Poor intake:</strong> Anorexia, alcoholism, elderly</p>
+                    </div>
+                    <div class="interpretation-item">
+                        <h4>Drug-Induced Hyperkalemia</h4>
+                        <p><strong>Common drugs:</strong> ACE inhibitors, ARBs, spironolactone, amiloride<br>
+                        <strong>Risk factors:</strong> CKD, elderly, dehydration<br>
+                        <strong>Management:</strong> Stop offending drug, monitor closely<br>
+                        <strong>Prevention:</strong> Regular monitoring in high-risk patients</p>
+                    </div>
+                    <div class="interpretation-item">
+                        <h4>Replacement Therapy</h4>
+                        <p><strong>Mild hypokalemia:</strong> Oral K+ 40-80 mmol daily<br>
+                        <strong>Severe hypokalemia:</strong> IV K+ max 10 mmol/hour<br>
+                        <strong>Monitor:</strong> ECG, repeat K+ after each 40 mmol<br>
+                        <strong>Mg+ check:</strong> Always correct hypomagnesemia first</p>
+                    </div>
+                </div>
+
+                <div class="clinical-pearl">
+                    <h3>Clinical Pearl</h3>
+                    <p><strong>"The Magnesium Connection":</strong> Hypokalemia that doesn't correct despite adequate potassium replacement suggests concurrent hypomagnesemia. Magnesium is essential for potassium retention. Always check and correct magnesium levels when treating persistent hypokalemia—you can't fix low potassium without fixing low magnesium first.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <div class="section-icon">🌊</div>
+                    <h2>Step 4: Acid-Base Balance - Reading Between the Lines</h2>
+                </div>
+
+                <p>While U&Es don't give you complete acid-base status, the bicarbonate level provides crucial information about metabolic acidosis and alkalosis. Combined with the anion gap (if available) and clinical context, bicarbonate changes can reveal serious underlying pathology from diabetic ketoacidosis to kidney failure.</p>
+
+                <div class="two-column">
+                    <div>
+                        <h4>Understanding Bicarbonate Changes</h4>
+                        <p>Bicarbonate (HCO3-) reflects the metabolic component of acid-base balance:</p>
+                        <ul>
+                            <li><strong>Low HCO3- (<22):</strong> Metabolic acidosis</li>
+                            <li><strong>High HCO3- (>29):</strong> Metabolic alkalosis</li>
+                            <li><strong>Normal (22-29):</strong> No metabolic acid-base disorder</li>
+                        </ul>
+                        <p>Remember: the body compensates, so chronic respiratory disorders cause predictable metabolic changes.</p>
+                    </div>
+                    <div>
+                        <h4>Clinical Approach to Bicarbonate Abnormalities</h4>
+                        <p>Always consider the clinical context:</p>
+                        <ul>
+                            <li><strong>Acidosis + diabetes:</strong> Check ketones, glucose</li>
+                            <li><strong>Acidosis + kidney disease:</strong> Uremic acidosis</li>
+                            <li><strong>Alkalosis + hypokalemia:</strong> Diuretics, vomiting</li>
+                            <li><strong>Severe acidosis:</strong> Consider toxic ingestion</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="parameter-grid">
+                    <div class="parameter-card abnormal-low">
+                        <h4>Metabolic Acidosis (HCO3- <22)</h4>
+                        <p><strong>Mild (18-21):</strong> Often compensated, investigate cause<br>
+                        <strong>Moderate (12-17):</strong> Symptoms likely, treat underlying cause<br>
+                        <strong>Severe (<12):</strong> Life-threatening, consider bicarbonate<br>
+                        <strong>Causes:</strong> DKA, lactic acidosis, kidney failure, diarrhea</p>
+                    </div>
+                    <div class="parameter-card abnormal-high">
+                        <h4>Metabolic Alkalosis (HCO3- >29)</h4>
+                        <p><strong>Mild (30-35):</strong> Usually well tolerated<br>
+                        <strong>Severe (>40):</strong> Respiratory depression risk<br>
+                        <strong>Causes:</strong> Vomiting, diuretics, hyperaldosteronism<br>
+                        <strong>Treatment:</strong> Correct K+ and Cl- deficiency</p>
+                    </div>
+                    <div class="parameter-card critical">
+                        <h4>Diabetic Ketoacidosis Pattern</h4>
+                        <p><strong>HCO3-:</strong> Usually <15 mmol/L<br>
+                        <strong>Associated:</strong> High glucose, ketones, anion gap<br>
+                        <strong>Clinical:</strong> Dehydration, Kussmaul breathing<br>
+                        <strong>Treatment:</strong> Insulin, fluids, K+ replacement</p>
+                    </div>
+                    <div class="parameter-card normal">
+                        <h4>Chronic Compensation</h4>
+                        <p><strong>COPD:</strong> High HCO3- compensates for high CO2<br>
+                        <strong>Normal in COPD:</strong> HCO3- may be 30-35 mmol/L<br>
+                        <strong>Key point:</strong> Don't "correct" compensated states<br>
+                        <strong>Danger:</strong> Rapid changes in chronic patients</p>
+                    </div>
+                </div>
+
+                <div class="clinical-pearl">
+                    <h3>Clinical Pearl</h3>
+                    <p><strong>"The Anion Gap Detective":</strong> When bicarbonate is low, calculate the anion gap: (Na+ + K+) - (Cl- + HCO3-). Normal is 8-16. High anion gap acidosis (DKA, lactic acidosis, toxins) needs urgent treatment. Normal anion gap acidosis (diarrhea, RTA) is usually less urgent but still needs investigation.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <div class="section-icon">🔄</div>
+                    <h2>Step 5: Putting It All Together - Pattern Recognition</h2>
+                </div>
+
+                <div class="assessment-flow">
+                    <div class="flow-step">
+                        <h4>Start with Kidney Function</h4>
+                        <p>Check eGFR first. Is this normal kidney function, CKD, or AKI? This sets the context for interpreting all other electrolyte abnormalities and guides urgency of intervention.</p>
+                    </div>
+                    <div class="flow-step">
+                        <h4>Assess Life-Threatening Electrolytes</h4>
+                        <p>Check K+ for arrhythmia risk, Na+ for seizure risk. These need immediate attention if critically abnormal, regardless of other findings.</p>
+                    </div>
+                    <div class="flow-step">
+                        <h4>Look for Patterns</h4>
+                        <p>Multiple abnormalities suggest systemic disease. AKI + hyperkalemia = medication review. Low Na+ + high K+ = adrenal insufficiency. Pattern recognition speeds diagnosis.</p>
+                    </div>
+                    <div class="flow-step">
+                        <h4>Clinical Integration</h4>
+                        <p>Combine biochemistry with clinical picture. Dehydration, heart failure, medication history all influence interpretation and management priorities.</p>
+                    </div>
+                </div>
+
+                <div class="interpretation-grid">
+                    <div class="interpretation-item">
+                        <h4>Dehydration Pattern</h4>
+                        <p><strong>Biochemistry:</strong> High urea:creatinine ratio, high sodium<br>
+                        <strong>Clinical:</strong> Dry mucous membranes, reduced urine output<br>
+                        <strong>Causes:</strong> Poor fluid intake, diabetes, diuretics<br>
+                        <strong>Treatment:</strong> Careful fluid replacement, monitor response</p>
+                    </div>
+                    <div class="interpretation-item">
+                        <h4>Heart Failure Pattern</h4>
+                        <p><strong>Biochemistry:</strong> Mild AKI, low sodium, high urea<br>
+                        <strong>Clinical:</strong> Edema, elevated JVP, breathlessness<br>
+                        <strong>Cause:</strong> Poor cardiac output, activation of RAAS<br>
+                        <strong>Treatment:</strong> Optimize heart failure management</p>
+                    </div>
+                    <div class="interpretation-item">
+                        <h4>Addison's Disease Pattern</h4>
+                        <p><strong>Biochemistry:</strong> Low Na+, high K+, mild AKI<br>
+                        <strong>Clinical:</strong> Hypotension, pigmentation, weakness<br>
+                        <strong>Test:</strong> 9am cortisol, short synacthen test<br>
+                        <strong>Treatment:</strong> Urgent steroids if suspected</p>
+                    </div>
+                    <div class="interpretation-item">
+                        <h4>Diuretic Effect Pattern</h4>
+                        <p><strong>Thiazides:</strong> Low K+, low Na+, mild AKI<br>
+                        <strong>Loop diuretics:</strong> Low K+, dehydration<br>
+                        <strong>K+-sparing:</strong> High K+, especially with ACE inhibitors<br>
+                        <strong>Management:</strong> Adjust doses, monitor regularly</p>
+                    </div>
+                </div>
+
+                <div class="risk-factors-visual">
+                    <div class="risk-factor">
+                        <h4>AKI Risk Factors</h4>
+                        <p>Age >65, CKD, heart failure, liver disease, diabetes</p>
+                        <p>Dehydration, sepsis, contrast exposure</p>
+                        <p>NSAIDs, ACE inhibitors, gentamicin</p>
+                    </div>
+                    <div class="risk-factor">
+                        <h4>Hyperkalemia Risk Factors</h4>
+                        <p>CKD, diabetes, heart failure</p>
+                        <p>ACE inhibitors, ARBs, spironolactone</p>
+                        <p>Age >65, acidosis, tissue breakdown</p>
+                    </div>
+                    <div class="risk-factor">
+                        <h4>Hyponatremia Risk Factors</h4>
+                        <p>Age >65, female sex, low BMI</p>
+                        <p>Diuretics, SSRIs, carbamazepine</p>
+                        <p>Heart failure, liver disease, COPD</p>
+                    </div>
+                    <div class="risk-factor">
+                        <h4>Monitoring Requirements</h4>
+                        <p>High-risk patients need regular U&Es</p>
+                        <p>After starting/changing nephrotoxic drugs</p>
+                        <p>During acute illness, dehydration</p>
+                    </div>
+                </div>
+
+                <div class="clinical-pearl">
+                    <h3>Clinical Pearl</h3>
+                    <p><strong>"The Medication Cascade":</strong> Many U&E abnormalities are medication-related and create cascading effects. ACE inhibitor causes mild hyperkalemia → stopped → heart failure worsens → gets diuretic → develops hyponatremia. Always consider the medication timeline when interpreting electrolyte changes, and sometimes the solution is optimizing rather than stopping treatment.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <div class="section-icon">💡</div>
+                    <h2>Common Pitfalls and How to Avoid Them</h2>
+                </div>
+
+                <div class="interpretation-grid">
+                    <div class="interpretation-item">
+                        <h4>The Creatinine Blind Spot</h4>
+                        <p><strong>Mistake:</strong> Assuming normal creatinine = normal kidney function<br>
+                        <strong>Reality:</strong> Elderly, small women can have significant CKD with "normal" creatinine<br>
+                        <strong>Solution:</strong> Always check eGFR, not just creatinine<br>
+                        <strong>Example:</strong> 75-year-old woman with creatinine 90 may have eGFR <45</p>
+                    </div>
+                    <div class="interpretation-item">
+                        <h4>The Pseudohyperkalemia Trap</h4>
+                        <p><strong>Mistake:</strong> Treating laboratory artifact as true hyperkalemia<br>
+                        <strong>Reality:</strong> Hemolysis, thrombocytosis, delayed processing cause false high K+<br>
+                        <strong>Solution:</strong> Check for hemolysis, repeat sample if suspicious<br>
+                        <strong>Clues:</strong> Normal ECG with very high K+, hemolyzed sample</p>
+                    </div>
+                    <div class="interpretation-item">
+                        <h4>The Bicarbonate Overreaction</h4>
+                        <p><strong>Mistake:</strong> Aggressive treatment of compensated acid-base disorders<br>
+                        <strong>Reality:</strong> COPD patients normally have high bicarbonate<br>
+                        <strong>Solution:</strong> Don't "correct" chronic compensation<br>
+                        <strong>Key:</strong> Rapid changes in chronic patients are dangerous</p>
+                    </div>
+                    <div class="interpretation-item">
+                        <h4>The ACE Inhibitor Knee-Jerk</h4>
+                        <p><strong>Mistake:</strong> Stopping ACE inhibitors for mild creatinine rise<br>
+                        <strong>Reality:</strong> 30% creatinine rise is acceptable and protective<br>
+                        <strong>Solution:</strong> Only stop if >50% rise or hyperkalemia >5.5<br>
+                        <strong>Benefit:</strong> Long-term kidney and heart protection usually outweighs risk</p>
+                    </div>
+                </div>
+
+                <div class="highlight-box">
+                    <h4>Red Flags That Should Never Be Missed</h4>
+                    <ul>
+                        <li><strong>K+ >6.0 mmol/L:</strong> Immediate ECG and treatment regardless of symptoms</li>
+                        <li><strong>Na+ <125 mmol/L with confusion:</strong> Risk of seizures, assess chronicity urgently</li>
+                        <li><strong>Creatinine doubled from baseline:</strong> AKI until proven otherwise</li>
+                        <li><strong>eGFR <15 mL/min/1.73m²:</strong> Pre-dialysis CKD needing urgent nephrology referral</li>
+                        <li><strong>HCO3- <12 mmol/L:</strong> Life-threatening acidosis, check pH if possible</li>
+                        <li><strong>New AKI + rash + eosinophilia:</strong> Drug-induced interstitial nephritis</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <div class="section-icon">📈</div>
+                    <h2>Summary: The Five-Step U&E Mastery Method</h2>
+                </div>
+
+                <div class="visual-element">
+                    <div class="diagram">
+                        <div class="diagram-item">
+                            <h4>1. Check eGFR First</h4>
+                            <p>True kidney function assessment, not just creatinine</p>
+                        </div>
+                        <div class="diagram-item">
+                            <h4>2. Assess Life-Threatening Values</h4>
+                            <p>Potassium for arrhythmias, sodium for seizures</p>
+                        </div>
+                        <div class="diagram-item">
+                            <h4>3. Look for Patterns</h4>
+                            <p>Multiple abnormalities suggest systemic disease</p>
+                        </div>
+                        <div class="diagram-item">
+                            <h4>4. Review Medications</h4>
+                            <p>Many U&E problems are drug-related and reversible</p>
+                        </div>
+                        <div class="diagram-item">
+                            <h4>5. Monitor Trends</h4>
+                            <p>Changes over time more important than single values</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="two-column">
+                    <div>
+                        <h4>Critical Values to Act On Immediately</h4>
+                        <p><strong>K+ >6.5 or <2.5:</strong> Cardiac protection, immediate treatment</p>
+                        <p><strong>Na+ <125 with symptoms:</strong> Assess chronicity, cautious correction</p>
+                        <p><strong>Creatinine doubled:</strong> AKI workup, stop nephrotoxic drugs</p>
+                        <p><strong>HCO3- <15:</strong> Severe acidosis, investigate cause urgently</p>
+                    </div>
+                    <div>
+                        <h4>Key Clinical Decision Points</h4>
+                        <p><strong>eGFR 30-60:</strong> Stage 3 CKD, nephrology referral if progressing</p>
+                        <p><strong>eGFR <30:</strong> Stage 4-5 CKD, urgent nephrology referral</p>
+                        <p><strong>AKI Stage 3:</strong> Consider dialysis, intensive monitoring</p>
+                        <p><strong>Drug-induced changes:</strong> Often reversible with medication adjustment</p>
+                    </div>
+                </div>
+
+                <div class="clinical-pearl">
+                    <h3>Clinical Pearl</h3>
+                    <p><strong>"The Trend is Your Friend":</strong> Single abnormal U&E values can be misleading, but trends over time reveal the true story. Slowly rising creatinine over months suggests progressive CKD requiring different management than rapidly rising creatinine over days suggesting AKI. Always interpret results in the context of previous values and rate of change.</p>
+                </div>
+
+                <div class="highlight-box">
+                    <h4>Take Home Messages for U&E Interpretation</h4>
+                    <ul>
+                        <li><strong>eGFR trumps creatinine:</strong> Always assess kidney function via eGFR, especially in elderly patients</li>
+                        <li><strong>Potassium kills quickly:</strong> Any K+ >6.0 mmol/L needs immediate treatment regardless of symptoms</li>
+                        <li><strong>Medication review essential:</strong> Many U&E abnormalities are drug-related and reversible</li>
+                        <li><strong>AKI is often preventable:</strong> Early recognition and intervention can prevent progression</li>
+                        <li><strong>Context matters:</strong> Combine biochemistry with clinical assessment and drug history</li>
+                        <li><strong>Chronic compensation is normal:</strong> Don't "fix" appropriately compensated acid-base disorders</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="references-section">
+                <h3>🔗 Clinical Guidelines & Evidence Base</h3>
+                <div class="guideline-grid">
+                    <div class="guideline-item">
+                        <strong>NICE Guideline NG148</strong><br>
+                        <em>Acute kidney injury: prevention, detection and management</em> - Updated 2024<br>
+                        <a href="https://www.nice.org.uk/guidance/ng148">Access Guidelines</a>
+                    </div>
+                    <div class="guideline-item">
+                        <strong>NICE Guideline NG203</strong><br>
+                        <em>Chronic kidney disease: assessment and management</em> - 2021<br>
+                        <a href="https://www.nice.org.uk/guidance/ng203">Access Guidelines</a>
+                    </div>
+                    <div class="guideline-item">
+                        <strong>KDIGO Clinical Practice Guideline</strong><br>
+                        <em>Evaluation and Management of Chronic Kidney Disease</em> - 2024<br>
+                        <a href="https://kdigo.org/guidelines/ckd-evaluation-management/">Access Guidelines</a>
+                    </div>
+                    <div class="guideline-item">
+                        <strong>UK Kidney Association</strong><br>
+                        <em>UK eCKD Guide</em> - 2024<br>
+                        <a href="https://ukkidney.org/health-professionals/information-resources/uk-eckd-guide">Access Guide</a>
+                    </div>
+                    <div class="guideline-item">
+                        <strong>Resuscitation Council UK</strong><br>
+                        <em>Emergency treatment of hyperkalemia in adults</em> - 2022<br>
+                        <a href="https://www.resus.org.uk/library/additional-guidance/guidance-hyperkalemia">Access Guidelines</a>
+                    </div>
+                    <div class="guideline-item">
+                        <strong>European Medicines Agency</strong><br>
+                        <em>Guideline on the evaluation of the pharmacokinetics of medicinal products in patients with decreased renal function</em> - 2024<br>
+                        <a href="https://www.ema.europa.eu/en/documents/scientific-guideline">Access Guideline</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="medical-textbook-scripts.js"></script>
+</body>
+</html>

@@ -1,1092 +1,507 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Decoding Sex Hormone Profiles for Primary Care</title>
+    <title>Blood Test Interpretation for Primary Care - Complete Textbook</title>
     <link rel="stylesheet" href="medical-textbook-styles.css">
+    <style>
+        .landing-page {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .hero-title {
+            font-size: 3.2em;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero-subtitle {
+            font-size: 1.4em;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .search-container {
+            background: white;
+            border-radius: 50px;
+            padding: 10px 30px;
+            margin: 30px auto;
+            max-width: 500px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .search-box {
+            width: 100%;
+            border: none;
+            padding: 15px 20px;
+            font-size: 1.1em;
+            border-radius: 40px;
+            outline: none;
+            color: #333;
+        }
+
+        .search-box::placeholder {
+            color: #999;
+        }
+
+        .chapters-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .chapter-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            border: 1px solid #e1e8f0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .chapter-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+
+        .chapter-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+        }
+
+        .chapter-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .chapter-title {
+            font-size: 1.4em;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+
+        .chapter-description {
+            color: #64748b;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .chapter-link {
+            display: inline-flex;
+            align-items: center;
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .chapter-link:hover {
+            color: #764ba2;
+        }
+
+        .chapter-link::after {
+            content: '→';
+            margin-left: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .chapter-link:hover::after {
+            transform: translateX(4px);
+        }
+
+        .coming-soon {
+            opacity: 0.6;
+            pointer-events: none;
+        }
+
+        .coming-soon .chapter-link {
+            color: #94a3b8;
+        }
+
+        .status-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            font-weight: 500;
+        }
+
+        .status-available {
+            background: #dcfce7;
+            color: #166534;
+        }
+
+        .status-coming-soon {
+            background: #fef3c7;
+            color: #92400e;
+        }
+
+        .intro-section {
+            background: #f8fafc;
+            padding: 40px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+        }
+
+        .intro-title {
+            font-size: 2em;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+        .intro-text {
+            font-size: 1.1em;
+            line-height: 1.7;
+            color: #475569;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .feature-item {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .feature-icon {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .feature-text {
+            font-weight: 500;
+            color: #475569;
+        }
+
+        .stats-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 15px;
+            margin: 40px 0;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 30px;
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2.5em;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .stat-label {
+            opacity: 0.9;
+            font-size: 0.95em;
+        }
+
+        .footer-section {
+            text-align: center;
+            padding: 40px 20px;
+            border-top: 1px solid #e1e8f0;
+            margin-top: 60px;
+        }
+
+        .footer-text {
+            color: #64748b;
+            font-size: 0.95em;
+        }
+
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5em;
+            }
+
+            .hero-subtitle {
+                font-size: 1.2em;
+            }
+
+            .chapters-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
-    <div class="textbook-page">
-        <button class="download-btn" onclick="downloadPDF()">
-            <svg class="download-icon" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-            </svg>
-            Download PDF
-        </button>
+    <div class="landing-page">
+        <div class="hero-section">
+            <h1 class="hero-title">Blood Test Interpretation</h1>
+            <p class="hero-subtitle">Master the Art of Clinical Laboratory Medicine for Primary Care</p>
 
-        <div class="page-header">
-            <h1>Decoding Sex Hormone Profiles</h1>
-            <div class="subtitle">Making Sense of the Numbers That Tell Human Stories</div>
+            <div class="search-container">
+                <input type="text" class="search-box" placeholder="Search blood tests (e.g., FBC, lipids, liver function...)" id="searchInput">
+            </div>
         </div>
 
-        <div class="content">
-            <div class="section">
-                <div class="section-header">
-                    <div class="section-icon">🧬</div>
-                    <h2>Introduction: The Hormones That Shape Lives</h2>
-                </div>
-                <p>Every sex hormone profile you order tells a deeply personal story. Behind those numbers are patients struggling with fertility, teenagers questioning their development, middle-aged people facing unexpected changes, and older adults navigating life transitions. The skill isn't just knowing what the numbers mean—it's understanding which story those numbers are telling and what that means for the human sitting in front of you.</p>
-                
-                <p>Sex hormones don't work in isolation. They're part of an intricate conversation between the brain, ovaries or testes, and every tissue in the body. When you learn to read these profiles properly, you're not just interpreting lab values—you're becoming fluent in the language the body uses to communicate about reproduction, development, and aging.</p>
+        <div class="intro-section">
+            <h2 class="intro-title">Transform Numbers into Clinical Insights</h2>
+            <p class="intro-text">
+                Every blood test tells a story. This comprehensive textbook teaches you to read between the lines,
+                spot the patterns that matter, and translate laboratory numbers into actionable clinical decisions.
+                From the basics of FBC interpretation to the nuances of hormonal profiles, each chapter provides
+                the clinical pearls and decision-making frameworks you need to excel in primary care.
+            </p>
 
-                <div class="clinical-pearl">
-                    <h3>Clinical Pearl</h3>
-                    <p><strong>"Context Is King":</strong> A testosterone level of 10 nmol/L means completely different things in a 16-year-old boy (concerning), a 30-year-old woman with hirsutism (diagnostic), and a 70-year-old man (potentially normal for age). Never interpret hormone levels without considering age, sex, timing, and clinical context.</p>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <span class="feature-icon">🎯</span>
+                    <p class="feature-text">Clinical Decision Making</p>
                 </div>
-
-                <div class="reference-range-table">
-                    <h4>Essential Sex Hormone Normal Ranges (Adults)</h4>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Hormone</th>
-                                <th>Male Range</th>
-                                <th>Female Range</th>
-                                <th>Units</th>
-                                <th>Key Notes</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Total Testosterone</td>
-                                <td>10-28 nmol/L</td>
-                                <td>0.5-2.5 nmol/L</td>
-                                <td>nmol/L</td>
-                                <td>Morning sample essential</td>
-                            </tr>
-                            <tr>
-                                <td>Free Testosterone</td>
-                                <td>0.2-0.6 nmol/L</td>
-                                <td>0.003-0.03 nmol/L</td>
-                                <td>nmol/L</td>
-                                <td>More accurate than total</td>
-                            </tr>
-                            <tr>
-                                <td>Oestradiol (E2)</td>
-                                <td>70-200 pmol/L</td>
-                                <td>120-1100 pmol/L</td>
-                                <td>pmol/L</td>
-                                <td>Varies with cycle phase</td>
-                            </tr>
-                            <tr>
-                                <td>LH</td>
-                                <td>1-10 U/L</td>
-                                <td>1-95 U/L</td>
-                                <td>U/L</td>
-                                <td>Pulsatile release</td>
-                            </tr>
-                            <tr>
-                                <td>FSH</td>
-                                <td>1-12 U/L</td>
-                                <td>1-21 U/L</td>
-                                <td>U/L</td>
-                                <td>Rises with age</td>
-                            </tr>
-                            <tr>
-                                <td>SHBG</td>
-                                <td>15-60 nmol/L</td>
-                                <td>20-80 nmol/L</td>
-                                <td>nmol/L</td>
-                                <td>Affects free hormones</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <div class="feature-item">
+                    <span class="feature-icon">💎</span>
+                    <p class="feature-text">Evidence-Based Pearls</p>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">📊</span>
+                    <p class="feature-text">Pattern Recognition</p>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">⚡</span>
+                    <p class="feature-text">Quick Reference</p>
                 </div>
             </div>
+        </div>
 
-            <div class="section">
-                <div class="section-header">
-                    <div class="section-icon">🎯</div>
-                    <h2>Step 1: Before You Order - The Art of Targeted Testing</h2>
+        <div class="stats-section">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">11</div>
+                    <div class="stat-label">Core Blood Tests</div>
                 </div>
-
-                <div class="assessment-flow">
-                    <div class="flow-step">
-                        <h4>Define Your Question</h4>
-                        <p>Don't order a "hormone panel" without a clear clinical question. Are you investigating fertility, checking for PCOS, evaluating delayed puberty, or exploring menopausal symptoms? Your question determines which tests to order and when.</p>
-                    </div>
-                    <div class="flow-step">
-                        <h4>Timing Matters Hugely</h4>
-                        <p>Testosterone: early morning (8-10am) when levels peak. For women: consider menstrual cycle phase. FSH/LH: day 2-5 of cycle for baseline. Oestradiol: depends on your question—follicular phase for baseline, mid-cycle for ovulation assessment.</p>
-                    </div>
-                    <div class="flow-step">
-                        <h4>Consider Current Medications</h4>
-                        <p>Oral contraceptives dramatically alter hormone levels—stop 3 months before testing if possible. HRT, steroids, anticonvulsants, and many psychiatric medications affect results. Don't waste money testing while on hormonal contraception.</p>
-                    </div>
-                    <div class="flow-step">
-                        <h4>Clinical Context First</h4>
-                        <p>What does the patient look like? A hirsute woman with acne and irregular periods has PCOS until proven otherwise, regardless of what the lab says. Clinical features often trump individual hormone levels.</p>
-                    </div>
+                <div class="stat-item">
+                    <div class="stat-number">100+</div>
+                    <div class="stat-label">Clinical Pearls</div>
                 </div>
-
-                <div class="clinical-pearl">
-                    <h3>Clinical Pearl</h3>
-                    <p><strong>"The Morning Rule":</strong> Testosterone levels can drop by 30-40% from morning to afternoon due to natural circadian rhythm. A "low" afternoon testosterone might be completely normal if taken in the morning. Always order testosterone before 10am, especially in men under 50.</p>
+                <div class="stat-item">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Decision Trees</div>
                 </div>
-
-                <div class="red-flag-grid">
-                    <div class="red-flag-item">
-                        <div style="display: block; margin-bottom: 8px;"><strong>Testing on the Pill</strong></div>
-                        Hormone levels on combined oral contraceptives are meaningless—you're measuring the pill's effects, not the patient's natural production
-                    </div>
-                    <div class="red-flag-item">
-                        <div style="display: block; margin-bottom: 8px;"><strong>Random Cycle Testing</strong></div>
-                        Ordering hormones at random cycle points in reproductive-age women often creates more confusion than clarity
-                    </div>
-                    <div class="red-flag-item">
-                        <div style="display: block; margin-bottom: 8px;"><strong>Afternoon Testosterone in Men</strong></div>
-                        Late-day testosterone in younger men is notoriously unreliable—stick to morning samples or risk misdiagnosis
-                    </div>
-                    <div class="red-flag-item">
-                        <div style="display: block; margin-bottom: 8px;"><strong>Single FSH for Menopause</strong></div>
-                        FSH fluctuates wildly in perimenopause—one normal result doesn't exclude menopausal transition
-                    </div>
+                <div class="stat-item">
+                    <div class="stat-number">2025</div>
+                    <div class="stat-label">Current Guidelines</div>
                 </div>
             </div>
+        </div>
 
-            <div class="section">
-                <div class="section-header">
-                    <div class="section-icon">👨</div>
-                    <h2>Step 2: Decoding Male Hormone Patterns</h2>
-                </div>
-
-                <div class="interpretation-grid">
-                    <div class="interpretation-item">
-                        <h4>Normal Male Pattern</h4>
-                        <p><strong>Testosterone:</strong> 12-28 nmol/L (morning)<br>
-                        <strong>LH:</strong> 2-8 U/L<br>
-                        <strong>FSH:</strong> 1-8 U/L<br>
-                        <strong>Interpretation:</strong> Healthy hypothalamic-pituitary-testicular axis. Everything working as it should.</p>
-                    </div>
-                    <div class="interpretation-item">
-                        <h4>Primary Hypogonadism</h4>
-                        <p><strong>Testosterone:</strong> Low (<8 nmol/L)<br>
-                        <strong>LH/FSH:</strong> High (>12 U/L)<br>
-                        <strong>Think:</strong> Testicular failure<br>
-                        <strong>Causes:</strong> Klinefelter's, mumps orchitis, chemotherapy, trauma</p>
-                    </div>
-                    <div class="interpretation-item">
-                        <h4>Secondary Hypogonadism</h4>
-                        <p><strong>Testosterone:</strong> Low (<8 nmol/L)<br>
-                        <strong>LH/FSH:</strong> Low/normal (<5 U/L)<br>
-                        <strong>Think:</strong> Brain problem (pituitary/hypothalamic)<br>
-                        <strong>Causes:</strong> Prolactinoma, obesity, sleep apnea, stress</p>
-                    </div>
-                    <div class="interpretation-item">
-                        <h4>Age-Related Decline</h4>
-                        <p><strong>Testosterone:</strong> Borderline (8-12 nmol/L)<br>
-                        <strong>LH/FSH:</strong> Normal to slightly high<br>
-                        <strong>Think:</strong> Natural aging process<br>
-                        <strong>Action:</strong> Symptoms matter more than numbers in older men</p>
-                    </div>
-                </div>
-
-                <div class="clinical-pearl">
-                    <h3>Clinical Pearl</h3>
-                    <p><strong>"The LH Tells the Story":</strong> In men with low testosterone, LH reveals the cause. High LH means the brain is screaming at failed testicles (primary hypogonadism). Low/normal LH means the brain itself isn't working (secondary hypogonadism). Same low testosterone, completely different causes and treatments.</p>
-                </div>
-
-                <div class="visual-element">
-                    <h3>Male Testosterone by Age: What's Really Normal?</h3>
-                    <div class="parameter-grid">
-                        <div class="parameter-card normal">
-                            <h4>Ages 20-30</h4>
-                            <p><strong>Expected:</strong> 15-28 nmol/L<br>
-                            <strong>Red flag if:</strong> <12 nmol/L<br>
-                            <strong>Note:</strong> Peak reproductive years</p>
-                        </div>
-                        <div class="parameter-card normal">
-                            <h4>Ages 30-50</h4>
-                            <p><strong>Expected:</strong> 12-25 nmol/L<br>
-                            <strong>Red flag if:</strong> <10 nmol/L<br>
-                            <strong>Note:</strong> Gradual decline begins</p>
-                        </div>
-                        <div class="parameter-card abnormal-low">
-                            <h4>Ages 50-70</h4>
-                            <p><strong>Expected:</strong> 8-20 nmol/L<br>
-                            <strong>Red flag if:</strong> <8 nmol/L<br>
-                            <strong>Note:</strong> Context matters more than numbers</p>
-                        </div>
-                        <div class="parameter-card critical">
-                            <h4>Over 70</h4>
-                            <p><strong>Expected:</strong> 6-15 nmol/L<br>
-                            <strong>Red flag if:</strong> <6 nmol/L with symptoms<br>
-                            <strong>Note:</strong> Treat symptoms, not numbers</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="highlight-box">
-                    <h4>When to Check Male Hormones</h4>
-                    <ul>
-                        <li><strong>Definite indications:</strong> Erectile dysfunction with low libido, infertility, delayed puberty, gynecomastia</li>
-                        <li><strong>Consider in:</strong> Unexplained fatigue, depression, osteoporosis, muscle loss</li>
-                        <li><strong>Don't bother:</strong> Normal libido and sexual function, screening without symptoms</li>
-                        <li><strong>Repeat if borderline:</strong> 8-12 nmol/L range needs confirmation and clinical correlation</li>
-                    </ul>
-                </div>
+        <div class="chapters-grid" id="chaptersGrid">
+            <!-- Full Blood Count -->
+            <div class="chapter-card" data-search="fbc full blood count haemoglobin anaemia white cell count platelets">
+                <div class="status-badge status-available">Available</div>
+                <span class="chapter-icon">🩸</span>
+                <h3 class="chapter-title">Full Blood Count (FBC)</h3>
+                <p class="chapter-description">Master the systematic interpretation of FBC results, from recognising anaemia patterns to spotting early signs of haematological malignancy.</p>
+                <a href="FBC.html" class="chapter-link">Read Chapter</a>
             </div>
 
-            <div class="section">
-                <div class="section-header">
-                    <div class="section-icon">👩</div>
-                    <h2>Step 3: Decoding Female Hormone Patterns</h2>
-                </div>
-
-                <div class="two-column">
-                    <div>
-                        <h4>Reproductive Years: It's All About Timing</h4>
-                        <p>Female hormone interpretation is like reading a constantly changing script. The same woman can have completely different hormone levels depending on where she is in her cycle:</p>
-                        <ul>
-                            <li><strong>Follicular phase (days 1-7):</strong> Low oestradiol, rising FSH</li>
-                            <li><strong>Mid-cycle (days 12-16):</strong> Oestradiol surge, LH peak</li>
-                            <li><strong>Luteal phase (days 15-28):</strong> High progesterone, falling oestradiol</li>
-                        </ul>
-                        <p>This is why random hormone testing in women often creates more confusion than clarity. Know when you're sampling, or the results are meaningless.</p>
-                    </div>
-                    <div>
-                        <h4>The PCOS Pattern: Learning to Spot It</h4>
-                        <p>PCOS is the most common hormone disorder you'll see in women of reproductive age, affecting 10-13% of women. The pattern is distinctive:</p>
-                        <ul>
-                            <li><strong>Testosterone:</strong> Elevated (>2.5 nmol/L)</li>
-                            <li><strong>Free androgen index:</strong> >5</li>
-                            <li><strong>LH:FSH ratio:</strong> Often >2:1 (but not diagnostic)</li>
-                            <li><strong>SHBG:</strong> Often low due to insulin resistance</li>
-                        </ul>
-                        <p>Remember: clinical signs (hirsutism, acne, irregular periods) plus elevated androgens equals PCOS in most cases.</p>
-                    </div>
-                </div>
-
-                <div class="clinical-pearl">
-                    <h3>Clinical Pearl</h3>
-                    <p><strong>"The Free Androgen Index Trick":</strong> Can't get free testosterone measured? Calculate free androgen index: (total testosterone × 100) ÷ SHBG. Values >5 suggest PCOS. It's not perfect, but it's widely available and clinically useful for detecting hyperandrogenism.</p>
-                </div>
-
-                <div class="interpretation-grid">
-                    <div class="interpretation-item">
-                        <h4>PCOS Hyperandrogenism</h4>
-                        <p><strong>Testosterone:</strong> 2.5-4.8 nmol/L<br>
-                        <strong>FAI:</strong> >5<br>
-                        <strong>SHBG:</strong> Often low<br>
-                        <strong>Clinical:</strong> Hirsutism, acne, male-pattern hair loss<br>
-                        <strong>Action:</strong> Check metabolic screen, consider metformin</p>
-                    </div>
-                    <div class="interpretation-item">
-                        <h4>Tumor-Level Androgens</h4>
-                        <p><strong>Testosterone:</strong> >4.8 nmol/L<br>
-                        <strong>DHEAS:</strong> >800 μg/dL if elevated<br>
-                        <strong>Clinical:</strong> Rapid virilization<br>
-                        <strong>Think:</strong> Ovarian or adrenal tumor<br>
-                        <strong>Action:</strong> Urgent imaging and endocrine referral</p>
-                    </div>
-                    <div class="interpretation-item">
-                        <h4>Ovarian Insufficiency</h4>
-                        <p><strong>FSH:</strong> >25 U/L (under age 40)<br>
-                        <strong>Oestradiol:</strong> <100 pmol/L<br>
-                        <strong>Clinical:</strong> Amenorrhea, hot flushes<br>
-                        <strong>Think:</strong> Premature ovarian insufficiency<br>
-                        <strong>Action:</strong> HRT discussion, fertility counseling</p>
-                    </div>
-                    <div class="interpretation-item">
-                        <h4>Perimenopause Pattern</h4>
-                        <p><strong>FSH:</strong> Fluctuating (15-40 U/L)<br>
-                        <strong>Oestradiol:</strong> Variable<br>
-                        <strong>Clinical:</strong> Irregular periods, symptoms<br>
-                        <strong>Note:</strong> Normal FSH doesn't exclude perimenopause<br>
-                        <strong>Action:</strong> Clinical diagnosis, HRT if appropriate</p>
-                    </div>
-                </div>
-
-                <div class="critical-values">
-                    <h3>Female Hormone Red Flags Demanding Action</h3>
-                    <ul>
-                        <li><strong>Testosterone >4.8 nmol/L:</strong> Think tumor—urgent imaging needed</li>
-                        <li><strong>FSH >40 U/L under age 40:</strong> Premature ovarian insufficiency—immediate HRT consideration</li>
-                        <li><strong>Very low oestradiol with amenorrhea:</strong> Functional hypothalamic amenorrhea vs. organic cause</li>
-                        <li><strong>Rapid virilization:</strong> Deepening voice, clitoromegaly—urgent endocrine referral</li>
-                        <li><strong>Prepubertal child with adult hormone levels:</strong> Precocious puberty—urgent pediatric referral</li>
-                    </ul>
-                </div>
+            <!-- Sex Hormone Profile -->
+            <div class="chapter-card" data-search="hormones testosterone oestrogen lh fsh pcos menopause fertility">
+                <div class="status-badge status-available">Available</div>
+                <span class="chapter-icon">🧬</span>
+                <h3 class="chapter-title">Sex Hormone Profiles</h3>
+                <p class="chapter-description">Navigate the complex world of reproductive hormones, from PCOS diagnosis to male hypogonadism and menopause management.</p>
+                <a href="hormonal_profile.html" class="chapter-link">Read Chapter</a>
             </div>
 
-            <div class="section">
-                <div class="section-header">
-                    <div class="section-icon">⚖️</div>
-                    <h2>Step 4: The Menopause Maze - Navigating Transition</h2>
-                </div>
-
-                <div class="highlight-box">
-                    <h4>NICE 2024 Guidelines: Menopause Diagnosis Made Simple</h4>
-                    <p><strong>Over 45 with typical symptoms:</strong> Don't test—diagnose clinically based on symptoms and menstrual changes. Save your lab budget for cases that matter.</p>
-                    <p><strong>Ages 40-45:</strong> Consider FSH if diagnosis unclear, but remember it fluctuates wildly in perimenopause.</p>
-                    <p><strong>Under 40:</strong> Always test if menopause suspected—premature ovarian insufficiency has serious health implications.</p>
-                </div>
-
-                <div class="visual-element">
-                    <h3>Understanding Menopausal Hormone Patterns</h3>
-                    <div class="diagram">
-                        <div class="diagram-item">
-                            <h4>Premenopause</h4>
-                            <p><strong>FSH:</strong> <10 U/L</p>
-                            <p><strong>Oestradiol:</strong> Cyclic variation</p>
-                            <p><strong>Periods:</strong> Regular</p>
-                        </div>
-                        <div class="diagram-item">
-                            <h4>Perimenopause</h4>
-                            <p><strong>FSH:</strong> 15-40 U/L (variable)</p>
-                            <p><strong>Oestradiol:</strong> Erratic levels</p>
-                            <p><strong>Periods:</strong> Irregular, changing</p>
-                        </div>
-                        <div class="diagram-item">
-                            <h4>Postmenopause</h4>
-                            <p><strong>FSH:</strong> >30 U/L consistently</p>
-                            <p><strong>Oestradiol:</strong> <100 pmol/L</p>
-                            <p><strong>Periods:</strong> Absent >12 months</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="clinical-pearl">
-                    <h3>Clinical Pearl</h3>
-                    <p><strong>"The Perimenopause Paradox":</strong> A woman can have a normal FSH on Monday and menopausal levels on Friday. During perimenopause, hormones fluctuate wildly, making single hormone tests unreliable. Trust the clinical picture—irregular periods and vasomotor symptoms trump lab values.</p>
-                </div>
-
-                <div class="decision-tree">
-                    <h4>Menopause Testing Decision Tree</h4>
-                    <div class="tree-node decision">
-                        <strong>Woman with menopausal symptoms</strong>
-                    </div>
-                    <div class="tree-node decision">
-                        <strong>Age >45 with typical symptoms?</strong>
-                    </div>
-                    <div class="tree-node action">
-                        <strong>Yes:</strong> No testing needed → Clinical diagnosis → Discuss HRT if appropriate
-                    </div>
-                    <div class="tree-node action">
-                        <strong>Age 40-45:</strong> Consider FSH if unclear → But normal result doesn't exclude perimenopause
-                    </div>
-                    <div class="tree-node action">
-                        <strong>Age <40:</strong> Always test → High FSH suggests premature ovarian insufficiency → Urgent action needed
-                    </div>
-                </div>
+            <!-- Lipid Profile -->
+            <div class="chapter-card" data-search="lipids cholesterol hdl ldl triglycerides cardiovascular risk">
+                <div class="status-badge status-available">Available</div>
+                <span class="chapter-icon">💓</span>
+                <h3 class="chapter-title">Lipid Profile</h3>
+                <p class="chapter-description">Understand cholesterol testing, calculate cardiovascular risk, and make evidence-based decisions about statin therapy.</p>
+                <a href="lipid_profile.html" class="chapter-link">Read Chapter</a>
             </div>
 
-            <div class="section">
-                <div class="section-header">
-                    <div class="section-icon">🧩</div>
-                    <h2>Step 5: Putting It All Together - Pattern Recognition</h2>
-                </div>
-
-                <div class="assessment-flow">
-                    <div class="flow-step">
-                        <h4>Start with the Clinical Picture</h4>
-                        <p>What does the patient look like? What are their symptoms? A 25-year-old woman with hirsutism and acne probably has PCOS regardless of the exact hormone numbers. Clinical features guide interpretation, not the other way around.</p>
-                    </div>
-                    <div class="flow-step">
-                        <h4>Look for the Primary Pattern</h4>
-                        <p>High hormones with low LH/FSH = tumor or external source. Low hormones with high LH/FSH = gland failure. Low hormones with low LH/FSH = brain problem. This fundamental pattern tells you where the problem is.</p>
-                    </div>
-                    <div class="flow-step">
-                        <h4>Consider the Context</h4>
-                        <p>Age, medications, timing, and clinical presentation all matter enormously. The same hormone levels can be normal, concerning, or diagnostic depending on context. Never interpret numbers in isolation.</p>
-                    </div>
-                    <div class="flow-step">
-                        <h4>Know When to Refer</h4>
-                        <p>Complex patterns, tumor-level hormones, discordant clinical and biochemical findings, or when you're unsure—these all warrant specialist input. Don't struggle alone with confusing results.</p>
-                    </div>
-                </div>
-
-                <div class="risk-factors-visual">
-                    <div class="risk-factor">
-                        <h4>Always Recheck If:</h4>
-                        <p>Borderline results<br>Doesn't fit clinical picture<br>Patient on medications<br>Wrong timing suspected</p>
-                    </div>
-                    <div class="risk-factor">
-                        <h4>Refer Urgently If:</h4>
-                        <p>Tumor-level hormones<br>Rapid virilization<br>Prepubertal abnormalities<br>Discordant findings</p>
-                    </div>
-                    <div class="risk-factor">
-                        <h4>Don't Test If:</h4>
-                        <p>On hormonal contraception<br>Clear clinical diagnosis<br>Wouldn't change management<br>Menopause >45 with symptoms</p>
-                    </div>
-                    <div class="risk-factor">
-                        <h4>Remember to Consider:</h4>
-                        <p>Sample timing<br>Patient age<br>Current medications<br>Clinical context</p>
-                    </div>
-                </div>
-
-                <div class="clinical-pearl">
-                    <h3>Clinical Pearl</h3>
-                    <p><strong>"The Most Important Test":</strong> Your clinical assessment matters more than any single hormone level. If the biochemistry doesn't fit the clinical picture, trust your clinical judgment and either retest or refer. Laboratories make mistakes, assays have limitations, and patients are complex.</p>
-                </div>
+            <!-- Liver Function Tests -->
+            <div class="chapter-card" data-search="liver function alt ast alp bilirubin hepatitis">
+                <div class="status-badge status-available">Available</div>
+                <span class="chapter-icon">🫀</span>
+                <h3 class="chapter-title">Liver Function Tests</h3>
+                <p class="chapter-description">Decode liver biochemistry patterns, distinguish hepatocellular from cholestatic injury, and know when to worry.</p>
+                <a href="liver_function_tests.html" class="chapter-link">Read Chapter</a>
             </div>
 
-            <div class="section">
-                <div class="section-header">
-                    <div class="section-icon">💡</div>
-                    <h2>Step 6: Common Pitfalls and How to Avoid Them</h2>
-                </div>
-
-                <div class="interpretation-grid">
-                    <div class="interpretation-item">
-                        <h4>The Afternoon Testosterone Trap</h4>
-                        <p><strong>Mistake:</strong> Ordering testosterone any time of day<br>
-                        <strong>Reality:</strong> Levels drop 30-40% by afternoon<br>
-                        <strong>Solution:</strong> Always before 10am, especially in younger men<br>
-                        <strong>Exception:</strong> Less critical in older men with lower amplitude variation</p>
-                    </div>
-                    <div class="interpretation-item">
-                        <h4>The Contraceptive Confusion</h4>
-                        <p><strong>Mistake:</strong> Testing hormones on the pill<br>
-                        <strong>Reality:</strong> You're measuring pill effects, not natural production<br>
-                        <strong>Solution:</strong> Stop hormones 3 months before testing<br>
-                        <strong>Exception:</strong> Not always practical—discuss with patient first</p>
-                    </div>
-                    <div class="interpretation-item">
-                        <h4>The Single FSH Fallacy</h4>
-                        <p><strong>Mistake:</strong> One normal FSH rules out menopause<br>
-                        <strong>Reality:</strong> FSH fluctuates wildly in perimenopause<br>
-                        <strong>Solution:</strong> Diagnose clinically over 45, repeat if under 45<br>
-                        <strong>Remember:</strong> Symptoms matter more than single values</p>
-                    </div>
-                    <div class="interpretation-item">
-                        <h4>The Reference Range Trap</h4>
-                        <p><strong>Mistake:</strong> Normal range = normal for this patient<br>
-                        <strong>Reality:</strong> Ranges are population-based, not individualized<br>
-                        <strong>Solution:</strong> Consider age, sex, and clinical context always<br>
-                        <strong>Example:</strong> FSH 15 U/L is normal at 50, concerning at 25</p>
-                    </div>
-                </div>
-
-                <div class="highlight-box">
-                    <h4>The "Always Remember" List for Hormone Testing</h4>
-                    <ul>
-                        <li><strong>Timing is everything:</strong> Wrong timing can make normal look abnormal and vice versa</li>
-                        <li><strong>One abnormal result isn't a diagnosis:</strong> Confirm unexpected findings with repeat testing</li>
-                        <li><strong>Medications matter:</strong> Many drugs affect hormone levels—check current medications</li>
-                        <li><strong>Age changes everything:</strong> The same level can be normal at one age, abnormal at another</li>
-                        <li><strong>Clinical correlation is key:</strong> If it doesn't fit, don't force it—recheck or refer</li>
-                        <li><strong>Stress affects results:</strong> Acute illness, psychological stress, and extreme exercise alter levels</li>
-                    </ul>
-                </div>
+            <!-- Urea & Electrolytes -->
+            <div class="chapter-card" data-search="urea electrolytes creatinine sodium potassium kidney renal">
+                <div class="status-badge status-available">Available</div>
+                <span class="chapter-icon">🫘</span>
+                <h3 class="chapter-title">Urea & Electrolytes</h3>
+                <p class="chapter-description">Master kidney function assessment, electrolyte disorders, and acute kidney injury recognition in primary care.</p>
+                <a href="urea_electrolytes.html" class="chapter-link">Read Chapter</a>
             </div>
 
-            <div class="section">
-                <div class="section-header">
-                    <div class="section-icon">📈</div>
-                    <h2>Summary: Mastering Hormone Interpretation</h2>
-                </div>
-
-                <div class="visual-element">
-                    <h3>The Five-Step Hormone Reading Method</h3>
-                    <div class="diagram">
-                        <div class="diagram-item">
-                            <h4>1. Clinical Context</h4>
-                            <p>Age, symptoms, timing, medications - these shape interpretation more than numbers</p>
-                        </div>
-                        <div class="diagram-item">
-                            <h4>2. Pattern Recognition</h4>
-                            <p>High/low hormones with high/low LH/FSH reveals the site of pathology</p>
-                        </div>
-                        <div class="diagram-item">
-                            <h4>3. Physiological Sense</h4>
-                            <p>Does this result make biological sense given the patient's presentation?</p>
-                        </div>
-                        <div class="diagram-item">
-                            <h4>4. Confirmatory Testing</h4>
-                            <p>Unexpected results need confirmation - don't change management on single tests</p>
-                        </div>
-                        <div class="diagram-item">
-                            <h4>5. Clinical Decision</h4>
-                            <p>What does this mean for the patient? How does it change management?</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="two-column">
-                    <div>
-                        <h4>What to Remember About Each Hormone</h4>
-                        <p><strong>Testosterone:</strong> Morning samples essential in men, context crucial in women. Free testosterone more accurate than total.</p>
-                        <p><strong>LH/FSH:</strong> The brain's messengers - high levels mean the brain is trying to stimulate failed gonads, low levels suggest brain problems.</p>
-                        <p><strong>Oestradiol:</strong> Fluctuates dramatically with menstrual cycle. Timing is everything for interpretation.</p>
-                        <p><strong>SHBG:</strong> The carrier protein that affects free hormone levels. High SHBG lowers free hormones, low SHBG raises them.</p>
-                    </div>
-                    <div>
-                        <h4>The Most Common Patterns You'll See</h4>
-                        <p><strong>PCOS:</strong> High testosterone + clinical signs + irregular periods</p>
-                        <p><strong>Male hypogonadism:</strong> Low testosterone - check LH to find the cause</p>
-                        <p><strong>Menopause:</strong> Clinical diagnosis over 45, FSH confirmation under 40</p>
-                        <p><strong>Premature ovarian insufficiency:</strong> High FSH + low oestradiol under age 40</p>
-                    </div>
-                </div>
-
-                <div class="clinical-pearl">
-                    <h3>Clinical Pearl</h3>
-                    <p><strong>"The Human Touch in Hormone Medicine":</strong> Behind every hormone profile is a person with hopes, fears, and concerns about their body and future. Whether they're struggling with fertility, worried about their development, or navigating life changes, remember that these numbers represent deeply personal experiences. Your skill in interpreting these results can provide answers, reassurance, and direction at crucial moments in their lives.</p>
-                </div>
-
-                <div class="highlight-box">
-                    <h4>Take Home Messages for Hormone Interpretation</h4>
-                    <ul>
-                        <li><strong>Context trumps numbers:</strong> Clinical picture matters more than isolated lab values</li>
-                        <li><strong>Timing is critical:</strong> Wrong timing can completely mislead interpretation</li>
-                        <li><strong>Patterns tell stories:</strong> Look for the overall pattern, not individual values</li>
-                        <li><strong>Confirm unexpected findings:</strong> One abnormal result doesn't make a diagnosis</li>
-                        <li><strong>Know when to refer:</strong> Complex cases need specialist input</li>
-                        <li><strong>Remember the human:</strong> These are deeply personal results affecting real lives</li>
-                    </ul>
-                </div>
+            <!-- Thyroid Function -->
+            <div class="chapter-card" data-search="thyroid tsh t4 t3 hyperthyroid hypothyroid">
+                <div class="status-badge status-available">Available</div>
+                <span class="chapter-icon">🦋</span>
+                <h3 class="chapter-title">Thyroid Function Tests</h3>
+                <p class="chapter-description">Navigate thyroid biochemistry from subclinical disease to overt dysfunction, including monitoring therapy.</p>
+                <a href="thyroid_function_tests.html" class="chapter-link">Read Chapter</a>
             </div>
 
-            <div class="references-section">
-                <h3>🔗 Evidence Base and Clinical Guidelines</h3>
-                <div class="guideline-grid">
-                    <div class="guideline-item">
-                        <strong>NICE Guideline NG23</strong><br>
-                        <em>Menopause: identification and management</em> - Updated 2024<br>
-                        <a href="https://www.nice.org.uk/guidance/ng23">Access Guidelines</a>
-                    </div>
-                    <div class="guideline-item">
-                        <strong>Endocrine Society</strong><br>
-                        <em>Testosterone Therapy in Men with Hypogonadism</em> - 2024<br>
-                        <a href="https://www.endocrine.org/clinical-practice-guidelines">Clinical Practice Guidelines</a>
-                    </div>
-                    <div class="guideline-item">
-                        <strong>International PCOS Guidelines</strong><br>
-                        <em>Evidence-based Guideline for Assessment and Management of PCOS</em> - 2023<br>
-                        <a href="https://www.monash.edu/medicine/mchri/pcos">Access Full Guideline</a>
-                    </div>
-                    <div class="guideline-item">
-                        <strong>American Urological Association</strong><br>
-                        <em>Testosterone Deficiency Guideline</em> - 2024<br>
-                        <a href="https://www.auanet.org/guidelines-and-quality/guidelines/testosterone-deficiency-guideline">Access Guidelines</a>
-                    </div>
-                    <div class="guideline-item">
-                        <strong>ESHRE Guidelines</strong><br>
-                        <em>Premature Ovarian Insufficiency</em> - 2025<br>
-                        <a href="https://www.eshre.eu/guidelines">Access Guidelines</a>
-                    </div>
-                    <div class="guideline-item">
-                        <strong>Clinical Practice Guidelines</strong><br>
-                        <em>Cases in primary care laboratory medicine: sex hormone testing</em><br>
-                        <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC1767292/">Reference Article</a>
-                    </div>
-                </div>
+            <!-- HbA1c & Diabetes -->
+            <div class="chapter-card" data-search="hba1c diabetes glucose monitoring glycemic control">
+                <div class="status-badge status-available">Available</div>
+                <span class="chapter-icon">📊</span>
+                <h3 class="chapter-title">HbA1c & Diabetes Monitoring</h3>
+                <p class="chapter-description">Understand glycemic control assessment, diabetes diagnosis criteria, and treatment monitoring strategies.</p>
+                <a href="hba1c_diabetes.html" class="chapter-link">Read Chapter</a>
             </div>
 
-            <div class="page-number">
-                Page 3 of 3 - Decoding Sex Hormone Profiles for Primary Care
+            <!-- Inflammatory Markers -->
+            <div class="chapter-card" data-search="crp esr inflammation markers infection">
+                <div class="status-badge status-available">Available</div>
+                <span class="chapter-icon">🔥</span>
+                <h3 class="chapter-title">Inflammatory Markers</h3>
+                <p class="chapter-description">Interpret CRP and ESR results, understand when inflammation testing is useful, and avoid common pitfalls.</p>
+                <a href="inflammatory_markers.html" class="chapter-link">Read Chapter</a>
             </div>
+
+            <!-- Bone Profile -->
+            <div class="chapter-card" data-search="bone calcium phosphate alp vitamin d osteoporosis">
+                <div class="status-badge status-available">Available</div>
+                <span class="chapter-icon">🦴</span>
+                <h3 class="chapter-title">Bone Profile</h3>
+                <p class="chapter-description">Master calcium metabolism, bone biochemistry interpretation, and vitamin D assessment for bone health.</p>
+                <a href="bone_profile.html" class="chapter-link">Read Chapter</a>
+            </div>
+
+            <!-- Cardiac Markers -->
+            <div class="chapter-card" data-search="troponin bnp cardiac markers heart failure myocardial infarction">
+                <div class="status-badge status-available">Available</div>
+                <span class="chapter-icon">❤️</span>
+                <h3 class="chapter-title">Cardiac Markers</h3>
+                <p class="chapter-description">Understand troponin interpretation, BNP testing for heart failure, and when cardiac biomarkers guide care.</p>
+                <a href="cardiac_markers.html" class="chapter-link">Read Chapter</a>
+            </div>
+
+            <!-- Iron Studies & B12/Folate -->
+            <div class="chapter-card" data-search="iron ferritin transferrin b12 folate anaemia deficiency">
+                <div class="status-badge status-available">Available</div>
+                <span class="chapter-icon">⚙️</span>
+                <h3 class="chapter-title">Iron Studies & B12/Folate</h3>
+                <p class="chapter-description">Investigate nutritional deficiencies, interpret iron studies, and understand when deficiency testing is indicated.</p>
+                <a href="iron_b12_folate.html" class="chapter-link">Read Chapter</a>
+            </div>
+        </div>
+
+        <div class="footer-section">
+            <p class="footer-text">
+                This textbook is regularly updated with the latest clinical guidelines and evidence-based practices.
+                Each chapter includes current NICE guidelines and international best practice recommendations.
+            </p>
+            <p class="footer-text" style="margin-top: 15px;">
+                <strong>Last updated:</strong> September 2025 | <strong>Guidelines version:</strong> 2024-2025
+            </p>
         </div>
     </div>
 
-    <script src="medical-textbook-scripts.js"></script>
-</body>
-</html>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sex Hormone Profile Interpretation for Primary Care</title>
-    <link rel="stylesheet" href="medical-textbook-styles.css">
-</head>
-<body>
-    <div class="textbook-page">
-        <button class="download-btn" onclick="downloadPDF()">
-            <svg class="download-icon" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-            </svg>
-            Download PDF
-        </button>
+    <script>
+        // Search functionality
+        const searchInput = document.getElementById('searchInput');
+        const chaptersGrid = document.getElementById('chaptersGrid');
+        const chapterCards = document.querySelectorAll('.chapter-card');
 
-        <div class="page-header">
-            <h1>Decoding the Sex Hormone Profile</h1>
-            <div class="subtitle">From Numbers to Narrative - Mastering Hormonal Detective Work</div>
-        </div>
+        searchInput.addEventListener('input', function() {
+            const searchTerm = this.value.toLowerCase().trim();
 
-        <div class="content">
-            <div class="section">
-                <div class="section-header">
-                    <div class="section-icon">🎭</div>
-                    <h2>Introduction: Reading the Hormonal Symphony</h2>
-                </div>
-                <p>Imagine each hormone in a sex hormone profile as an instrument in an orchestra. Testosterone might be the bold brass section, estradiol the flowing strings, while LH and FSH conduct the tempo from the pituitary podium. Prolactin occasionally interrupts with an unexpected solo, and SHBG quietly influences the whole performance by controlling how much of each hormone actually reaches its target.</p>
+            chapterCards.forEach(card => {
+                const searchData = card.getAttribute('data-search').toLowerCase();
+                const title = card.querySelector('.chapter-title').textContent.toLowerCase();
+                const description = card.querySelector('.chapter-description').textContent.toLowerCase();
 
-                <p>The art lies not in memorising normal ranges, but in listening to the ensemble - recognising when the symphony is harmonious, when instruments are playing out of tune, or when the conductor has lost control entirely. This chapter transforms you from someone who simply reads numbers into a hormonal detective who can hear the story behind the laboratory data.</p>
-                
-                <div class="clinical-pearl">
-                    <h3>Clinical Pearl</h3>
-                    <p><strong>"Never Trust a Solo Performance":</strong> A single hormone level tells you almost nothing - it's the relationships between hormones that reveal the diagnosis. Low testosterone with high LH suggests testicular failure, but low testosterone with low LH points to pituitary problems. Same symptom, opposite locations, completely different treatments.</p>
-                </div>
+                const isMatch = searchTerm === '' ||
+                               searchData.includes(searchTerm) ||
+                               title.includes(searchTerm) ||
+                               description.includes(searchTerm);
 
-                <div class="reference-range-table">
-                    <h4>Essential Sex Hormone Normal Ranges (Adults)</h4>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Hormone</th>
-                                <th>Male Range</th>
-                                <th>Female Range</th>
-                                <th>Key Notes</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Total Testosterone</td>
-                                <td>12-30 nmol/L</td>
-                                <td>0.5-2.5 nmol/L</td>
-                                <td>Morning sample essential</td>
-                            </tr>
-                            <tr>
-                                <td>LH</td>
-                                <td>2-9 IU/L</td>
-                                <td>2-15 IU/L (follicular)</td>
-                                <td>Pulsatile release</td>
-                            </tr>
-                            <tr>
-                                <td>FSH</td>
-                                <td>1-8 IU/L</td>
-                                <td>2-10 IU/L (follicular)</td>
-                                <td>Day 2-5 of cycle in women</td>
-                            </tr>
-                            <tr>
-                                <td>Prolactin</td>
-                                <td><400 mIU/L</td>
-                                <td><600 mIU/L</td>
-                                <td>Stress-sensitive</td>
-                            </tr>
-                            <tr>
-                                <td>SHBG</td>
-                                <td>15-50 nmol/L</td>
-                                <td>25-120 nmol/L</td>
-                                <td>The binding protein</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
+                if (isMatch) {
+                    card.style.display = 'block';
+                    card.style.animation = 'fadeIn 0.3s ease';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
 
-            <div class="section">
-                <div class="section-header">
-                    <div class="section-icon">🚨</div>
-                    <h2>Red Flag Patterns: When Hormones Scream Emergency</h2>
-                </div>
-
-                <p>Before we dive into nuanced interpretation, certain hormone patterns demand immediate action. These are not subtle whispers but urgent alarms that should trigger same-day phone calls and rapid referrals.</p>
-
-                <div class="red-flag-grid">
-                    <div class="red-flag-item">
-                        <div><strong>Prolactin >3000 mIU/L with headaches</strong></div>
-                        Macroadenoma until proven otherwise - urgent MRI and ophthalmology referral for visual field testing
-                    </div>
-                    <div class="red-flag-item">
-                        <div><strong>Rapid virilisation in women</strong></div>
-                        New voice changes, male-pattern balding, clitoromegaly - think androgen-secreting tumour, urgent imaging
-                    </div>
-                    <div class="red-flag-item">
-                        <div><strong>Testosterone >50 nmol/L in women</strong></div>
-                        Massively elevated androgen suggests tumour rather than PCOS - urgent specialist referral
-                    </div>
-                    <div class="red-flag-item">
-                        <div><strong>Young man with very low testosterone + visual symptoms</strong></div>
-                        Pituitary macroadenoma compressing optic chiasm - urgent neurosurgical discussion
-                    </div>
-                </div>
-
-                <div class="clinical-pearl">
-                    <h3>Clinical Pearl</h3>
-                    <p><strong>"The Hook Effect Trap":</strong> When clinical features scream prolactinoma but prolactin is only 'mildly' elevated, suspect the hook effect. Very high prolactin levels can paradoxically give low readings on immunoassays. Ask the lab to dilute and re-test - you might uncover prolactin levels >20,000 mIU/L.</p>
-                </div>
-            </div>
-
-            <div class="section">
-                <div class="section-header">
-                    <div class="section-icon">🧭</div>
-                    <h2>The Detective's Toolkit: What History Reveals</h2>
-                </div>
-
-                <p>The most sophisticated hormone profile becomes meaningless without the clinical context. Your history-taking needs to be strategic - every question should help you interpret the numbers you're about to receive or have already seen.</p>
-
-                <div class="two-column">
-                    <div>
-                        <h4>Timing Is Everything</h4>
-                        <ul>
-                            <li><strong>When did symptoms start?</strong> Gradual onset suggests functional causes, rapid changes point to structural problems</li>
-                            <li><strong>What time of day was blood taken?</strong> Testosterone varies by 40% between morning and evening</li>
-                            <li><strong>Which day of cycle?</strong> FSH/LH on day 21 are meaningless for ovarian reserve</li>
-                            <li><strong>Any recent stress/illness?</strong> Can suppress entire HPG axis acutely</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4>Medication Archaeology</h4>
-                        <ul>
-                            <li><strong>Contraceptive pills/patches:</strong> Raise SHBG, lower free testosterone</li>
-                            <li><strong>Antipsychotics/antiemetics:</strong> Block dopamine, raise prolactin</li>
-                            <li><strong>Opioids (including codeine):</strong> Suppress LH/FSH centrally</li>
-                            <li><strong>Glucocorticoids:</strong> Shut down hypothalamic drive</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="assessment-flow">
-                    <div class="flow-step">
-                        <h4>Step 1: Set the Scene</h4>
-                        <p>Age, sex, reproductive goals, current medications. Are we dealing with primary amenorrhoea, infertility, erectile dysfunction, or something else entirely?</p>
-                    </div>
-                    <div class="flow-step">
-                        <h4>Step 2: Timeline the Trouble</h4>
-                        <p>When did symptoms start? Has libido gradually declined over years (think age-related) or crashed in months (think pituitary adenoma)?</p>
-                    </div>
-                    <div class="flow-step">
-                        <h4>Step 3: Map the Medications</h4>
-                        <p>Current and recent drugs that affect the HPG axis. Include herbal supplements, anabolic steroids, and recreational drugs.</p>
-                    </div>
-                    <div class="flow-step">
-                        <h4>Step 4: Hunt for Clues</h4>
-                        <p>Galactorrhoea, visual field defects, hot flushes, loss of morning erections, changes in body hair - each symptom points to specific hormone disruptions.</p>
-                    </div>
-                </div>
-
-                <div class="clinical-pearl">
-                    <h3>Clinical Pearl</h3>
-                    <p><strong>"The Stress Test Question":</strong> Always ask 'How's your sleep, stress, and exercise routine?' Over-training, chronic stress, and sleep deprivation can mimic hypogonadism perfectly. Fix the lifestyle before you prescribe the hormones.</p>
-                </div>
-            </div>
-
-            <div class="section">
-                <div class="section-header">
-                    <div class="section-icon">🎯</div>
-                    <h2>The LH/FSH Detective Story: Primary vs Secondary</h2>
-                </div>
-
-                <p>LH and FSH are your diagnostic compass - they always point toward the problem. Think of them as messengers from the pituitary: if they're shouting loudly (high levels) but getting no response from the gonads, you have primary gonadal failure. If they're whispering quietly (low levels) despite obvious gonadal problems, the fault lies centrally.</p>
-
-                <div class="interpretation-grid">
-                    <div class="interpretation-item">
-                        <h4>High LH/FSH Pattern</h4>
-                        <p><strong>Typical Values:</strong> LH >15, FSH >15<br>
-                        <strong>Meaning:</strong> Pituitary shouting at unresponsive gonads<br>
-                        <strong>Causes:</strong> Testicular failure, ovarian failure, menopause<br>
-                        <strong>Action:</strong> Focus on gonadal causes, consider HRT/TRT</p>
-                    </div>
-                    <div class="interpretation-item">
-                        <h4>Low/Normal LH/FSH Pattern</h4>
-                        <p><strong>Typical Values:</strong> LH <2, FSH <3 with low sex steroids<br>
-                        <strong>Meaning:</strong> Central suppression or dysfunction<br>
-                        <strong>Causes:</strong> Pituitary adenoma, medications, chronic illness<br>
-                        <strong>Action:</strong> MRI pituitary, review medications, check prolactin</p>
-                    </div>
-                    <div class="interpretation-item">
-                        <h4>High LH/FSH Ratio (>2.5)</h4>
-                        <p><strong>Typical Pattern:</strong> LH 15, FSH 6 in women<br>
-                        <strong>Meaning:</strong> PCOS phenotype likely<br>
-                        <strong>Context:</strong> Irregular cycles, hirsutism, obesity<br>
-                        <strong>Action:</strong> Metabolic assessment, androgen levels, pelvic ultrasound</p>
-                    </div>
-                    <div class="interpretation-item">
-                        <h4>Very High FSH (>30)</h4>
-                        <p><strong>Typical Pattern:</strong> FSH 45, LH 25 in young woman<br>
-                        <strong>Meaning:</strong> Primary ovarian insufficiency<br>
-                        <strong>Urgency:</strong> High - fertility and bone health implications<br>
-                        <strong>Action:</strong> Urgent gynae referral, genetic counselling, bone protection</p>
-                    </div>
-                </div>
-
-                <div class="clinical-pearl">
-                    <h3>Clinical Pearl</h3>
-                    <p><strong>"The PCOS Ratio Trap":</strong> Not all women with PCOS have a raised LH/FSH ratio - about 40% have normal ratios. But if you see LH/FSH >2.5 with irregular periods, PCOS is highly likely. Use the ratio as a clue, not a rule-out test.</p>
-                </div>
-
-                <div class="visual-element">
-                    <h3>Decision Tree: Interpreting Gonadotropins</h3>
-                    <div class="decision-tree">
-                        <div class="tree-node decision">
-                            <strong>Low sex hormones present?</strong><br>
-                            (Low testosterone in men, amenorrhoea in women)
+            // Show "no results" message if no cards are visible
+            const visibleCards = Array.from(chapterCards).filter(card => card.style.display !== 'none');
+            if (visibleCards.length === 0 && searchTerm !== '') {
+                if (!document.getElementById('noResults')) {
+                    const noResults = document.createElement('div');
+                    noResults.id = 'noResults';
+                    noResults.innerHTML = `
+                        <div style="text-align: center; padding: 40px; color: #64748b;">
+                            <p style="font-size: 1.2em; margin-bottom: 10px;">No matching chapters found</p>
+                            <p>Try searching for terms like "FBC", "hormones", "liver", or "cholesterol"</p>
                         </div>
-                        <div class="tree-node decision">
-                            <strong>Check LH and FSH levels</strong><br>
-                            This determines primary vs secondary hypogonadism
-                        </div>
-                        <div class="tree-node action">
-                            <strong>High LH/FSH:</strong> Primary gonadal failure → Check karyotype, autoimmune screen, imaging
-                        </div>
-                        <div class="tree-node action">
-                            <strong>Low/Normal LH/FSH:</strong> Central cause → Check prolactin, MRI pituitary, review medications
-                        </div>
-                    </div>
-                </div>
-            </div>
+                    `;
+                    chaptersGrid.appendChild(noResults);
+                }
+            } else {
+                const noResults = document.getElementById('noResults');
+                if (noResults) noResults.remove();
+            }
+        });
 
-            <div class="section">
-                <div class="section-header">
-                    <div class="section-icon">🎪</div>
-                    <h2>Prolactin: The Great Disruptor</h2>
-                </div>
+        // Add fade-in animation
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes fadeIn {
+                from { opacity: 0; transform: translateY(10px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+        `;
+        document.head.appendChild(style);
 
-                <p>Prolactin is like that colleague who's normally quiet but occasionally dominates the entire meeting. When prolactin is elevated, it suppresses GnRH pulsatility, effectively silencing LH and FSH. This is why hyperprolactinaemia presents with hypogonadal symptoms despite normal-looking gonads.</p>
-
-                <div class="parameter-grid">
-                    <div class="parameter-card normal">
-                        <h4>Normal Prolactin (<600 mIU/L)</h4>
-                        <p>Allows normal pulsatile GnRH release. LH and FSH can respond appropriately to feedback. Normal reproductive function expected.</p>
-                    </div>
-                    <div class="parameter-card abnormal-low">
-                        <h4>Mildly Elevated (600-1000)</h4>
-                        <p>Often medication-induced (antipsychotics, SSRIs). May cause subtle menstrual irregularities. Review medications before investigating further.</p>
-                    </div>
-                    <div class="parameter-card abnormal-high">
-                        <h4>Moderately Elevated (1000-3000)</h4>
-                        <p>Significant GnRH suppression likely. Check for pregnancy, hypothyroidism. Consider macroprolactin. May need MRI if persistent.</p>
-                    </div>
-                    <div class="parameter-card critical">
-                        <h4>Markedly Elevated (>3000)</h4>
-                        <p>Prolactinoma likely. Complete suppression of reproductive axis. Urgent MRI and ophthalmology referral. Rule out hook effect with dilutional assay.</p>
-                    </div>
-                </div>
-
-                <div class="clinical-pearl">
-                    <h3>Clinical Pearl</h3>
-                    <p><strong>"The Macroprolactin Red Herring":</strong> About 15% of elevated prolactin is actually macroprolactin - a biologically inactive complex that cross-reacts in the assay. Always check if your lab routinely screens for this, as it prevents unnecessary imaging and anxiety.</p>
-                </div>
-
-                <div class="highlight-box">
-                    <h4>Common Causes of Hyperprolactinaemia by Level</h4>
-                    <ul>
-                        <li><strong>600-1000 mIU/L:</strong> Medications, stress, nipple stimulation, hypothyroidism</li>
-                        <li><strong>1000-3000 mIU/L:</strong> Microprolactinoma, stalk compression, kidney disease</li>
-                        <li><strong>>3000 mIU/L:</strong> Prolactinoma (micro or macro), pregnancy, drugs (rare to cause this level)</li>
-                        <li><strong>>10,000 mIU/L:</strong> Almost always prolactinoma - but watch for hook effect</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="section">
-                <div class="section-header">
-                    <div class="section-icon">🔗</div>
-                    <h2>SHBG: The Invisible Modifier</h2>
-                </div>
-
-                <p>SHBG is like a sponge that soaks up hormones, determining how much actually reaches target tissues. High SHBG makes total testosterone levels look better than they functionally are, while low SHBG makes them look worse. It's the lens through which you must view all sex steroid measurements.</p>
-
-                <div class="risk-factors-visual">
-                    <div class="risk-factor">
-                        <strong>High SHBG Causes</strong><br>
-                        Oral estrogens<br>
-                        Hyperthyroidism<br>
-                        Liver disease<br>
-                        Aging in men
-                    </div>
-                    <div class="risk-factor">
-                        <strong>Low SHBG Causes</strong><br>
-                        Obesity/insulin resistance<br>
-                        Hypothyroidism<br>
-                        Androgens<br>
-                        Liver disease (different type)
-                    </div>
-                    <div class="risk-factor">
-                        <strong>High SHBG Effects</strong><br>
-                        Total testosterone looks normal<br>
-                        Free testosterone may be low<br>
-                        May need higher doses TRT
-                    </div>
-                    <div class="risk-factor">
-                        <strong>Low SHBG Effects</strong><br>
-                        Total testosterone looks low<br>
-                        Free testosterone may be normal<br>
-                        PCOS phenotype in women
-                    </div>
-                </div>
-
-                <div class="clinical-pearl">
-                    <h3>Clinical Pearl</h3>
-                    <p><strong>"SHBG is Your Reality Check":</strong> Never interpret testosterone without knowing SHBG. A man with total testosterone of 10 nmol/L might be hypogonadal if SHBG is high (not enough free hormone) or perfectly normal if SHBG is low (plenty of free hormone available).</p>
-                </div>
-
-                <div class="visual-element">
-                    <h3>Calculating Free Androgen Index (FAI)</h3>
-                    <div class="highlight-box">
-                        <p><strong>FAI = (Total Testosterone ÷ SHBG) × 100</strong></p>
-                        <ul>
-                            <li><strong>Normal FAI in women:</strong> 1-5%</li>
-                            <li><strong>PCOS often shows:</strong> FAI >5%</li>
-                            <li><strong>In men:</strong> FAI 30-150 is typical</li>
-                            <li><strong>Low FAI suggests:</strong> Functional hypogonadism despite normal total testosterone</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="section">
-                <div class="section-header">
-                    <div class="section-icon">🧩</div>
-                    <h2>Pattern Recognition: Common Clinical Scenarios</h2>
-                </div>
-
-                <div class="interpretation-grid">
-                    <div class="interpretation-item">
-                        <h4>The Tired Middle-Aged Man</h4>
-                        <p><strong>Pattern:</strong> Total T 8-12 nmol/L, normal/low LH/FSH, normal prolactin<br>
-                        <strong>Often:</strong> High BMI, sleep apnea, diabetes<br>
-                        <strong>Think:</strong> Functional hypogonadism vs age-related decline<br>
-                        <strong>Action:</strong> Lifestyle first, repeat hormones, consider CPAP</p>
-                    </div>
-                    <div class="interpretation-item">
-                        <h4>Young Woman with Irregular Periods</h4>
-                        <p><strong>Pattern:</strong> LH/FSH >2.5, low SHBG, elevated androgens<br>
-                        <strong>Often:</strong> Weight gain, hirsutism, acanthosis nigricans<br>
-                        <strong>Think:</strong> PCOS with metabolic features<br>
-                        <strong>Action:</strong> Metabolic assessment, lifestyle, metformin consideration</p>
-                    </div>
-                    <div class="interpretation-item">
-                        <h4>Woman with Hot Flushes at 42</h4>
-                        <p><strong>Pattern:</strong> High FSH (>30), low estradiol, irregular periods<br>
-                        <strong>Often:</strong> Family history, autoimmune conditions<br>
-                        <strong>Think:</strong> Primary ovarian insufficiency<br>
-                        <strong>Action:</strong> Urgent referral, genetic counselling, bone protection, HRT discussion</p>
-                    </div>
-                    <div class="interpretation-item">
-                        <h4>Bodybuilder with Mood Changes</h4>
-                        <p><strong>Pattern:</strong> Low/undetectable LH/FSH, variable testosterone<br>
-                        <strong>Often:</strong> Recent cessation of anabolic steroids<br>
-                        <strong>Think:</strong> Suppressed HPG axis recovery<br>
-                        <strong>Action:</strong> Time, supportive care, avoid immediate TRT</p>
-                    </div>
-                </div>
-
-                <div class="clinical-pearl">
-                    <h3>Clinical Pearl</h3>
-                    <p><strong>"Context Trumps Numbers":</strong> The same hormone profile can mean completely different things in different people. Low testosterone with suppressed LH/FSH in a 25-year-old bodybuilder needs time to recover, but the same pattern in a 45-year-old with headaches needs urgent pituitary imaging.</p>
-                </div>
-            </div>
-
-            <div class="section">
-                <div class="section-header">
-                    <div class="section-icon">💡</div>
-                    <h2>Treatment Monitoring: Following the Thread</h2>
-                </div>
-
-                <p>Once treatment starts, the hormone profile transforms from diagnostic tool to monitoring device. Each therapy creates its own signature pattern, and understanding these helps you optimise treatment and spot problems early.</p>
-
-                <div class="assessment-flow">
-                    <div class="flow-step">
-                        <h4>Testosterone Replacement in Men</h4>
-                        <p>Expect suppressed LH/FSH (negative feedback working). Monitor trough testosterone levels. If persistently low despite good adherence, check SHBG and consider absorption issues.</p>
-                    </div>
-                    <div class="flow-step">
-                        <h4>Dopamine Agonists for Prolactinomas</h4>
-                        <p>Prolactin should fall dramatically within weeks. LH/FSH recovery may take months. If prolactin normalises but symptoms persist, look for other causes of hypogonadism.</p>
-                    </div>
-                    <div class="flow-step">
-                        <h4>Clomiphene for Hypogonadism</h4>
-                        <p>Should raise LH/FSH and consequently testosterone. If LH/FSH rise but testosterone doesn't, suggests primary testicular problem. If neither rise, suggests central resistance.</p>
-                    </div>
-                    <div class="flow-step">
-                        <h4>Metformin in PCOS</h4>
-                        <p>May lower LH/FSH ratio over months. SHBG may rise (good sign). Androgen levels should improve. Weight loss amplifies hormonal improvements.</p>
-                    </div>
-                </div>
-
-                <div class="critical-values">
-                    <h3>Red Flags During Treatment</h3>
-                    <ul>
-                        <li><strong>Rising prolactin on dopamine agonist:</strong> Non-compliance, resistance, or wrong diagnosis</li>
-                        <li><strong>Persistently suppressed LH on clomiphene:</strong> Inadequate dose or central resistance</li>
-                        <li><strong>Hematocrit >54% on TRT:</strong> Increased stroke risk, reduce dose or stop</li>
-                        <li><strong>Worsening virilisation on testosterone therapy in women:</strong> Overdosing or poor compliance with application instructions</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="section">
-                <div class="section-header">
-                    <div class="section-icon">📈</div>
-                    <h2>Summary: The Five-Step Hormone Interpretation Method</h2>
-                </div>
-
-                <div class="highlight-box">
-                    <h4>Your Systematic Approach to Any Sex Hormone Profile</h4>
-                    <ol>
-                        <li><strong>Context First:</strong> Age, symptoms, medications, timing of sample - set the clinical scene before looking at numbers</li>
-                        <li><strong>Follow the Feedback Loop:</strong> Pair each sex hormone with its pituitary driver - discordance localises the problem</li>
-                        <li><strong>Adjust for SHBG:</strong> Calculate free hormone indices when total levels don't match clinical picture</li>
-                        <li><strong>Check the Disruptors:</strong> Elevated prolactin explains many mysterious patterns of hypogonadism</li>
-                        <li><strong>Integrate and Act:</strong> Combine hormone patterns with clinical features to guide investigation and treatment</li>
-                    </ol>
-                </div>
-
-                <div class="visual-element">
-                    <div class="diagram">
-                        <div class="diagram-item">
-                            <h4>Remember These Ratios</h4>
-                            <p>LH/FSH >2.5 → Think PCOS</p>
-                            <p>LH/FSH <0.5 → Think low ovarian reserve</p>
-                            <p>FAI >5% (women) → Think hyperandrogenism</p>
-                        </div>
-                        <div class="diagram-item">
-                            <h4>Master These Patterns</h4>
-                            <p>High LH/FSH + Low sex steroids = Primary failure</p>
-                            <p>Low LH/FSH + Low sex steroids = Central problem</p>
-                            <p>High prolactin = Explains most central hypogonadism</p>
-                        </div>
-                        <div class="diagram-item">
-                            <h4>Never Forget</h4>
-                            <p>Timing matters - morning testosterone, cycle day for LH/FSH</p>
-                            <p>Medications affect everything - review thoroughly</p>
-                            <p>SHBG changes interpretation - always consider</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="clinical-pearl">
-                    <h3>Clinical Pearl</h3>
-                    <p><strong>"When the Pattern Doesn't Fit, Widen the Net":</strong> If hormone levels don't match the clinical picture, consider thyroid dysfunction, chronic illness, eating disorders, or laboratory error. The HPG axis rarely misbehaves in isolation - there's usually a broader endocrine story to uncover.</p>
-                </div>
-            </div>
-
-            <div class="references-section">
-                <h3>🔗 Clinical Guidelines & Evidence Base</h3>
-                <div class="guideline-grid">
-                    <div class="guideline-item">
-                        <strong>NICE Guideline NG23</strong><br>
-                        <em>Menopause: identification and management</em> - Updated November 2024<br>
-                        <a href="https://www.nice.org.uk/guidance/ng23">Access Guidelines</a>
-                    </div>
-                    <div class="guideline-item">
-                        <strong>Endocrine Society Clinical Practice Guideline</strong><br>
-                        <em>Testosterone Therapy in Men with Hypogonadism</em> - 2018<br>
-                        <a href="https://www.endocrine.org/clinical-practice-guidelines/testosterone-therapy">Access Guideline</a>
-                    </div>
-                    <div class="guideline-item">
-                        <strong>Pituitary Society International Consensus</strong><br>
-                        <em>Diagnosis and Management of Prolactinomas</em> - 2023<br>
-                        <a href="https://www.nature.com/articles/s41574-023-00886-5">Access Statement</a>
-                    </div>
-                    <div class="guideline-item">
-                        <strong>American Association of Family Physicians</strong><br>
-                        <em>Diagnosis and Treatment of PCOS</em> - 2016<br>
-                        <a href="https://www.aafp.org/pubs/afp/issues/2016/0715/p106.html">Access Guideline</a>
-                    </div>
-                    <div class="guideline-item">
-                        <strong>British Menopause Society</strong><br>
-                        <em>BMS Statement on Testosterone for Women</em> - 2024<br>
-                        <a href="https://thebms.org.uk/publications/tools-for-clinicians/testosterone-replacement-in-menopause/">Access Statement</a>
-                    </div>
-                    <div class="guideline-item">
-                        <strong>Endocrine Society</strong><br>
-                        <em>Diagnosis and Treatment of Hyperprolactinemia</em> - 2011 (Updated 2022)<br>
-                        <a href="https://www.endocrine.org/clinical-practice-guidelines/hyperprolactinemia">Access Guideline</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="page-number">
-                <p>Chapter: Sex Hormone Profile Interpretation | Page 3 of 3</p>
-            </div>
-        </div>
-    </div>
-
-    <script src="medical-textbook-scripts.js"></script>
+        // Keyboard navigation
+        searchInput.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter') {
+                const visibleCards = Array.from(chapterCards).filter(card => card.style.display !== 'none');
+                if (visibleCards.length > 0) {
+                    const firstAvailable = visibleCards.find(card => !card.classList.contains('coming-soon'));
+                    if (firstAvailable) {
+                        const link = firstAvailable.querySelector('.chapter-link');
+                        if (link.href !== '#') {
+                            window.location.href = link.href;
+                        }
+                    }
+                }
+            }
+        });
+    </script>
 </body>
 </html>

@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bone Profile Interpretation for Primary Care</title>
+    <link rel="stylesheet" href="medical-textbook-styles.css">
+</head>
+<body>
+    <div class="textbook-page">
+        <button class="download-btn" onclick="downloadPDF()">
+            <svg class="download-icon" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+            </svg>
+            Download PDF
+        </button>
+
+        <div class="page-header">
+            <h1>Bone Profile Interpretation</h1>
+            <div class="subtitle">A Structured Approach to Calcium, Phosphate, ALP, and Vitamin D Assessment</div>
+        </div>
+
+        <div class="content">
+            <div class="section">
+                <div class="section-header">
+                    <div class="section-icon">🦴</div>
+                    <h2>Introduction: Understanding Bone Biochemistry</h2>
+                </div>
+                <p>The bone profile is one of the most revealing blood tests in primary care, offering insights into bone health, parathyroid function, vitamin D status, and liver disease. Unlike isolated tests, the bone profile tells a story through the relationships between calcium, phosphate, alkaline phosphatase, and vitamin D. Understanding these interconnections allows you to diagnose conditions from osteomalacia to primary hyperparathyroidism with confidence.</p>
+
+                <div class="clinical-pearl">
+                    <h3>Clinical Pearl</h3>
+                    <p><strong>"Read the Pattern, Not the Numbers":</strong> A high calcium with high alkaline phosphatase suggests different pathology than high calcium with normal alkaline phosphatase. The former points to bone disease (Paget's, malignancy), the latter to primary hyperparathyroidism. Pattern recognition trumps memorising reference ranges.</p>
+                </div>
+
+                <div class="reference-range-table">
+                    <h4>Essential Bone Profile Reference Ranges (Adults)</h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Parameter</th>
+                                <th>Reference Range</th>
+                                <th>Units</th>
+                                <th>Key Clinical Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Albumin-adjusted Calcium</td>
+                                <td>2.20-2.60</td>
+                                <td>mmol/L</td>
+                                <td>Always use adjusted calcium for clinical decisions</td>
+                            </tr>
+                            <tr>
+                                <td>Phosphate</td>
+                                <td>0.80-1.50</td>
+                                <td>mmol/L</td>
+                                <td>Inversely related to calcium in parathyroid disorders</td>
+                            </tr>
+                            <tr>
+                                <td>Alkaline Phosphatase (ALP)</td>
+                                <td>30-130</td>
+                                <td>U/L</td>
+                                <td>Rises with bone formation and liver disease</td>
+                            </tr>
+                            <tr>
+                                <td>25-OH Vitamin D</td>
+                                <td>>50</td>
+                                <td>nmol/L</td>
+                                <td>Deficient <30, insufficient 30-50</td>
+                            </tr>
+                            <tr>
+                                <td>PTH (if measured)</td>
+                                <td>1.6-6.9</td>
+                                <td>pmol/L</td>
+                                <td>Elevated in vitamin D deficiency and primary hyperparathyroidism</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <div class="section-icon">🔍</div>
+                    <h2>Step 1: Systematic Bone Profile Analysis</h2>
+                </div>
+
+                <div class="assessment-flow">
+                    <div class="flow-step">
+                        <h4>First: Check Calcium Status</h4>
+                        <p>Always use albumin-adjusted calcium. If >2.6 mmol/L on two occasions, consider primary hyperparathyroidism. If <2.2 mmol/L, think vitamin D deficiency, hypoparathyroidism, or chronic kidney disease.</p>
+                    </div>
+                    <div class="flow-step">
+                        <h4>Second: Examine the Calcium-Phosphate Relationship</h4>
+                        <p>In parathyroid disorders, these move in opposite directions. High calcium + low phosphate = hyperparathyroidism. Low calcium + high phosphate = hypoparathyroidism or chronic kidney disease.</p>
+                    </div>
+                    <div class="flow-step">
+                        <h4>Third: Interpret Alkaline Phosphatase Context</h4>
+                        <p>If ALP is raised, differentiate bone from liver origin using GGT. Bone ALP rises in high turnover states (Paget's, metastases, healing fractures, vitamin D deficiency).</p>
+                    </div>
+                    <div class="flow-step">
+                        <h4>Fourth: Assess Vitamin D Status</h4>
+                        <p>Vitamin D deficiency can cause secondary hyperparathyroidism, masking or complicating primary hyperparathyroidism diagnosis. Always check vitamin D status in calcium disorders.</p>
+                    </div>
+                </div>
+
+                <div class="clinical-pearl">
+                    <h3>Clinical Pearl</h3>
+                    <p><strong>"The ALP Source Detective Method":</strong> Raised ALP with normal GGT = bone source. Raised ALP with raised GGT = liver source. If both are elevated but liver function tests are normal, consider infiltrative liver disease or bone metastases.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <div class="section-icon">⚡</div>
+                    <h2>Step 2: Priority Assessment - Red Flags</h2>
+                </div>
+
+                <div class="red-flag-grid">
+                    <div class="red-flag-item">
+                        <div style="display: block; margin-bottom: 8px;"><strong>Calcium >2.9 mmol/L</strong></div>
+                        Hypercalcaemic crisis risk - urgent assessment for dehydration, confusion, arrhythmias
+                    </div>
+                    <div class="red-flag-item">
+                        <div style="display: block; margin-bottom: 8px;"><strong>Calcium <1.9 mmol/L</strong></div>
+                        Severe hypocalcaemia - risk of tetany, seizures, laryngospasm
+                    </div>
+                    <div class="red-flag-item">
+                        <div style="display: block; margin-bottom: 8px;"><strong>ALP >500 U/L</strong></div>
+                        Consider Paget's disease, bone metastases, or severe liver disease
+                    </div>
+                    <div class="red-flag-item">
+                        <div style="display: block; margin-bottom: 8px;"><strong>Phosphate <0.3 mmol/L</strong></div>
+                        Severe hypophosphataemia - risk of respiratory failure, cardiac dysfunction
+                    </div>
+                </div>
+
+                <div class="clinical-pearl">
+                    <h3>Clinical Pearl</h3>
+                    <p><strong>"Calcium Symptoms Are Non-Specific":</strong> "Stones, bones, groans, and psychiatric overtones" remains relevant, but early symptoms are subtle. Fatigue, depression, and cognitive impairment may be the only signs of mild hyperparathyroidism. Don't wait for kidney stones to investigate elevated calcium.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <div class="section-icon">🎯</div>
+                    <h2>Step 3: Pattern Recognition in Bone Disorders</h2>
+                </div>
+
+                <div class="interpretation-grid">
+                    <div class="interpretation-item">
+                        <h4>Primary Hyperparathyroidism (PHPT)</h4>
+                        <p><strong>Classic Pattern:</strong> ↑ Calcium, ↓ Phosphate, Normal/↑ ALP, Normal/↑ PTH<br>
+                        <strong>Clinical Context:</strong> Often asymptomatic, may have fatigue, depression, kidney stones<br>
+                        <strong>Action:</strong> Confirm with repeat calcium, measure PTH, refer to endocrinology if confirmed<br>
+                        <strong>NICE Guidance:</strong> Measure calcium and PTH if symptoms of hypercalcaemia or calcium ≥2.6 mmol/L</p>
+                    </div>
+                    <div class="interpretation-item">
+                        <h4>Vitamin D Deficiency/Osteomalacia</h4>
+                        <p><strong>Classic Pattern:</strong> ↓/Normal Calcium, ↓/Normal Phosphate, ↑ ALP, ↓ Vitamin D, ↑ PTH<br>
+                        <strong>Clinical Context:</strong> Bone pain, muscle weakness, increased fracture risk<br>
+                        <strong>Action:</strong> Vitamin D replacement 800-4000 IU daily depending on deficiency severity<br>
+                        <strong>Evidence:</strong> ALP rises early in vitamin D deficiency, calcium falls only in severe cases</p>
+                    </div>
+                    <div class="interpretation-item">
+                        <h4>Paget's Disease</h4>
+                        <p><strong>Classic Pattern:</strong> Normal Calcium, Normal Phosphate, ↑↑ ALP (often >500), Normal Vitamin D<br>
+                        <strong>Clinical Context:</strong> Bone pain, deformity, hearing loss, may be asymptomatic<br>
+                        <strong>Action:</strong> X-rays of affected bones, consider bone scan, rheumatology referral<br>
+                        <strong>Note:</strong> ALP can be extremely elevated (>1000 U/L) in active Paget's</p>
+                    </div>
+                    <div class="interpretation-item">
+                        <h4>Bone Metastases</h4>
+                        <p><strong>Classic Pattern:</strong> ↑ Calcium (osteolytic), Normal/↑ Phosphate, ↑ ALP<br>
+                        <strong>Clinical Context:</strong> Known malignancy, bone pain, pathological fractures<br>
+                        <strong>Action:</strong> Urgent oncology referral, imaging, consider bisphosphonates<br>
+                        <strong>Tumour Types:</strong> Breast, lung, kidney, prostate, thyroid most commonly metastasize to bone</p>
+                    </div>
+                </div>
+
+                <div class="clinical-pearl">
+                    <h3>Clinical Pearl</h3>
+                    <p><strong>"The Secondary Hyperparathyroidism Trap":</strong> Vitamin D deficiency causes secondary hyperparathyroidism with raised PTH but usually normal/low calcium. If calcium is high with raised PTH, don't assume it's secondary - it could be primary hyperparathyroidism with coexistent vitamin D deficiency.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <div class="section-icon">💊</div>
+                    <h2>Step 4: Treatment Decisions and Monitoring</h2>
+                </div>
+
+                <div class="two-column">
+                    <div>
+                        <h4>Vitamin D Replacement Strategy (2024 Guidelines)</h4>
+                        <p><strong>For Deficiency (<30 nmol/L):</strong></p>
+                        <ul>
+                            <li>Colecalciferol 800 IU daily for 8-12 weeks</li>
+                            <li>Or weekly doses (e.g., 5600 IU weekly)</li>
+                            <li>Recheck vitamin D level after treatment</li>
+                        </ul>
+                        <p><strong>For Insufficiency (30-50 nmol/L):</strong></p>
+                        <ul>
+                            <li>Colecalciferol 400-800 IU daily</li>
+                            <li>Consider higher doses if malabsorption</li>
+                        </ul>
+                        <p><strong>Maintenance Therapy:</strong></p>
+                        <ul>
+                            <li>400-800 IU daily for high-risk patients</li>
+                            <li>1000-2000 IU daily in housebound/care home patients</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Calcium Supplementation Guidelines</h4>
+                        <p><strong>Dietary Assessment First:</strong></p>
+                        <ul>
+                            <li>Aim for 700-1200mg daily from diet</li>
+                            <li>One glass milk = 300mg calcium</li>
+                            <li>30g cheese = 200mg calcium</li>
+                        </ul>
+                        <p><strong>Supplementation Indications:</strong></p>
+                        <ul>
+                            <li>Dietary intake <700mg daily</li>
+                            <li>On bisphosphonates for osteoporosis</li>
+                            <li>Malabsorption syndromes</li>
+                        </ul>
+                        <p><strong>Prescribing Principles:</strong></p>
+                        <ul>
+                            <li>Calcium carbonate 1.25g (500mg elemental) BD</li>
+                            <li>Take with food for better absorption</li>
+                            <li>Avoid with tetracyclines, iron supplements</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="clinical-pearl">
+                    <h3>Clinical Pearl</h3>
+                    <p><strong>"Food First, Supplements Second":</strong> Calcium absorption from supplements is limited to ~500mg per dose, while dietary calcium is better absorbed. Three servings of dairy daily usually provide adequate calcium. Only supplement if dietary intake is genuinely inadequate.</p>
+                </div>
+
+                <div class="highlight-box">
+                    <h4>Monitoring Parameters During Treatment</h4>
+                    <ul>
+                        <li><strong>Vitamin D deficiency:</strong> Recheck 25-OH vitamin D after 2-3 months of treatment</li>
+                        <li><strong>Primary hyperparathyroidism:</strong> Annual bone density, kidney function, calcium levels</li>
+                        <li><strong>Osteoporosis treatment:</strong> Monitor compliance, check bone profile if ALP rises significantly</li>
+                        <li><strong>Paget's disease:</strong> Monitor ALP every 3-6 months during treatment</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <div class="section-icon">🔄</div>
+                    <h2>Step 5: Special Considerations and Complex Cases</h2>
+                </div>
+
+                <div class="visual-element">
+                    <h3>Age-Related Changes in Bone Biochemistry</h3>
+                    <div class="parameter-grid">
+                        <div class="parameter-card normal">
+                            <h4>Young Adults (20-40 years)</h4>
+                            <p>Peak bone mass achieved around age 30. Normal bone profile values apply. Any significant abnormality warrants investigation.</p>
+                        </div>
+                        <div class="parameter-card abnormal-low">
+                            <h4>Postmenopausal Women</h4>
+                            <p>Increased bone resorption post-menopause. Slight elevation in ALP may be normal. Focus on fracture risk assessment and prevention.</p>
+                        </div>
+                        <div class="parameter-card abnormal-high">
+                            <h4>Elderly (>75 years)</h4>
+                            <p>Higher risk of vitamin D deficiency, hyperparathyroidism, and Paget's disease. Age-adjust alkaline phosphatase interpretation.</p>
+                        </div>
+                        <div class="parameter-card critical">
+                            <h4>Chronic Kidney Disease</h4>
+                            <p>Complex mineral and bone disorders. Phosphate retention, secondary hyperparathyroidism common. Requires specialist management.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="decision-tree">
+                    <h4>Decision Tree for Raised Alkaline Phosphatase</h4>
+                    <div class="tree-node decision">
+                        <strong>ALP Elevated (>130 U/L)</strong>
+                    </div>
+                    <div class="tree-node decision">
+                        <strong>Check GGT to differentiate source</strong><br>
+                        Essential first step in ALP evaluation
+                    </div>
+                    <div class="tree-node action">
+                        <strong>GGT Normal:</strong> Bone source likely → Check calcium, phosphate, vitamin D → Consider Paget's, bone mets, vitamin D deficiency
+                    </div>
+                    <div class="tree-node action">
+                        <strong>GGT Raised:</strong> Liver source → Check full liver function tests → Consider hepatitis, alcohol, drugs, biliary obstruction
+                    </div>
+                    <div class="tree-node action">
+                        <strong>Both Raised:</strong> Mixed picture → Consider infiltrative disease, drug effects, or concurrent bone and liver pathology
+                    </div>
+                </div>
+
+                <div class="clinical-pearl">
+                    <h3>Clinical Pearl</h3>
+                    <p><strong>"The Pregnancy Exception":</strong> ALP naturally rises in pregnancy due to placental production, reaching levels that would be concerning outside pregnancy. Always consider pregnancy in women of childbearing age with isolated ALP elevation. Bone-specific ALP and liver function tests help differentiate.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <div class="section-icon">⚠️</div>
+                    <h2>Step 6: When to Refer and Urgent Actions</h2>
+                </div>
+
+                <div class="critical-values">
+                    <h3>Immediate Referral Criteria</h3>
+                    <ul>
+                        <li><strong>Severe hypercalcaemia (>2.9 mmol/L):</strong> Same-day assessment for hypercalcaemic crisis</li>
+                        <li><strong>Severe hypocalcaemia (<1.9 mmol/L) with symptoms:</strong> Risk of tetany, seizures</li>
+                        <li><strong>Confirmed primary hyperparathyroidism:</strong> Endocrinology referral for surgical assessment</li>
+                        <li><strong>ALP >500 U/L with bone source:</strong> Consider Paget's disease or bone metastases</li>
+                        <li><strong>Suspected bone metastases:</strong> Urgent oncology referral</li>
+                        <li><strong>Severe hypophosphataemia (<0.3 mmol/L) with symptoms:</strong> Risk of respiratory/cardiac failure</li>
+                    </ul>
+                </div>
+
+                <div class="highlight-box">
+                    <h4>Routine Referral Indications</h4>
+                    <ul>
+                        <li><strong>Endocrinology:</strong> Confirmed primary hyperparathyroidism, complex vitamin D resistant cases</li>
+                        <li><strong>Rheumatology:</strong> Suspected Paget's disease, metabolic bone disease</li>
+                        <li><strong>Nephrology:</strong> CKD-related bone disease, persistent phosphate abnormalities</li>
+                        <li><strong>Gastroenterology:</strong> Malabsorption causing vitamin D deficiency</li>
+                    </ul>
+                </div>
+
+                <div class="clinical-pearl">
+                    <h3>Clinical Pearl</h3>
+                    <p><strong>"The 48-Hour Rule for Calcium":</strong> Any calcium >2.8 mmol/L should prompt clinical assessment within 48 hours. Patients may not volunteer symptoms of hypercalcaemia (fatigue, depression, confusion), but these can progress rapidly to hypercalcaemic crisis.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <div class="section-icon">📊</div>
+                    <h2>Summary: Mastering Bone Profile Interpretation</h2>
+                </div>
+
+                <div class="highlight-box">
+                    <h4>The Six-Step Bone Profile Method</h4>
+                    <ol>
+                        <li><strong>Calcium Status:</strong> Always use albumin-adjusted values, confirm abnormalities</li>
+                        <li><strong>Calcium-Phosphate Relationship:</strong> Inverse relationship suggests parathyroid pathology</li>
+                        <li><strong>ALP Source Identification:</strong> Use GGT to differentiate bone from liver disease</li>
+                        <li><strong>Vitamin D Assessment:</strong> Essential for understanding calcium metabolism</li>
+                        <li><strong>Clinical Correlation:</strong> Symptoms, age, and comorbidities guide interpretation</li>
+                        <li><strong>Pattern Recognition:</strong> Classic combinations point to specific diagnoses</li>
+                    </ol>
+                </div>
+
+                <div class="visual-element">
+                    <div class="diagram">
+                        <div class="diagram-item">
+                            <h4>Master These Patterns</h4>
+                            <p>PHPT: High Ca²⁺ + Low PO₄³⁻ + Normal/High ALP</p>
+                            <p>Vitamin D deficiency: Low/Normal Ca²⁺ + High ALP + Low vitamin D</p>
+                            <p>Paget's: Normal Ca²⁺ + Very High ALP + Normal GGT</p>
+                        </div>
+                        <div class="diagram-item">
+                            <h4>Remember These Rules</h4>
+                            <p>Always use albumin-adjusted calcium</p>
+                            <p>GGT differentiates ALP sources</p>
+                            <p>Vitamin D affects calcium metabolism</p>
+                        </div>
+                        <div class="diagram-item">
+                            <h4>Never Miss These</h4>
+                            <p>Calcium >2.9 = urgent assessment</p>
+                            <p>ALP >500 = investigate bone pathology</p>
+                            <p>Low phosphate <0.3 = critical risk</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="risk-factors-visual">
+                    <h3>Key Risk Factors for Bone Disease</h3>
+                    <div class="risk-category">
+                        <h4>Osteoporosis Risk</h4>
+                        <div class="risk-items">
+                            <span class="risk-item">Postmenopausal women</span>
+                            <span class="risk-item">Steroid use >3 months</span>
+                            <span class="risk-item">Family history fractures</span>
+                            <span class="risk-item">Low BMI <19</span>
+                            <span class="risk-item">Smoking, excess alcohol</span>
+                        </div>
+                    </div>
+                    <div class="risk-category">
+                        <h4>Vitamin D Deficiency Risk</h4>
+                        <div class="risk-items">
+                            <span class="risk-item">Limited sun exposure</span>
+                            <span class="risk-item">Dark skin in UK</span>
+                            <span class="risk-item">Housebound/care home</span>
+                            <span class="risk-item">Malabsorption</span>
+                            <span class="risk-item">Dietary restrictions</span>
+                        </div>
+                    </div>
+                    <div class="risk-category">
+                        <h4>Hyperparathyroidism Risk</h4>
+                        <div class="risk-items">
+                            <span class="risk-item">Postmenopausal women</span>
+                            <span class="risk-item">Previous neck irradiation</span>
+                            <span class="risk-item">Family history MEN syndrome</span>
+                            <span class="risk-item">Lithium therapy</span>
+                            <span class="risk-item">Age >65 years</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clinical-pearl">
+                    <h3>Clinical Pearl</h3>
+                    <p><strong>"Integration Over Isolation":</strong> The bone profile's power lies in interpreting all four parameters together. Isolated abnormalities need clinical context, but pattern abnormalities tell clear diagnostic stories. Always consider the whole picture - patient age, symptoms, risk factors, and biochemical patterns - for accurate diagnosis and appropriate management.</p>
+                </div>
+            </div>
+
+            <div class="references-section">
+                <h3>🔗 Clinical Guidelines & Evidence Base</h3>
+                <div class="guideline-grid">
+                    <div class="guideline-item">
+                        <strong>NICE Clinical Guideline</strong><br>
+                        <em>Hyperparathyroidism (Primary): Diagnosis, Assessment and Initial Management</em> - 2020<br>
+                        <a href="https://www.nice.org.uk/guidance/ng132">Access Guidelines</a>
+                    </div>
+                    <div class="guideline-item">
+                        <strong>NICE Clinical Knowledge Summaries</strong><br>
+                        <em>Osteoporosis - Prevention of Fragility Fractures</em> - 2024<br>
+                        <a href="https://cks.nice.org.uk/topics/osteoporosis-prevention-of-fragility-fractures/">Access Guidelines</a>
+                    </div>
+                    <div class="guideline-item">
+                        <strong>Royal Osteoporosis Society</strong><br>
+                        <em>UK Clinical Guideline for Prevention and Treatment of Osteoporosis</em> - 2022<br>
+                        <a href="https://royalosteoporosissociety.org/guidelines">Access Guidelines</a>
+                    </div>
+                    <div class="guideline-item">
+                        <strong>NICE Guideline NG203</strong><br>
+                        <em>Chronic Kidney Disease: Assessment and Management</em> - 2023<br>
+                        <a href="https://www.nice.org.uk/guidance/ng203">Access Guidelines</a>
+                    </div>
+                    <div class="guideline-item">
+                        <strong>BNSSG ICB</strong><br>
+                        <em>Vitamin D Guidelines for Adults</em> - 2024<br>
+                        <a href="https://remedy.bnssg.icb.nhs.uk/media/rorpnazk/bnssg-vitamin-d-guidelines-2024.pdf">Access Guidelines</a>
+                    </div>
+                    <div class="guideline-item">
+                        <strong>NHS England</strong><br>
+                        <em>Calcium and Vitamin D Supplementation in Osteoporosis</em> - 2024<br>
+                        <a href="https://primarycare.northeastlondon.icb.nhs.uk/wp-content/uploads/2024/01/Calcium-and-vitamin-D-colecalciferol-preparations-for-adults-at-risk-of-osteoporosis-guidance-NEL_12.2023.pdf">Access Guidelines</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="medical-textbook-scripts.js"></script>
+</body>
+</html>

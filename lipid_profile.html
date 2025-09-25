@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lipid Profile Interpretation for Primary Care</title>
+    <link rel="stylesheet" href="medical-textbook-styles.css">
+</head>
+<body>
+    <div class="textbook-page">
+        <button class="download-btn" onclick="downloadPDF()">
+            <svg class="download-icon" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+            </svg>
+            Download PDF
+        </button>
+
+        <div class="page-header">
+            <h1>Mastering Lipid Profiles</h1>
+            <div class="subtitle">From Numbers to Cardiovascular Risk Management</div>
+        </div>
+
+        <div class="content">
+            <div class="section">
+                <div class="section-header">
+                    <div class="section-icon">💓</div>
+                    <h2>Introduction: Beyond the Numbers Game</h2>
+                </div>
+                <p>A lipid profile isn't just a collection of cholesterol values—it's a window into your patient's cardiovascular future. Every result tells part of the story: total cholesterol hints at risk, but LDL cholesterol predicts events. HDL cholesterol offers protection, while triglycerides whisper warnings of metabolic chaos. The art lies in weaving these numbers together with clinical context to make decisions that can prevent heart attacks, strokes, and save lives.</p>
+
+                <p>This chapter transforms you from someone who simply reads lipid results into a cardiovascular risk detective who can spot the patterns that matter, avoid the pitfalls that mislead, and make evidence-based decisions about when to treat, how aggressively, and what targets to aim for.</p>
+
+                <div class="clinical-pearl">
+                    <h3>Clinical Pearl</h3>
+                    <p><strong>"LDL is the Star of the Show":</strong> While patients fixate on total cholesterol, LDL cholesterol is what matters for cardiovascular events. A patient with total cholesterol of 6.0 mmol/L might need urgent treatment if LDL is 4.5 mmol/L, or might need no treatment at all if LDL is 2.0 mmol/L with high protective HDL. Focus on LDL—it's what clogs arteries.</p>
+                </div>
+
+                <div class="reference-range-table">
+                    <h4>Lipid Profile Normal Ranges and Targets</h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Lipid Component</th>
+                                <th>Optimal Level</th>
+                                <th>Primary Prevention Target</th>
+                                <th>Secondary Prevention Target</th>
+                                <th>Units</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Total Cholesterol</td>
+                                <td><5.0</td>
+                                <td><5.0</td>
+                                <td><4.0</td>
+                                <td>mmol/L</td>
+                            </tr>
+                            <tr>
+                                <td>LDL Cholesterol</td>
+                                <td><3.0</td>
+                                <td><3.0</td>
+                                <td><2.0</td>
+                                <td>mmol/L</td>
+                            </tr>
+                            <tr>
+                                <td>HDL Cholesterol</td>
+                                <td>>1.0 (men), >1.2 (women)</td>
+                                <td>>1.0 (men), >1.2 (women)</td>
+                                <td>No specific target</td>
+                                <td>mmol/L</td>
+                            </tr>
+                            <tr>
+                                <td>Non-HDL Cholesterol</td>
+                                <td><4.0</td>
+                                <td><4.0</td>
+                                <td><2.6</td>
+                                <td>mmol/L</td>
+                            </tr>
+                            <tr>
+                                <td>Triglycerides</td>
+                                <td><1.7</td>
+                                <td><1.7</td>
+                                <td><1.7</td>
+                                <td>mmol/L</td>
+                            </tr>
+                            <tr>
+                                <td>Total:HDL Ratio</td>
+                                <td><4.0</td>
+                                <td><4.0</td>
+                                <td><4.0</td>
+                                <td>Ratio</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <div class="section-icon">🚨</div>
+                    <h2>Priority Assessment: When Lipids Signal Urgent Action</h2>
+                </div>
+
+                <p>Most lipid abnormalities develop slowly and allow time for thoughtful management. However, certain patterns demand immediate attention—either because they signal underlying pathology or because they represent such extreme cardiovascular risk that urgent intervention is warranted.</p>
+
+                <div class="red-flag-grid">
+                    <div class="red-flag-item">
+                        <div style="display: block; margin-bottom: 8px;"><strong>Total Cholesterol >8.0 mmol/L</strong></div>
+                        Possible familial hypercholesterolaemia—urgent lipid clinic referral needed, screen family members, calculate lifetime risk
+                    </div>
+                    <div class="red-flag-item">
+                        <div style="display: block; margin-bottom: 8px;"><strong>Triglycerides >10.0 mmol/L</strong></div>
+                        Acute pancreatitis risk—admit for monitoring, strict fat restriction, urgent specialist referral for lipid disorders
+                    </div>
+                    <div class="red-flag-item">
+                        <div style="display: block; margin-bottom: 8px;"><strong>New Severe Hyperlipidaemia + Symptoms</strong></div>
+                        Rule out secondary causes: hypothyroidism, diabetes, nephrotic syndrome, cholestatic liver disease, medications
+                    </div>
+                    <div class="red-flag-item">
+                        <div style="display: block; margin-bottom: 8px;"><strong>Very Low HDL (<0.8 mmol/L) + High Triglycerides</strong></div>
+                        Metabolic syndrome or diabetes risk—check HbA1c, blood pressure, waist circumference urgently
+                    </div>
+                </div>
+
+                <div class="clinical-pearl">
+                    <h3>Clinical Pearl</h3>
+                    <p><strong>"The Familial Hypercholesterolaemia Detective Work":</strong> Total cholesterol >7.5 mmol/L before age 30, or >9.0 mmol/L at any age, combined with family history of early coronary disease or high cholesterol, suggests familial hypercholesterolaemia. These patients need specialist management and their families need screening—early treatment can prevent premature death.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <div class="section-icon">🎯</div>
+                    <h2>Step 1: The QRISK3 Revolution - Risk-Based Decision Making</h2>
+                </div>
+
+                <p>NICE 2023 guidelines transformed lipid management from a numbers-based to a risk-based approach. The magic number isn't your patient's cholesterol level—it's their 10-year cardiovascular risk. QRISK3 calculates this risk using 20+ variables, giving you the power to identify who really needs treatment and who can be safely observed.</p>
+
+                <div class="assessment-flow">
+                    <div class="flow-step">
+                        <h4>Step 1: Calculate 10-Year CVD Risk</h4>
+                        <p>Use QRISK3 calculator for all patients aged 25-84 without established CVD. Include age, sex, ethnicity, postcode, smoking, diabetes, blood pressure, BMI, family history, chronic conditions, and lipid levels. The calculator does the complex maths for you.</p>
+                    </div>
+                    <div class="flow-step">
+                        <h4>Step 2: Apply the 10% Threshold</h4>
+                        <p>QRISK3 ≥10% over 10 years = offer statin therapy. This threshold represents the point where benefits clearly outweigh risks. Below 10%, focus on lifestyle; above 10%, discuss statin therapy.</p>
+                    </div>
+                    <div class="flow-step">
+                        <h4>Step 3: Consider Individual Factors</h4>
+                        <p>QRISK3 is a guide, not a rule. Consider patient preferences, frailty, life expectancy, polypharmacy, and potential for lifestyle change. A fit 45-year-old with 12% risk might benefit more than a frail 80-year-old with 15% risk.</p>
+                    </div>
+                    <div class="flow-step">
+                        <h4>Step 4: Reassess Regularly</h4>
+                        <p>Cardiovascular risk changes over time. Reassess QRISK3 every 5 years, or sooner if clinical situation changes (new diabetes, hypertension, or major life events). Risk isn't static.</p>
+                    </div>
+                </div>
+
+                <div class="visual-element">
+                    <h3>QRISK3 Decision Framework</h3>
+                    <div class="decision-tree">
+                        <div class="tree-node decision">
+                            <strong>Patient aged 25-84 without established CVD</strong>
+                        </div>
+                        <div class="tree-node decision">
+                            <strong>Calculate QRISK3 score</strong><br>
+                            Include all relevant risk factors and current lipid levels
+                        </div>
+                        <div class="tree-node action">
+                            <strong><10% risk:</strong> Lifestyle advice → Reassess in 5 years → Consider family history and patient preference
+                        </div>
+                        <div class="tree-node action">
+                            <strong>≥10% risk:</strong> Offer statin → Start atorvastatin 20mg → Titrate to achieve LDL targets
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clinical-pearl">
+                    <h3>Clinical Pearl</h3>
+                    <p><strong>"The Power of Risk Communication":</strong> Don't just quote the QRISK3 percentage—translate it into terms patients understand. "Your risk is 15%" becomes "Out of 100 people like you, 15 would have a heart attack or stroke in the next 10 years, but statins could prevent about 5 of those events." Stories resonate more than statistics.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <div class="section-icon">💊</div>
+                    <h2>Step 2: Statin Therapy - The Evidence-Based Approach</h2>
+                </div>
+
+                <div class="interpretation-grid">
+                    <div class="interpretation-item">
+                        <h4>Primary Prevention Statin Choice</h4>
+                        <p><strong>First Line:</strong> Atorvastatin 20mg once daily<br>
+                        <strong>Evidence:</strong> Best evidence base, predictable dosing<br>
+                        <strong>Timing:</strong> Evening dosing traditional but any time acceptable<br>
+                        <strong>Monitoring:</strong> Check lipids at 3 months, then annually</p>
+                    </div>
+                    <div class="interpretation-item">
+                        <h4>Secondary Prevention Statin Choice</h4>
+                        <p><strong>First Line:</strong> Atorvastatin 80mg once daily<br>
+                        <strong>Evidence:</strong> Proven to reduce cardiovascular events<br>
+                        <strong>Target:</strong> LDL <2.0 mmol/L or >40% reduction<br>
+                        <strong>Monitoring:</strong> Check lipids at 6-8 weeks, then 3-monthly</p>
+                    </div>
+                    <div class="interpretation-item">
+                        <h4>Statin Intolerance Management</h4>
+                        <p><strong>Try:</strong> Lower dose, alternate day, different statin<br>
+                        <strong>Alternatives:</strong> Ezetimibe 10mg, bile acid sequestrants<br>
+                        <strong>Newer options:</strong> Bempedoic acid, PCSK9 inhibitors<br>
+                        <strong>Key:</strong> True intolerance is rare—explore and rechallenge</p>
+                    </div>
+                    <div class="interpretation-item">
+                        <h4>Combination Therapy</h4>
+                        <p><strong>Add ezetimibe if:</strong> LDL targets not met on maximum tolerated statin<br>
+                        <strong>Dose:</strong> Ezetimibe 10mg daily with statin<br>
+                        <strong>Effect:</strong> Additional 15-20% LDL reduction<br>
+                        <strong>Safety:</strong> Generally well tolerated, minimal interactions</p>
+                    </div>
+                </div>
+
+                <div class="parameter-grid">
+                    <div class="parameter-card normal">
+                        <h4>Atorvastatin 20mg Effects</h4>
+                        <p><strong>LDL reduction:</strong> 35-40%<br>
+                        <strong>Typical result:</strong> LDL from 4.0 → 2.4 mmol/L<br>
+                        <strong>CVD risk reduction:</strong> 20-25% in primary prevention</p>
+                    </div>
+                    <div class="parameter-card abnormal-low">
+                        <h4>Atorvastatin 40mg Effects</h4>
+                        <p><strong>LDL reduction:</strong> 45-50%<br>
+                        <strong>Typical result:</strong> LDL from 4.0 → 2.0 mmol/L<br>
+                        <strong>Use for:</strong> Higher risk patients, target not met on 20mg</p>
+                    </div>
+                    <div class="parameter-card abnormal-high">
+                        <h4>Atorvastatin 80mg Effects</h4>
+                        <p><strong>LDL reduction:</strong> 55-60%<br>
+                        <strong>Typical result:</strong> LDL from 4.0 → 1.6 mmol/L<br>
+                        <strong>Use for:</strong> Secondary prevention, high-risk primary prevention</p>
+                    </div>
+                    <div class="parameter-card critical">
+                        <h4>Statin + Ezetimibe Effects</h4>
+                        <p><strong>Combined LDL reduction:</strong> 65-70%<br>
+                        <strong>Typical result:</strong> LDL from 4.0 → 1.2 mmol/L<br>
+                        <strong>Use for:</strong> Targets not met, familial hypercholesterolaemia</p>
+                    </div>
+                </div>
+
+                <div class="clinical-pearl">
+                    <h3>Clinical Pearl</h3>
+                    <p><strong>"The Statin Intolerance Reality Check":</strong> True statin intolerance occurs in <5% of patients, but up to 20% report muscle symptoms. Many symptoms are nocebo effects or unrelated conditions. Try dose reduction, alternate-day dosing, or a different statin before declaring intolerance. The cardiovascular benefits usually outweigh muscle discomfort.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <div class="section-icon">📊</div>
+                    <h2>Step 3: Reading the Lipid Profile - Pattern Recognition</h2>
+                </div>
+
+                <div class="two-column">
+                    <div>
+                        <h4>The Classic Patterns You'll See</h4>
+                        <p><strong>High LDL Pattern:</strong> LDL >3.0, normal triglycerides, variable HDL. Think genetic predisposition, dietary factors, or familial hypercholesterolaemia if very high.</p>
+                        <p><strong>Metabolic Syndrome Pattern:</strong> High triglycerides, low HDL, modestly elevated LDL. Often accompanies insulin resistance, obesity, diabetes.</p>
+                        <p><strong>Post-Statin Pattern:</strong> Dramatically improved LDL, stable or slightly improved HDL, variable triglyceride response depending on baseline levels.</p>
+                    </div>
+                    <div>
+                        <h4>The Ratios That Matter</h4>
+                        <p><strong>Total:HDL ratio >6.0:</strong> High cardiovascular risk regardless of individual cholesterol levels. HDL is protective—low HDL amplifies risk from any LDL level.</p>
+                        <p><strong>Non-HDL cholesterol:</strong> Total cholesterol minus HDL. Useful when triglycerides are high and LDL calculation unreliable. Target <2.6 mmol/L for secondary prevention.</p>
+                        <p><strong>LDL:HDL ratio >3.5:</strong> Atherogenic pattern—high risk of plaque formation and cardiovascular events.</p>
+                    </div>
+                </div>
+
+                <div class="interpretation-grid">
+                    <div class="interpretation-item">
+                        <h4>Isolated High LDL</h4>
+                        <p><strong>Pattern:</strong> LDL >4.0, HDL normal, TG <2.0<br>
+                        <strong>Common in:</strong> Familial hypercholesterolaemia, dietary excess<br>
+                        <strong>Risk:</strong> High for coronary artery disease<br>
+                        <strong>Treatment:</strong> Statin therapy highly effective</p>
+                    </div>
+                    <div class="interpretation-item">
+                        <h4>Mixed Dyslipidaemia</h4>
+                        <p><strong>Pattern:</strong> LDL high, HDL low, TG >2.0<br>
+                        <strong>Common in:</strong> Metabolic syndrome, diabetes, obesity<br>
+                        <strong>Risk:</strong> Very high for cardiovascular events<br>
+                        <strong>Treatment:</strong> Statin + lifestyle ± ezetimibe</p>
+                    </div>
+                    <div class="interpretation-item">
+                        <h4>Isolated Low HDL</h4>
+                        <p><strong>Pattern:</strong> HDL <1.0 (men) or <1.2 (women), LDL normal<br>
+                        <strong>Common in:</strong> Smoking, sedentary lifestyle, metabolic disorders<br>
+                        <strong>Risk:</strong> Moderate but significant<br>
+                        <strong>Treatment:</strong> Exercise, smoking cessation, consider statin if other risk factors</p>
+                    </div>
+                    <div class="interpretation-item">
+                        <h4>Isolated High Triglycerides</h4>
+                        <p><strong>Pattern:</strong> TG >2.0, LDL and HDL normal<br>
+                        <strong>Common in:</strong> Alcohol excess, diabetes, medications<br>
+                        <strong>Risk:</strong> Variable—check for secondary causes<br>
+                        <strong>Treatment:</strong> Address underlying cause, consider fibrate if >5.0</p>
+                    </div>
+                </div>
+
+                <div class="clinical-pearl">
+                    <h3>Clinical Pearl</h3>
+                    <p><strong>"The Non-Fasting Liberation":</strong> You can now order lipids without fasting for most patients. Total cholesterol, HDL, and non-HDL cholesterol are minimally affected by recent food intake. Only order fasting lipids if triglycerides >4.5 mmol/L on non-fasting sample, or when investigating possible familial hyperlipidaemia.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <div class="section-icon">🔍</div>
+                    <h2>Step 4: Secondary Causes - The Detective Work</h2>
+                </div>
+
+                <p>Before labeling someone with primary hyperlipidaemia, exclude secondary causes. These are often reversible and treating the underlying condition may normalize lipid levels without needing long-term statin therapy. Think systematically through potential causes, especially in patients with new-onset severe lipid abnormalities.</p>
+
+                <div class="risk-factors-visual">
+                    <div class="risk-factor">
+                        <h4>Endocrine Causes</h4>
+                        <p><strong>Hypothyroidism:</strong> Check TSH—can cause severe hyperlipidaemia</p>
+                        <p><strong>Diabetes:</strong> Poor glycaemic control raises triglycerides and lowers HDL</p>
+                        <p><strong>Cushing's syndrome:</strong> Rare but causes mixed dyslipidaemia</p>
+                    </div>
+                    <div class="risk-factor">
+                        <h4>Renal Causes</h4>
+                        <p><strong>Nephrotic syndrome:</strong> Proteinuria with hyperlipidaemia</p>
+                        <p><strong>Chronic kidney disease:</strong> Progressive lipid abnormalities</p>
+                        <p><strong>Dialysis:</strong> Often requires specific lipid management</p>
+                    </div>
+                    <div class="risk-factor">
+                        <h4>Hepatic Causes</h4>
+                        <p><strong>Cholestatic liver disease:</strong> Very high cholesterol</p>
+                        <p><strong>Non-alcoholic fatty liver:</strong> Often with metabolic syndrome</p>
+                        <p><strong>Primary biliary cholangitis:</strong> Specific lipid pattern</p>
+                    </div>
+                    <div class="risk-factor">
+                        <h4>Medication Causes</h4>
+                        <p><strong>Thiazide diuretics:</strong> Modestly raise cholesterol and triglycerides</p>
+                        <p><strong>Beta-blockers:</strong> May worsen lipid profile</p>
+                        <p><strong>Corticosteroids:</strong> Cause mixed dyslipidaemia</p>
+                        <p><strong>Immunosuppressants:</strong> Ciclosporin particularly problematic</p>
+                    </div>
+                </div>
+
+                <div class="highlight-box">
+                    <h4>Investigation Strategy for Secondary Causes</h4>
+                    <ul>
+                        <li><strong>Always check:</strong> TSH (hypothyroidism), HbA1c (diabetes), urinalysis (proteinuria)</li>
+                        <li><strong>Consider checking:</strong> Liver function tests, kidney function, glucose tolerance</li>
+                        <li><strong>Review medications:</strong> Especially diuretics, beta-blockers, steroids, immunosuppressants</li>
+                        <li><strong>Lifestyle factors:</strong> Alcohol intake, dietary habits, recent weight changes</li>
+                        <li><strong>Family history:</strong> Early coronary disease, hyperlipidaemia, diabetes</li>
+                    </ul>
+                </div>
+
+                <div class="clinical-pearl">
+                    <h3>Clinical Pearl</h3>
+                    <p><strong>"The Hypothyroidism Masquerader":</strong> Severe hyperlipidaemia with total cholesterol >10 mmol/L in someone without obvious familial hypercholesterolaemia should always prompt thyroid function testing. Hypothyroidism can cause dramatic lipid abnormalities that completely normalize with levothyroxine treatment. Check TSH first, treat appropriately, then reassess lipids.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <div class="section-icon">🎖️</div>
+                    <h2>Step 5: Special Populations and Scenarios</h2>
+                </div>
+
+                <div class="assessment-flow">
+                    <div class="flow-step">
+                        <h4>Elderly Patients (>75 years)</h4>
+                        <p>QRISK3 less reliable over 75. Consider life expectancy, frailty, polypharmacy, and patient preference. For established CVD, statins still beneficial. For primary prevention, individualised approach—benefits may not outweigh risks in frail patients with limited life expectancy.</p>
+                    </div>
+                    <div class="flow-step">
+                        <h4>Diabetes Patients</h4>
+                        <p>Diabetes is a major cardiovascular risk factor. Type 1 diabetes >40 years or Type 2 diabetes at any age should be considered for statin therapy regardless of cholesterol levels. Target LDL <2.6 mmol/L for high-risk diabetes patients. Consider more intensive lipid lowering if multiple risk factors.</p>
+                    </div>
+                    <div class="flow-step">
+                        <h4>Chronic Kidney Disease</h4>
+                        <p>Offer atorvastatin 20mg for primary or secondary prevention in CKD. If eGFR >30, can increase dose to meet targets. If eGFR <30, consult renal specialist before high-dose statins. Avoid fibrates in significant CKD. Monitor for drug interactions.</p>
+                    </div>
+                    <div class="flow-step">
+                        <h4>Pregnancy and Breastfeeding</h4>
+                        <p>Stop statins before conception—teratogenic risk. Pregnancy naturally raises cholesterol levels. Focus on dietary management. Consider bile acid sequestrants if treatment essential. Resume statins after breastfeeding. Preconception counselling crucial for women on lipid-lowering therapy.</p>
+                    </div>
+                </div>
+
+                <div class="critical-values">
+                    <h3>When to Refer to Specialist Lipid Services</h3>
+                    <ul>
+                        <li><strong>Familial hypercholesterolaemia:</strong> Total cholesterol >7.5 mmol/L with family history</li>
+                        <li><strong>Severe hypertriglyceridaemia:</strong> Triglycerides >10 mmol/L or recurrent pancreatitis</li>
+                        <li><strong>Statin intolerance:</strong> Multiple statins tried, genuine intolerance confirmed</li>
+                        <li><strong>Targets not achieved:</strong> Maximum tolerated therapy, targets still not met</li>
+                        <li><strong>Complex cases:</strong> Multiple comorbidities, unusual lipid patterns, young patients with CVD</li>
+                        <li><strong>Novel therapies needed:</strong> PCSK9 inhibitors, inclisiran, complex combination therapy</li>
+                    </ul>
+                </div>
+
+                <div class="clinical-pearl">
+                    <h3>Clinical Pearl</h3>
+                    <p><strong>"The Diabetes Lipid Advantage":</strong> Patients with diabetes often see greater triglyceride and HDL improvements with statins compared to non-diabetic patients. The combination of improved glycaemic control and statin therapy creates synergistic benefits for their lipid profile and cardiovascular risk reduction. Optimize both glucose and lipid control together.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <div class="section-icon">⚡</div>
+                    <h2>Step 6: Monitoring and Follow-up Strategy</h2>
+                </div>
+
+                <div class="visual-element">
+                    <h3>Lipid Monitoring Timeline</h3>
+                    <div class="parameter-grid">
+                        <div class="parameter-card normal">
+                            <h4>Initial Treatment Response</h4>
+                            <p><strong>When:</strong> 6-8 weeks after starting statin<br>
+                            <strong>Check:</strong> Lipids, liver function, symptoms<br>
+                            <strong>Action:</strong> Dose adjustment if targets not met</p>
+                        </div>
+                        <div class="parameter-card abnormal-low">
+                            <h4>Routine Monitoring</h4>
+                            <p><strong>When:</strong> 3 months, then annually<br>
+                            <strong>Check:</strong> Lipids, medication adherence<br>
+                            <strong>Action:</strong> Reinforce lifestyle, check targets</p>
+                        </div>
+                        <div class="parameter-card abnormal-high">
+                            <h4>High-Risk Patients</h4>
+                            <p><strong>When:</strong> 3-monthly initially<br>
+                            <strong>Check:</strong> Lipids, secondary prevention targets<br>
+                            <strong>Action:</strong> Intensive management, combination therapy</p>
+                        </div>
+                        <div class="parameter-card critical">
+                            <h4>Specialist Monitoring</h4>
+                            <p><strong>When:</strong> Complex cases, novel therapies<br>
+                            <strong>Check:</strong> Specialist protocols<br>
+                            <strong>Action:</strong> Shared care with specialist services</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="highlight-box">
+                    <h4>Treatment Success Indicators</h4>
+                    <ul>
+                        <li><strong>Primary prevention:</strong> LDL reduction of ≥40% from baseline, or LDL <3.0 mmol/L</li>
+                        <li><strong>Secondary prevention:</strong> LDL <2.0 mmol/L or non-HDL <2.6 mmol/L</li>
+                        <li><strong>High-risk patients:</strong> Consider LDL <1.4 mmol/L for very high risk</li>
+                        <li><strong>Patient factors:</strong> Good adherence, tolerable side effects, lifestyle maintenance</li>
+                        <li><strong>Additional benefits:</strong> Blood pressure improvement, diabetes control</li>
+                    </ul>
+                </div>
+
+                <div class="clinical-pearl">
+                    <h3>Clinical Pearl</h3>
+                    <p><strong>"The Power of Percentage Thinking":</strong> Don't get fixated on absolute targets if patients can't achieve them. A 50% LDL reduction from 5.0 to 2.5 mmol/L provides substantial cardiovascular benefit, even if the target of 2.0 mmol/L isn't reached. Celebrate meaningful improvements and maintain perspective on relative risk reduction.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <div class="section-icon">💡</div>
+                    <h2>Common Pitfalls and How to Avoid Them</h2>
+                </div>
+
+                <div class="interpretation-grid">
+                    <div class="interpretation-item">
+                        <h4>The Total Cholesterol Trap</h4>
+                        <p><strong>Mistake:</strong> Focusing on total cholesterol instead of LDL<br>
+                        <strong>Reality:</strong> Total cholesterol can be high due to protective HDL<br>
+                        <strong>Solution:</strong> Always look at LDL cholesterol and HDL separately<br>
+                        <strong>Example:</strong> Total 6.5 might be fine if LDL 2.0 and HDL 4.0</p>
+                    </div>
+                    <div class="interpretation-item">
+                        <h4>The Fasting Obsession</h4>
+                        <p><strong>Mistake:</strong> Always requiring fasting samples<br>
+                        <strong>Reality:</strong> Non-fasting lipids are reliable for most decisions<br>
+                        <strong>Solution:</strong> Use non-fasting unless triglycerides >4.5 mmol/L<br>
+                        <strong>Benefits:</strong> Improved patient compliance, more convenient</p>
+                    </div>
+                    <div class="interpretation-item">
+                        <h4>The Statin Intolerance Overdiagnosis</h4>
+                        <p><strong>Mistake:</strong> Accepting muscle symptoms as definite statin intolerance<br>
+                        <strong>Reality:</strong> Many symptoms are nocebo or unrelated<br>
+                        <strong>Solution:</strong> Try dose reduction, alternate statin, rechallenge<br>
+                        <strong>Key:</strong> True intolerance is rare but important to identify</p>
+                    </div>
+                    <div class="interpretation-item">
+                        <h4>The Target Perfectionism</h4>
+                        <p><strong>Mistake:</strong> Aggressive pursuit of perfect lipid targets<br>
+                        <strong>Reality:</strong> Relative improvement matters more than absolute targets<br>
+                        <strong>Solution:</strong> Celebrate meaningful reductions, consider patient factors<br>
+                        <strong>Focus:</strong> Cardiovascular benefit, not laboratory perfection</p>
+                    </div>
+                </div>
+
+                <div class="highlight-box">
+                    <h4>Red Flags in Lipid Management</h4>
+                    <ul>
+                        <li><strong>Unexplained severe muscle pain:</strong> Stop statin, check CK, rule out rhabdomyolysis</li>
+                        <li><strong>New diabetes diagnosis:</strong> May be statin-related in borderline patients—benefits still outweigh risks</li>
+                        <li><strong>Persistent non-response:</strong> Check adherence before assuming statin resistance</li>
+                        <li><strong>Drug interactions:</strong> Many medications affect statin metabolism—check interactions</li>
+                        <li><strong>Liver function abnormalities:</strong> Minor elevations common and acceptable, marked rises concerning</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <div class="section-icon">📈</div>
+                    <h2>Summary: The Five-Step Lipid Mastery Method</h2>
+                </div>
+
+                <div class="visual-element">
+                    <div class="diagram">
+                        <div class="diagram-item">
+                            <h4>1. Risk Assessment First</h4>
+                            <p>Use QRISK3 to calculate 10-year CVD risk—this drives all decisions</p>
+                        </div>
+                        <div class="diagram-item">
+                            <h4>2. Focus on LDL</h4>
+                            <p>LDL cholesterol predicts events—this is your primary target</p>
+                        </div>
+                        <div class="diagram-item">
+                            <h4>3. Rule Out Secondary Causes</h4>
+                            <p>Check TSH, HbA1c, urinalysis—treat underlying conditions first</p>
+                        </div>
+                        <div class="diagram-item">
+                            <h4>4. Start with Lifestyle</h4>
+                            <p>Diet, exercise, smoking cessation—foundation of all management</p>
+                        </div>
+                        <div class="diagram-item">
+                            <h4>5. Monitor and Adjust</h4>
+                            <p>Regular follow-up, target-based titration, long-term adherence</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="two-column">
+                    <div>
+                        <h4>Key Numbers to Remember</h4>
+                        <p><strong>Primary prevention:</strong> QRISK3 ≥10% = consider statin</p>
+                        <p><strong>Secondary prevention:</strong> LDL <2.0 mmol/L target</p>
+                        <p><strong>Statin choice:</strong> Atorvastatin 20mg (primary), 80mg (secondary)</p>
+                        <p><strong>Monitoring:</strong> 6-8 weeks then 3-monthly initially</p>
+                    </div>
+                    <div>
+                        <h4>Clinical Decision Points</h4>
+                        <p><strong>Familial hypercholesterolaemia:</strong> Total cholesterol >7.5 mmol/L</p>
+                        <p><strong>Pancreatitis risk:</strong> Triglycerides >10 mmol/L</p>
+                        <p><strong>Combination therapy:</strong> Add ezetimibe if targets not met</p>
+                        <p><strong>Specialist referral:</strong> Complex cases or novel therapies needed</p>
+                    </div>
+                </div>
+
+                <div class="clinical-pearl">
+                    <h3>Clinical Pearl</h3>
+                    <p><strong>"The Lifetime Perspective":</strong> Lipid management is a marathon, not a sprint. Small improvements maintained over decades prevent more cardiovascular events than dramatic short-term reductions followed by treatment discontinuation. Focus on sustainable therapy, patient understanding, and long-term adherence rather than perfect laboratory values.</p>
+                </div>
+
+                <div class="highlight-box">
+                    <h4>Take Home Messages for Lipid Management</h4>
+                    <ul>
+                        <li><strong>Risk-based treatment:</strong> Use QRISK3 to guide decisions, not just cholesterol levels</li>
+                        <li><strong>LDL is king:</strong> Focus on LDL cholesterol—it's what causes cardiovascular events</li>
+                        <li><strong>Atorvastatin first:</strong> Best evidence base, predictable effects, wide dose range</li>
+                        <li><strong>Secondary causes matter:</strong> Always check TSH, HbA1c, urinalysis before labeling primary hyperlipidaemia</li>
+                        <li><strong>Targets are guides:</strong> Relative improvement often matters more than absolute targets</li>
+                        <li><strong>Lifestyle foundation:</strong> Medication enhances but never replaces healthy living</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="references-section">
+                <h3>🔗 Clinical Guidelines & Evidence Base</h3>
+                <div class="guideline-grid">
+                    <div class="guideline-item">
+                        <strong>NICE Guideline NG238</strong><br>
+                        <em>Cardiovascular disease: risk assessment and reduction, including lipid modification</em> - Updated 2023<br>
+                        <a href="https://www.nice.org.uk/guidance/ng238">Access Guidelines</a>
+                    </div>
+                    <div class="guideline-item">
+                        <strong>QRISK3 Calculator</strong><br>
+                        <em>Official QRISK3 cardiovascular risk calculator</em><br>
+                        <a href="https://qrisk.org/three/">Access Calculator</a>
+                    </div>
+                    <div class="guideline-item">
+                        <strong>European Society of Cardiology</strong><br>
+                        <em>ESC/EAS Guidelines for the management of dyslipidaemias</em> - 2019<br>
+                        <a href="https://academic.oup.com/eurheartj/article/41/1/111/5556353">Access Guidelines</a>
+                    </div>
+                    <div class="guideline-item">
+                        <strong>American Heart Association</strong><br>
+                        <em>2018 AHA/ACC/AACVPR/AAPA/ABC/ACPM/ADA/AGS/APhA/ASPC/NLA/PCNA Guideline</em><br>
+                        <a href="https://www.ahajournals.org/doi/10.1161/CIR.0000000000000625">Access Guidelines</a>
+                    </div>
+                    <div class="guideline-item">
+                        <strong>Cochrane Review</strong><br>
+                        <em>Statins for the primary prevention of cardiovascular disease</em> - 2022<br>
+                        <a href="https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD004816.pub5/full">Access Review</a>
+                    </div>
+                    <div class="guideline-item">
+                        <strong>NICE Clinical Knowledge Summaries</strong><br>
+                        <em>Lipid modification - CVD prevention</em> - Updated 2024<br>
+                        <a href="https://cks.nice.org.uk/topics/lipid-modification-cvd-prevention/">Access Summary</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="medical-textbook-scripts.js"></script>
+</body>
+</html>

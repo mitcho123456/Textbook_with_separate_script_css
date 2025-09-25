@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardiac Markers Interpretation for Primary Care</title>
+    <link rel="stylesheet" href="medical-textbook-styles.css">
+</head>
+<body>
+    <div class="textbook-page">
+        <button class="download-btn" onclick="downloadPDF()">
+            <svg class="download-icon" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+            </svg>
+            Download PDF
+        </button>
+
+        <div class="page-header">
+            <h1>Cardiac Markers Interpretation</h1>
+            <div class="subtitle">A Structured Approach to Troponin, BNP, and NT-proBNP Assessment</div>
+        </div>
+
+        <div class="content">
+            <div class="section">
+                <div class="section-header">
+                    <div class="section-icon">💓</div>
+                    <h2>Introduction: The Modern Cardiac Biomarker Arsenal</h2>
+                </div>
+                <p>Cardiac biomarkers have revolutionised the assessment of chest pain and heart failure in primary care. High-sensitivity troponins can now rule out myocardial infarction within one hour, while NT-proBNP provides a powerful screening tool for heart failure. Understanding when to test, how to interpret results, and crucially when NOT to test these expensive biomarkers is essential for effective primary care practice.</p>
+
+                <div class="clinical-pearl">
+                    <h3>Clinical Pearl</h3>
+                    <p><strong>"Troponin is Not a Screening Test":</strong> Never order troponin "just to be safe" in low-risk chest pain. A positive result in someone with <2% pre-test probability of ACS creates more problems than it solves. Clinical assessment must drive testing, not anxiety or defensive medicine.</p>
+                </div>
+
+                <div class="reference-range-table">
+                    <h4>Key Cardiac Biomarker Thresholds (2024 NICE Guidelines)</h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Biomarker</th>
+                                <th>Critical Threshold</th>
+                                <th>Clinical Significance</th>
+                                <th>Timing</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>High-Sensitivity Troponin T</td>
+                                <td>99th percentile: 14 ng/L</td>
+                                <td>Myocardial injury threshold</td>
+                                <td>Peak 12-24 hours post-MI</td>
+                            </tr>
+                            <tr>
+                                <td>High-Sensitivity Troponin I</td>
+                                <td>99th percentile: varies by assay</td>
+                                <td>More specific than Troponin T</td>
+                                <td>Earlier rise than Troponin T</td>
+                            </tr>
+                            <tr>
+                                <td>NT-proBNP</td>
+                                <td><400 ng/L: HF unlikely</td>
+                                <td>Heart failure screening</td>
+                                <td>Stable levels, not affected by diurnal variation</td>
+                            </tr>
+                            <tr>
+                                <td>NT-proBNP (urgent)</td>
+                                <td>>2000 ng/L</td>
+                                <td>Urgent cardiology referral</td>
+                                <td>2-week pathway activation</td>
+                            </tr>
+                            <tr>
+                                <td>BNP (alternative)</td>
+                                <td><100 pg/mL: HF unlikely</td>
+                                <td>Less stable than NT-proBNP</td>
+                                <td>Shorter half-life, more variability</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <div class="section-icon">🔍</div>
+                    <h2>Step 1: High-Sensitivity Troponin - When and Why</h2>
+                </div>
+
+                <div class="assessment-flow">
+                    <div class="flow-step">
+                        <h4>Pre-Test Probability Assessment</h4>
+                        <p>Before ordering troponin, assess likelihood of ACS using clinical features, ECG, and risk factors. Only test if intermediate risk (5-85% probability) - low risk wastes resources, high risk needs immediate treatment regardless.</p>
+                    </div>
+                    <div class="flow-step">
+                        <h4>Timing Considerations</h4>
+                        <p>High-sensitivity assays can detect troponin within 1-2 hours of symptom onset. NICE DG40 supports 0/1-hour protocols for early rule-out. Traditional 12-hour rule is outdated with modern assays.</p>
+                    </div>
+                    <div class="flow-step">
+                        <h4>Clinical Context Integration</h4>
+                        <p>Troponin elevation doesn't equal MI. Consider alternative causes: myocarditis, PE, sepsis, renal failure, heart failure exacerbation. Clinical correlation is mandatory for accurate diagnosis.</p>
+                    </div>
+                    <div class="flow-step">
+                        <h4>Serial Measurement Strategy</h4>
+                        <p>Single measurements rarely diagnostic. Rising pattern over 1-3 hours suggests acute MI. Static elevation suggests chronic myocardial injury. Delta changes more important than absolute values.</p>
+                    </div>
+                </div>
+
+                <div class="clinical-pearl">
+                    <h3>Clinical Pearl</h3>
+                    <p><strong>"The 99th Percentile Trap":</strong> 99% of healthy people have troponin below the 99th percentile - which means 1 in 100 healthy people will have "abnormal" results. This false positive rate is why clinical correlation is essential. Never diagnose MI on troponin alone.</p>
+                </div>
+
+                <div class="red-flag-grid">
+                    <div class="red-flag-item">
+                        <div style="display: block; margin-bottom: 8px;"><strong>Troponin >10x 99th Percentile</strong></div>
+                        Highly suggestive of acute MI with significant myocardial damage
+                    </div>
+                    <div class="red-flag-item">
+                        <div style="display: block; margin-bottom: 8px;"><strong>Rising Troponin + Chest Pain</strong></div>
+                        Acute coronary syndrome - urgent cardiology assessment required
+                    </div>
+                    <div class="red-flag-item">
+                        <div style="display: block; margin-bottom: 8px;"><strong>Troponin + ST Changes</strong></div>
+                        STEMI equivalent - immediate primary PCI activation
+                    </div>
+                    <div class="red-flag-item">
+                        <div style="display: block; margin-bottom: 8px;"><strong>Detectable Troponin + Unstable Patient</strong></div>
+                        Any troponin elevation in unstable patient requires urgent assessment
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <div class="section-icon">📊</div>
+                    <h2>Step 2: Troponin Result Interpretation Patterns</h2>
+                </div>
+
+                <div class="interpretation-grid">
+                    <div class="interpretation-item">
+                        <h4>Undetectable Troponin (<3-5 ng/L)</h4>
+                        <p><strong>Clinical Meaning:</strong> Excellent negative predictive value for MI<br>
+                        <strong>Action:</strong> If >3 hours from symptom onset, effectively rules out MI<br>
+                        <strong>Caution:</strong> Very early presentation (<1 hour) may still have undetectable levels<br>
+                        <strong>Confidence Level:</strong> >99% NPV for ruling out MI</p>
+                    </div>
+                    <div class="interpretation-item">
+                        <h4>Low-Level Elevation (5-50 ng/L)</h4>
+                        <p><strong>Clinical Meaning:</strong> Possible myocardial injury, but not necessarily MI<br>
+                        <strong>Action:</strong> Repeat in 1-3 hours, assess clinical context carefully<br>
+                        <strong>Common Causes:</strong> Chronic heart failure, renal impairment, myocarditis<br>
+                        <strong>Strategy:</strong> Look for rising pattern to differentiate acute from chronic</p>
+                    </div>
+                    <div class="interpretation-item">
+                        <h4>Significant Elevation (>100 ng/L)</h4>
+                        <p><strong>Clinical Meaning:</strong> Substantial myocardial damage<br>
+                        <strong>Action:</strong> Urgent cardiology assessment, start dual antiplatelet therapy<br>
+                        <strong>Differential:</strong> NSTEMI, large STEMI, massive PE, myocarditis<br>
+                        <strong>Risk Stratification:</strong> Higher levels correlate with worse outcomes</p>
+                    </div>
+                    <div class="interpretation-item">
+                        <h4>Extremely High Levels (>1000 ng/L)</h4>
+                        <p><strong>Clinical Meaning:</strong> Massive myocardial injury<br>
+                        <strong>Action:</strong> Immediate intervention cardiology referral<br>
+                        <strong>Prognosis:</strong> High short-term mortality risk<br>
+                        <strong>Management:</strong> Aggressive anti-ischaemic therapy, consider mechanical support</p>
+                    </div>
+                </div>
+
+                <div class="clinical-pearl">
+                    <h3>Clinical Pearl</h3>
+                    <p><strong>"The Delta Change Rule":</strong> A >20% rise (or fall) in troponin levels between two samples 1-3 hours apart is more diagnostic of acute MI than absolute values. Static elevation often represents chronic myocardial injury rather than acute coronary syndrome.</p>
+                </div>
+
+                <div class="visual-element">
+                    <h3>Troponin Kinetics in Different Conditions</h3>
+                    <div class="parameter-grid">
+                        <div class="parameter-card abnormal-high">
+                            <h4>Acute STEMI Pattern</h4>
+                            <p>Rapid rise within 1-2 hours, peak at 12-24 hours, elevated for 7-14 days. Magnitude correlates with infarct size.</p>
+                        </div>
+                        <div class="parameter-card abnormal-low">
+                            <h4>NSTEMI Pattern</h4>
+                            <p>More gradual rise, lower peak levels than STEMI, but still shows clear rising pattern over 1-6 hours.</p>
+                        </div>
+                        <div class="parameter-card normal">
+                            <h4>Chronic Elevation</h4>
+                            <p>Stable levels over time, often <100 ng/L, seen in heart failure, CKD, elderly patients.</p>
+                        </div>
+                        <div class="parameter-card critical">
+                            <h4>Non-ACS Causes</h4>
+                            <p>Myocarditis, PE, sepsis, cardioversion. Clinical context and ECG changes differentiate from ACS.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <div class="section-icon">💙</div>
+                    <h2>Step 3: NT-proBNP and Heart Failure Assessment</h2>
+                </div>
+
+                <div class="two-column">
+                    <div>
+                        <h4>NICE 2024 NT-proBNP Thresholds</h4>
+                        <p><strong>Rule-Out Threshold (<400 ng/L):</strong></p>
+                        <ul>
+                            <li>Heart failure very unlikely in untreated patients</li>
+                            <li>99% negative predictive value</li>
+                            <li>Avoids unnecessary echocardiography</li>
+                            <li>Consider alternative diagnoses</li>
+                        </ul>
+                        <p><strong>Routine Referral (400-2000 ng/L):</strong></p>
+                        <ul>
+                            <li>Specialist assessment within 6 weeks</li>
+                            <li>Transthoracic echocardiography required</li>
+                            <li>Start appropriate interim therapy</li>
+                        </ul>
+                        <p><strong>Urgent Referral (>2000 ng/L):</strong></p>
+                        <ul>
+                            <li>Specialist assessment within 2 weeks</li>
+                            <li>High likelihood of significant heart failure</li>
+                            <li>Poor prognostic indicator</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Factors Affecting NT-proBNP Levels</h4>
+                        <p><strong>Factors That Lower NT-proBNP:</strong></p>
+                        <ul>
+                            <li>Obesity (up to 50% reduction)</li>
+                            <li>African/Caribbean ethnicity</li>
+                            <li>ACE inhibitors, ARBs, beta-blockers</li>
+                            <li>Diuretics, MRAs</li>
+                        </ul>
+                        <p><strong>Factors That Raise NT-proBNP:</strong></p>
+                        <ul>
+                            <li>Age >70 years</li>
+                            <li>Atrial fibrillation</li>
+                            <li>Renal impairment (eGFR <60)</li>
+                            <li>Pulmonary embolism</li>
+                            <li>Sepsis, hypoxia</li>
+                            <li>Left ventricular hypertrophy</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="clinical-pearl">
+                    <h3>Clinical Pearl</h3>
+                    <p><strong>"The Obesity Paradox":</strong> Obese patients can have heart failure with normal NT-proBNP levels. Adipose tissue produces natriuretic peptide clearance receptors, reducing circulating levels. In obese patients, consider lower thresholds (200-300 ng/L) to maintain sensitivity.</p>
+                </div>
+
+                <div class="assessment-flow">
+                    <div class="flow-step">
+                        <h4>Clinical Presentation Assessment</h4>
+                        <p>NT-proBNP testing should be driven by clinical suspicion of heart failure: breathlessness, ankle swelling, fatigue, reduced exercise tolerance. Not a screening test in asymptomatic patients.</p>
+                    </div>
+                    <div class="flow-step">
+                        <h4>Result Interpretation in Context</h4>
+                        <p>Consider patient factors that affect levels. Very elderly patients may have elevated levels without heart failure. Renal impairment significantly elevates results regardless of cardiac function.</p>
+                    </div>
+                    <div class="flow-step">
+                        <h4>Treatment Response Monitoring</h4>
+                        <p>NT-proBNP can guide therapy but shouldn't be the sole target. Clinical improvement with falling NT-proBNP indicates successful treatment. Rising levels suggest deterioration or non-compliance.</p>
+                    </div>
+                    <div class="flow-step">
+                        <h4>Prognostic Value</h4>
+                        <p>Higher baseline NT-proBNP levels predict worse outcomes. Very high levels (>5000 ng/L) associated with significantly increased mortality. Useful for risk stratification and advanced care planning.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <div class="section-icon">⚖️</div>
+                    <h2>Step 4: BNP vs NT-proBNP - Making the Right Choice</h2>
+                </div>
+
+                <div class="interpretation-grid">
+                    <div class="interpretation-item">
+                        <h4>NT-proBNP Advantages</h4>
+                        <p><strong>Stability:</strong> Longer half-life (60-120 minutes) vs BNP (20 minutes)<br>
+                        <strong>Processing:</strong> Less affected by sample handling and storage<br>
+                        <strong>Precision:</strong> Less biological variation, more reproducible results<br>
+                        <strong>NICE Preference:</strong> Referenced in NICE NG106 guidelines as preferred test</p>
+                    </div>
+                    <div class="interpretation-item">
+                        <h4>BNP Characteristics</h4>
+                        <p><strong>Biological Activity:</strong> Active hormone, directly reflects cardiac function<br>
+                        <strong>Processing Requirements:</strong> Requires careful sample handling, immediate processing<br>
+                        <strong>Threshold:</strong> <100 pg/mL rules out heart failure<br>
+                        <strong>Variability:</strong> More affected by diurnal variation and sample handling</p>
+                    </div>
+                    <div class="interpretation-item">
+                        <h4>Clinical Equivalence</h4>
+                        <p><strong>Diagnostic Performance:</strong> Both have similar diagnostic accuracy for heart failure<br>
+                        <strong>Conversion:</strong> NT-proBNP ≈ 8.5 × BNP (approximate relationship)<br>
+                        <strong>Guidelines:</strong> Both accepted in international guidelines<br>
+                        <strong>Choice:</strong> Usually determined by local laboratory capabilities</p>
+                    </div>
+                    <div class="interpretation-item">
+                        <h4>Cost Considerations</h4>
+                        <p><strong>Test Cost:</strong> Similar costs for both assays<br>
+                        <strong>Processing:</strong> NT-proBNP more cost-effective due to stability<br>
+                        <strong>Repeat Testing:</strong> NT-proBNP less likely to need repeat due to pre-analytical errors<br>
+                        <strong>Outcome:</strong> Both cost-effective compared to clinical assessment alone</p>
+                    </div>
+                </div>
+
+                <div class="clinical-pearl">
+                    <h3>Clinical Pearl</h3>
+                    <p><strong>"Stick With One Test":</strong> Choose either BNP or NT-proBNP and become familiar with its characteristics. Don't switch between them for the same patient - the thresholds are different and this leads to confusion. NT-proBNP is generally preferred due to superior analytical stability.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <div class="section-icon">🎯</div>
+                    <h2>Step 5: Point-of-Care Testing Revolution (2024 Updates)</h2>
+                </div>
+
+                <div class="highlight-box">
+                    <h4>Point-of-Care Cardiac Biomarkers - Current Capabilities</h4>
+                    <ul>
+                        <li><strong>High-Sensitivity Troponin POC:</strong> Results in 8 minutes, comparable accuracy to lab assays</li>
+                        <li><strong>NT-proBNP POC:</strong> 15-minute turnaround time, excellent correlation with laboratory methods</li>
+                        <li><strong>Clinical Impact:</strong> Reduces ED attendance, faster decision-making, improved patient flow</li>
+                        <li><strong>Cost-Effectiveness:</strong> Potential savings from reduced hospital admissions and faster discharge</li>
+                    </ul>
+                </div>
+
+                <div class="visual-element">
+                    <h3>POC Testing Implementation in Primary Care (2024)</h3>
+                    <div class="parameter-grid">
+                        <div class="parameter-card normal">
+                            <h4>Ideal Candidates</h4>
+                            <p>Intermediate-risk chest pain, GP urgent care centers, community cardiology services, rural/remote locations.</p>
+                        </div>
+                        <div class="parameter-card abnormal-low">
+                            <h4>Quality Considerations</h4>
+                            <p>Requires trained operators, regular quality control, connectivity to electronic records, clinical governance.</p>
+                        </div>
+                        <div class="parameter-card abnormal-high">
+                            <h4>Economic Impact</h4>
+                            <p>Reduced ambulance transfers, faster rule-out decisions, improved patient satisfaction, resource optimization.</p>
+                        </div>
+                        <div class="parameter-card critical">
+                            <h4>Clinical Outcomes</h4>
+                            <p>Earlier treatment initiation, reduced time to diagnosis, maintained safety standards, enhanced care pathways.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clinical-pearl">
+                    <h3>Clinical Pearl</h3>
+                    <p><strong>"POC Testing Changes Everything":</strong> Point-of-care troponin testing transforms primary care chest pain assessment. A negative result within 8 minutes allows confident discharge, while positive results enable immediate appropriate treatment. This technology is moving acute cardiac care closer to patients.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <div class="section-icon">⚠️</div>
+                    <h2>Step 6: Critical Decision Points and Referral Thresholds</h2>
+                </div>
+
+                <div class="critical-values">
+                    <h3>Immediate Action Required</h3>
+                    <ul>
+                        <li><strong>Any detectable troponin + ongoing chest pain:</strong> Immediate cardiology assessment</li>
+                        <li><strong>Rising troponin pattern (>20% increase):</strong> Acute coronary syndrome pathway</li>
+                        <li><strong>NT-proBNP >2000 ng/L + clinical heart failure:</strong> 2-week urgent cardiology referral</li>
+                        <li><strong>Troponin >10x 99th percentile:</strong> Immediate interventional cardiology consideration</li>
+                        <li><strong>Positive troponin + ECG changes:</strong> Emergency treatment activation</li>
+                        <li><strong>NT-proBNP >5000 ng/L:</strong> Consider advanced heart failure, urgent specialist review</li>
+                    </ul>
+                </div>
+
+                <div class="decision-tree">
+                    <h4>Chest Pain Assessment with Troponin Testing</h4>
+                    <div class="tree-node decision">
+                        <strong>Chest pain patient presents</strong>
+                    </div>
+                    <div class="tree-node decision">
+                        <strong>Assess pre-test probability of ACS</strong><br>
+                        Use clinical features, ECG, risk factors
+                    </div>
+                    <div class="tree-node action">
+                        <strong>Low risk (<5%):</strong> Reassure, safety net advice, no troponin needed
+                    </div>
+                    <div class="tree-node action">
+                        <strong>Intermediate risk (5-85%):</strong> High-sensitivity troponin, consider 0/1 hour protocol
+                    </div>
+                    <div class="tree-node action">
+                        <strong>High risk (>85%):</strong> Treat as ACS, troponin for confirmation not diagnosis
+                    </div>
+                </div>
+
+                <div class="highlight-box">
+                    <h4>When NOT to Test Cardiac Biomarkers</h4>
+                    <ul>
+                        <li><strong>Very low-risk chest pain:</strong> Atypical pain, young age, no risk factors</li>
+                        <li><strong>Chronic stable angina:</strong> Troponin will not guide management</li>
+                        <li><strong>Obvious non-cardiac pain:</strong> Musculoskeletal, pleuritic, gastric causes</li>
+                        <li><strong>Asymptomatic screening:</strong> Neither troponin nor BNP are screening tests</li>
+                        <li><strong>Known chronic conditions:</strong> Established heart failure with stable symptoms</li>
+                    </ul>
+                </div>
+
+                <div class="clinical-pearl">
+                    <h3>Clinical Pearl</h3>
+                    <p><strong>"Test Wisely, Act Decisively":</strong> The power of cardiac biomarkers lies in their ability to change management. If a positive result wouldn't change your treatment plan, don't order the test. If you order it, be prepared to act on abnormal results with appropriate urgency and specialist input.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <div class="section-icon">📈</div>
+                    <h2>Summary: Mastering Cardiac Biomarker Interpretation</h2>
+                </div>
+
+                <div class="highlight-box">
+                    <h4>The Six-Step Cardiac Biomarker Strategy</h4>
+                    <ol>
+                        <li><strong>Clinical Assessment First:</strong> Pre-test probability drives testing decisions</li>
+                        <li><strong>Choose Appropriate Biomarker:</strong> Troponin for ACS, NT-proBNP for heart failure</li>
+                        <li><strong>Timing Matters:</strong> High-sensitivity assays enable earlier rule-out</li>
+                        <li><strong>Context Integration:</strong> Patient factors significantly affect interpretation</li>
+                        <li><strong>Pattern Recognition:</strong> Rising troponin more important than absolute values</li>
+                        <li><strong>Decisive Action:</strong> Abnormal results require appropriate urgency and follow-up</li>
+                    </ol>
+                </div>
+
+                <div class="visual-element">
+                    <div class="diagram">
+                        <div class="diagram-item">
+                            <h4>Master These Concepts</h4>
+                            <p>Pre-test probability guides troponin testing</p>
+                            <p>NT-proBNP <400 ng/L rules out heart failure</p>
+                            <p>Rising troponin = acute coronary syndrome</p>
+                        </div>
+                        <div class="diagram-item">
+                            <h4>Remember These Rules</h4>
+                            <p>Never screen with cardiac biomarkers</p>
+                            <p>Clinical correlation is mandatory</p>
+                            <p>Point-of-care testing transforms care</p>
+                        </div>
+                        <div class="diagram-item">
+                            <h4>Never Miss These</h4>
+                            <p>Rising troponin + chest pain = ACS</p>
+                            <p>NT-proBNP >2000 = urgent referral</p>
+                            <p>Very high troponin = immediate action</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="risk-factors-visual">
+                    <h3>Key Risk Factors for Cardiac Events</h3>
+                    <div class="risk-category">
+                        <h4>High-Risk ACS Features</h4>
+                        <div class="risk-items">
+                            <span class="risk-item">Age >65 years</span>
+                            <span class="risk-item">Male gender</span>
+                            <span class="risk-item">Diabetes mellitus</span>
+                            <span class="risk-item">Known CAD</span>
+                            <span class="risk-item">Family history MI</span>
+                        </div>
+                    </div>
+                    <div class="risk-category">
+                        <h4>Heart Failure Risk Factors</h4>
+                        <div class="risk-items">
+                            <span class="risk-item">Previous MI</span>
+                            <span class="risk-item">Hypertension</span>
+                            <span class="risk-item">Atrial fibrillation</span>
+                            <span class="risk-item">Valve disease</span>
+                            <span class="risk-item">Cardiomyopathy</span>
+                        </div>
+                    </div>
+                    <div class="risk-category">
+                        <h4>Testing Contraindications</h4>
+                        <div class="risk-items">
+                            <span class="risk-item">Very low pre-test probability</span>
+                            <span class="risk-item">Established diagnosis</span>
+                            <span class="risk-item">Won't change management</span>
+                            <span class="risk-item">Asymptomatic screening</span>
+                            <span class="risk-item">Obvious alternative diagnosis</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clinical-pearl">
+                    <h3>Clinical Pearl</h3>
+                    <p><strong>"The Future is Now":</strong> Cardiac biomarker testing has evolved rapidly. High-sensitivity troponins enable 1-hour rule-out protocols, point-of-care testing brings laboratory accuracy to the bedside, and NT-proBNP provides excellent heart failure screening. Master these tools to transform your cardiac care capabilities.</p>
+                </div>
+            </div>
+
+            <div class="references-section">
+                <h3>🔗 Clinical Guidelines & Evidence Base</h3>
+                <div class="guideline-grid">
+                    <div class="guideline-item">
+                        <strong>NICE Diagnostic Guidance DG40</strong><br>
+                        <em>High-sensitivity troponin tests for the early rule out of NSTEMI</em> - 2024<br>
+                        <a href="https://www.nice.org.uk/guidance/dg40">Access Guidelines</a>
+                    </div>
+                    <div class="guideline-item">
+                        <strong>NICE Clinical Guideline NG106</strong><br>
+                        <em>Chronic heart failure in adults: diagnosis and management</em> - 2018 (Updated 2024)<br>
+                        <a href="https://www.nice.org.uk/guidance/ng106">Access Guidelines</a>
+                    </div>
+                    <div class="guideline-item">
+                        <strong>NICE Clinical Guideline CG95</strong><br>
+                        <em>Chest pain of recent onset: assessment and diagnosis</em> - Updated 2024<br>
+                        <a href="https://www.nice.org.uk/guidance/cg95">Access Guidelines</a>
+                    </div>
+                    <div class="guideline-item">
+                        <strong>ESC Guidelines</strong><br>
+                        <em>2021 ESC Guidelines for the diagnosis and treatment of acute and chronic heart failure</em><br>
+                        <a href="https://academic.oup.com/eurheartj/article/42/36/3599/6358045">Access Guidelines</a>
+                    </div>
+                    <div class="guideline-item">
+                        <strong>NHS England</strong><br>
+                        <em>Enhancing GP direct access to diagnostic tests</em> - 2024<br>
+                        <a href="https://www.england.nhs.uk/publication/enhancing-gp-direct-access-to-diagnostic-tests/">Access Guidelines</a>
+                    </div>
+                    <div class="guideline-item">
+                        <strong>British Cardiovascular Society</strong><br>
+                        <em>Assessment of the diagnostic value of NT-proBNP in heart failure</em> - 2024<br>
+                        <a href="https://bjcardio.co.uk/2024/01/assessment-of-the-diagnostic-value-of-nt-probnp-in-heart-failure-with-preserved-ejection-fraction/">Access Guidelines</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="medical-textbook-scripts.js"></script>
+</body>
+</html>
