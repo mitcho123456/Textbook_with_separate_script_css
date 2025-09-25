@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Test Interpretation for Primary Care - Complete Textbook</title>
+    <link rel="stylesheet" href="medical-textbook-styles.css">
+    <style>
+        /* Book-specific styles for print and digital reading */
+        .book-page {
+            max-width: 210mm;
+            margin: 0 auto;
+            background: white;
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #2c3e50;
+        }
+
+        .cover-page {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            page-break-after: always;
+        }
+
+        .cover-title {
+            font-size: 3.5em;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .cover-subtitle {
+            font-size: 1.8em;
+            margin-bottom: 40px;
+            opacity: 0.9;
+            font-style: italic;
+        }
+
+        .cover-author {
+            font-size: 1.4em;
+            margin-bottom: 30px;
+            font-weight: 500;
+        }
+
+        .cover-year {
+            font-size: 1.2em;
+            opacity: 0.8;
+        }
+
+        .toc-page {
+            padding: 40px;
+            page-break-before: always;
+            page-break-after: always;
+        }
+
+        .toc-title {
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 40px;
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 15px;
+        }
+
+        .toc-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            padding: 10px 0;
+            border-bottom: 1px dotted #bdc3c7;
+        }
+
+        .toc-chapter-title {
+            font-weight: 600;
+            color: #2c3e50;
+        }
+
+        .toc-page-number {
+            font-weight: 500;
+            color: #7f8c8d;
+        }
+
+        .prologue-page {
+            padding: 40px;
+            page-break-before: always;
+            page-break-after: always;
+        }
+
+        .prologue-title {
+            font-size: 2.2em;
+            text-align: center;
+            margin-bottom: 30px;
+            color: #2c3e50;
+        }
+
+        .chapter-divider {
+            page-break-before: always;
+            text-align: center;
+            padding: 100px 0;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+
+        .chapter-divider-title {
+            font-size: 3em;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        .chapter-divider-subtitle {
+            font-size: 1.3em;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+
+        /* Enhanced chapter styling for book format */
+        .book-chapter {
+            padding: 40px;
+            page-break-before: always;
+        }
+
+        .book-chapter .page-header {
+            margin-bottom: 40px;
+        }
+
+        /* Print optimizations */
+        @media print {
+            .book-page {
+                max-width: 100%;
+                margin: 0;
+            }
+
+            .cover-page {
+                height: 100vh;
+            }
+
+            .chapter-divider {
+                page-break-before: always;
+                page-break-after: always;
+            }
+
+            .book-chapter {
+                page-break-before: always;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="book-page">
+
+        <!-- COVER PAGE -->
+        <div class="cover-page">
+            <h1 class="cover-title">Blood Test Interpretation</h1>
+            <p class="cover-subtitle">for Primary Care</p>
+            <div class="cover-author">Complete Medical Textbook</div>
+            <div class="cover-year">2025 Edition</div>
+        </div>
+
+        <!-- PROLOGUE -->
+        <div class="prologue-page">
+            <h1 class="prologue-title">Prologue</h1>
+
+            <p>Every day in primary care, you encounter blood test results that hold the key to your patient's diagnosis, treatment, and prognosis. Yet many clinicians feel overwhelmed by the sheer volume of laboratory data, uncertain about which patterns matter most, and worried about missing critical findings.</p>
+
+            <p>This textbook transforms that uncertainty into clinical confidence. Rather than simply listing normal ranges, we focus on the <em>why</em> behind interpretation – the clinical reasoning that turns numbers into actionable insights.</p>
+
+            <p>Each chapter follows a structured approach designed for busy primary care practice:</p>
+
+            <ul>
+                <li><strong>Pattern Recognition:</strong> Learn to spot the combinations that matter most</li>
+                <li><strong>Clinical Pearls:</strong> Memorable insights that stick when you need them</li>
+                <li><strong>Decision Trees:</strong> Clear pathways from result to action</li>
+                <li><strong>Red Flags:</strong> Critical findings that demand immediate attention</li>
+                <li><strong>Real Examples:</strong> Actual cases that illustrate key concepts</li>
+            </ul>
+
+            <p>This isn't just another reference book – it's a practical guide that reflects how experienced clinicians actually think about blood tests. By the end, you'll approach every result with the systematic confidence that comes from understanding not just what the numbers mean, but what to do about them.</p>
+
+            <p><em>The art of interpretation lies not in memorising ranges, but in recognising patterns, understanding relationships, and translating data into clinical action. This book teaches you that art.</em></p>
+        </div>
+
+        <!-- TABLE OF CONTENTS -->
+        <div class="toc-page">
+            <h1 class="toc-title">Table of Contents</h1>
+
+            <div class="toc-item">
+                <span class="toc-chapter-title">Prologue</span>
+                <span class="toc-page-number">3</span>
+            </div>
+
+            <div class="toc-item">
+                <span class="toc-chapter-title">Chapter 1: Full Blood Count (FBC)</span>
+                <span class="toc-page-number">5</span>
+            </div>
+
+            <div class="toc-item">
+                <span class="toc-chapter-title">Chapter 2: Iron Studies & B12/Folate</span>
+                <span class="toc-page-number">15</span>
+            </div>
+
+            <div class="toc-item">
+                <span class="toc-chapter-title">Chapter 3: Liver Function Tests</span>
+                <span class="toc-page-number">25</span>
+            </div>
+
+            <div class="toc-item">
+                <span class="toc-chapter-title">Chapter 4: Urea & Electrolytes</span>
+                <span class="toc-page-number">35</span>
+            </div>
+
+            <div class="toc-item">
+                <span class="toc-chapter-title">Chapter 5: Lipid Profile</span>
+                <span class="toc-page-number">45</span>
+            </div>
+
+            <div class="toc-item">
+                <span class="toc-chapter-title">Chapter 6: Thyroid Function Tests</span>
+                <span class="toc-page-number">55</span>
+            </div>
+
+            <div class="toc-item">
+                <span class="toc-chapter-title">Chapter 7: HbA1c & Diabetes Monitoring</span>
+                <span class="toc-page-number">65</span>
+            </div>
+
+            <div class="toc-item">
+                <span class="toc-chapter-title">Chapter 8: Inflammatory Markers</span>
+                <span class="toc-page-number">75</span>
+            </div>
+
+            <div class="toc-item">
+                <span class="toc-chapter-title">Chapter 9: Bone Profile</span>
+                <span class="toc-page-number">85</span>
+            </div>
+
+            <div class="toc-item">
+                <span class="toc-chapter-title">Chapter 10: Cardiac Markers</span>
+                <span class="toc-page-number">95</span>
+            </div>
+
+            <div class="toc-item">
+                <span class="toc-chapter-title">Chapter 11: Sex Hormone Profiles</span>
+                <span class="toc-page-number">105</span>
+            </div>
+        </div>
+
+        <!-- CHAPTER DIVIDER -->
+        <div class="chapter-divider">
+            <h1 class="chapter-divider-title">Chapter 1</h1>
+            <p class="chapter-divider-subtitle">Full Blood Count (FBC)</p>
+        </div>
+
+        <!-- CHAPTER 1: FBC -->
+        <div class="book-chapter">
+            <div class="textbook-page">
+                <div class="page-header">
+                    <h1>Reading the Full Blood Count</h1>
+                    <div class="subtitle">Mastering FBC Interpretation Skills in Primary Care</div>
+                </div>
+
+                <div class="content">
+                    <div class="section">
+                        <div class="section-header">
+                            <div class="section-icon">🔍</div>
+                            <h2>Introduction: The Art of Reading Numbers</h2>
+                        </div>
+                        <p>Every FBC tells a story. The skill lies not in memorising normal ranges, but in recognising patterns, understanding relationships between parameters, and translating numerical data into clinical meaning. This chapter teaches you to read FBC results like a detective examining clues, where each parameter provides evidence about what's happening inside your patient's bone marrow and circulation.</p>
+
+                        <div class="clinical-pearl">
+                            <h3>Clinical Pearl</h3>
+                            <p><strong>"Never Read in Isolation":</strong> A single abnormal value means little - it's the pattern of abnormalities that reveals the diagnosis. Hb 95 g/L with MCV 65 fl tells a completely different story than Hb 95 g/L with MCV 110 fl, even though both represent anaemia.</p>
+                        </div>
+
+                        <div class="reference-range-table">
+                            <h4>Essential FBC Normal Ranges (Adults)</h4>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Parameter</th>
+                                        <th>Male Range</th>
+                                        <th>Female Range</th>
+                                        <th>Units</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Haemoglobin (Hb)</td>
+                                        <td>130-175</td>
+                                        <td>120-155</td>
+                                        <td>g/L</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mean Cell Volume (MCV)</td>
+                                        <td>82-100</td>
+                                        <td>82-100</td>
+                                        <td>fl</td>
+                                    </tr>
+                                    <tr>
+                                        <td>White Cell Count (WCC)</td>
+                                        <td>4.0-11.0</td>
+                                        <td>4.0-11.0</td>
+                                        <td>×10⁹/L</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Platelets</td>
+                                        <td>150-450</td>
+                                        <td>150-450</td>
+                                        <td>×10⁹/L</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Red Cell Distribution Width (RDW)</td>
+                                        <td>11.5-15.0</td>
+                                        <td>11.5-15.0</td>
+                                        <td>%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <div class="section-header">
+                            <div class="section-icon">🎯</div>
+                            <h2>Step 1: The Systematic Approach to Reading FBC</h2>
+                        </div>
+
+                        <div class="assessment-flow">
+                            <div class="flow-step">
+                                <h4>First Glance: The Overview</h4>
+                                <p>Scan quickly - are all three cell lines (red, white, platelets) normal, or are one, two, or all three abnormal? This immediate pattern recognition guides your entire approach.</p>
+                            </div>
+                            <div class="flow-step">
+                                <h4>Red Cell Analysis: Size Matters</h4>
+                                <p>If Hb is low, immediately look at MCV. <80 fl = microcytic (think iron deficiency), >100 fl = macrocytic (think B12/folate), 80-100 fl = normocytic (think chronic disease or bleeding).</p>
+                            </div>
+                            <div class="flow-step">
+                                <h4>White Cell Differential: The Detail Story</h4>
+                                <p>Don't just look at total WCC - examine the differential. High neutrophils suggest infection, high lymphocytes may indicate viral infection or lymphoproliferative disorder.</p>
+                            </div>
+                            <div class="flow-step">
+                                <h4>Additional Clues: RDW and Blood Film</h4>
+                                <p>High RDW indicates variation in cell sizes - valuable in mixed deficiencies. Always request blood film comments when results don't fit the clinical picture.</p>
+                            </div>
+                        </div>
+
+                        <div class="clinical-pearl">
+                            <h3>Clinical Pearl</h3>
+                            <p><strong>"The MCV is Your Best Friend":</strong> In anaemia, MCV classification is 90% of your diagnosis. Microcytic = iron deficiency until proven otherwise. Macrocytic = B12/folate deficiency until proven otherwise. This simple rule will guide you correctly in the vast majority of cases.</p>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <div class="section-header">
+                            <div class="section-icon">🧮</div>
+                            <h2>Step 2: Decoding Anaemia Patterns</h2>
+                        </div>
+
+                        <div class="interpretation-grid">
+                            <div class="interpretation-item">
+                                <h4>Microcytic Anaemia (MCV <80 fl)</h4>
+                                <p><strong>Classic Pattern:</strong> Hb ↓, MCV ↓, RDW ↑<br>
+                                <strong>Think:</strong> Iron deficiency (95% of cases)<br>
+                                <strong>Next Steps:</strong> Check ferritin, consider thalassaemia trait if ferritin normal<br>
+                                <strong>Red Flag:</strong> In men >50 or post-menopausal women, always investigate source of blood loss</p>
+                            </div>
+                            <div class="interpretation-item">
+                                <h4>Macrocytic Anaemia (MCV >100 fl)</h4>
+                                <p><strong>Classic Pattern:</strong> Hb ↓, MCV ↑, often with neutrophil hypersegmentation<br>
+                                <strong>Think:</strong> B12 or folate deficiency<br>
+                                <strong>Next Steps:</strong> Check B12 and folate levels<br>
+                                <strong>Red Flag:</strong> Neurological symptoms suggest B12 deficiency requiring urgent treatment</p>
+                            </div>
+                            <div class="interpretation-item">
+                                <h4>Normocytic Anaemia (MCV 80-100 fl)</h4>
+                                <p><strong>Classic Pattern:</strong> Hb ↓, MCV normal, variable RDW<br>
+                                <strong>Think:</strong> Chronic disease, acute blood loss, or mixed deficiency<br>
+                                <strong>Next Steps:</strong> Check inflammatory markers, haematinics<br>
+                                <strong>Red Flag:</strong> Sudden onset suggests acute bleeding</p>
+                            </div>
+                        </div>
+
+                        <div class="clinical-pearl">
+                            <h3>Clinical Pearl</h3>
+                            <p><strong>"The RDW Reveals Mixed Stories":</strong> Normal MCV with raised RDW (>15%) suggests mixed deficiency - some cells are small (iron deficient) and some large (B12/folate deficient), averaging out to normal. Always check all haematinics when RDW is elevated.</p>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <div class="section-header">
+                            <div class="section-icon">📈</div>
+                            <h2>Summary: Mastering FBC Interpretation</h2>
+                        </div>
+
+                        <div class="highlight-box">
+                            <h4>The Five-Step FBC Reading Method</h4>
+                            <ol>
+                                <li><strong>Overview Scan:</strong> Normal, one abnormal, or multiple abnormalities?</li>
+                                <li><strong>MCV Classification:</strong> If anaemic, let MCV guide your thinking</li>
+                                <li><strong>Pattern Recognition:</strong> Look for classic combinations</li>
+                                <li><strong>Clinical Correlation:</strong> Does the result fit the patient?</li>
+                                <li><strong>Action Planning:</strong> Investigation, treatment, or referral needed?</li>
+                            </ol>
+                        </div>
+
+                        <div class="clinical-pearl">
+                            <h3>Clinical Pearl</h3>
+                            <p><strong>"Practice Makes Pattern Recognition Perfect":</strong> The more FBCs you interpret systematically, the faster you'll recognise patterns. Start with MCV in anaemia, examine all three cell lines for abnormalities, and always correlate with clinical picture. These skills will serve you throughout your clinical career.</p>
+                        </div>
+                    </div>
+
+                    <div class="references-section">
+                        <h3>🔗 Key Resources for FBC Interpretation</h3>
+                        <div class="guideline-grid">
+                            <div class="guideline-item">
+                                <strong>NICE Clinical Knowledge Summaries</strong><br>
+                                <em>Anaemia - Iron Deficiency</em> - 2024<br>
+                                <a href="https://cks.nice.org.uk/topics/anaemia-iron-deficiency/">Access Guidelines</a>
+                            </div>
+                            <div class="guideline-item">
+                                <strong>NICE Guideline NG12</strong><br>
+                                <em>Suspected cancer: recognition and referral</em> - 2024<br>
+                                <a href="https://www.nice.org.uk/guidance/ng12">Access Guidelines</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CHAPTER DIVIDER -->
+        <div class="chapter-divider">
+            <h1 class="chapter-divider-title">Chapter 2</h1>
+            <p class="chapter-divider-subtitle">Iron Studies & B12/Folate</p>
+        </div>
+
+        <!-- CHAPTER 2: Iron Studies -->
+        <div class="book-chapter">
+            <div class="textbook-page">
+                <div class="page-header">
+                    <h1>Iron Studies, B12 and Folate Interpretation</h1>
+                    <div class="subtitle">A Structured Approach to Diagnosing and Managing Deficiency States</div>
+                </div>
+
+                <div class="content">
+                    <div class="section">
+                        <div class="section-header">
+                            <div class="section-icon">🧲</div>
+                            <h2>Introduction: The Deficiency Detective Work</h2>
+                        </div>
+                        <p>Iron deficiency, B12 deficiency, and folate deficiency are among the most common and treatable causes of anaemia worldwide. Yet diagnosis can be complex, with overlapping presentations and confounding factors. Modern testing allows precise diagnosis, but requires systematic interpretation.</p>
+
+                        <div class="clinical-pearl">
+                            <h3>Clinical Pearl</h3>
+                            <p><strong>"Ferritin is Your Friend, But Not Always Honest":⁣</strong> Ferritin <15 µg/L always means iron deficiency. Ferritin >100 µg/L usually excludes iron deficiency. But ferritin 15-100 µg/L in the presence of inflammation can still represent iron deficiency.</p>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <div class="section-header">
+                            <div class="section-icon">⚖️</div>
+                            <h2>Iron Studies - Systematic Interpretation</h2>
+                        </div>
+
+                        <div class="interpretation-grid">
+                            <div class="interpretation-item">
+                                <h4>Iron Deficiency Pattern</h4>
+                                <p><strong>Classic:</strong> Low ferritin (<15), Low iron, High TIBC, Low transferrin saturation<br>
+                                <strong>Action:</strong> Treat with iron, investigate source of loss<br>
+                                <strong>Follow-up:</strong> Check response at 8 weeks</p>
+                            </div>
+                            <div class="interpretation-item">
+                                <h4>Iron Deficiency + Inflammation</h4>
+                                <p><strong>Tricky:</strong> Ferritin 15-100, Low transferrin saturation <20%<br>
+                                <strong>Key:</strong> Transferrin saturation is most reliable<br>
+                                <strong>Action:</strong> Trial of iron therapy</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <div class="section-header">
+                            <div class="section-icon">🧪</div>
+                            <h2>B12 and Folate Assessment</h2>
+                        </div>
+
+                        <div class="clinical-pearl">
+                            <h3>Clinical Pearl</h3>
+                            <p><strong>"B12 Deficiency Can Hide":⁣</strong> Normal B12 levels don't exclude functional deficiency. If clinical suspicion is high with neurological symptoms, consider treatment trial even with borderline results.</p>
+                        </div>
+
+                        <div class="highlight-box">
+                            <h4>When to Suspect B12/Folate Deficiency</h4>
+                            <ul>
+                                <li>Macrocytic anaemia (MCV >100 fl)</li>
+                                <li>Neurological symptoms (B12 especially)</li>
+                                <li>Glossitis, angular stomatitis</li>
+                                <li>Poor dietary intake, malabsorption</li>
+                                <li>Certain medications (metformin, PPIs)</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="references-section">
+                        <h3>🔗 Key Resources</h3>
+                        <div class="guideline-grid">
+                            <div class="guideline-item">
+                                <strong>NICE Clinical Knowledge Summaries</strong><br>
+                                <em>Iron deficiency anaemia</em> - 2024<br>
+                                <a href="#">Access Guidelines</a>
+                            </div>
+                            <div class="guideline-item">
+                                <strong>British Society for Haematology</strong><br>
+                                <em>Iron deficiency guidelines</em> - 2024<br>
+                                <a href="#">Access Guidelines</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CHAPTER DIVIDER -->
+        <div class="chapter-divider">
+            <h1 class="chapter-divider-title">Chapter 3</h1>
+            <p class="chapter-divider-subtitle">Liver Function Tests</p>
+        </div>
+
+        <!-- CHAPTER 3: Liver Function Tests -->
+        <div class="book-chapter">
+            <div class="textbook-page">
+                <div class="page-header">
+                    <h1>Liver Function Tests</h1>
+                    <div class="subtitle">A Structured Approach to Hepatic Assessment</div>
+                </div>
+
+                <div class="content">
+                    <div class="section">
+                        <div class="section-header">
+                            <div class="section-icon">🫀</div>
+                            <h2>Introduction: Reading the Liver's Language</h2>
+                        </div>
+                        <p>Liver function tests are among the most commonly ordered investigations in primary care, yet interpretation can be challenging. The key is understanding that different patterns tell different stories - hepatocellular injury looks different from cholestasis, acute problems differ from chronic disease.</p>
+
+                        <div class="clinical-pearl">
+                            <h3>Clinical Pearl</h3>
+                            <p><strong>"Pattern Over Numbers":</strong> ALT 300 with normal ALP suggests hepatocellular injury. ALP 300 with normal ALT suggests cholestasis. The pattern matters more than absolute values.</p>
+                        </div>
+
+                        <div class="reference-range-table">
+                            <h4>Essential Liver Function Test Ranges</h4>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Test</th>
+                                        <th>Normal Range</th>
+                                        <th>Units</th>
+                                        <th>Key Points</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>ALT</td>
+                                        <td>10-40</td>
+                                        <td>U/L</td>
+                                        <td>More liver-specific than AST</td>
+                                    </tr>
+                                    <tr>
+                                        <td>AST</td>
+                                        <td>10-35</td>
+                                        <td>U/L</td>
+                                        <td>Also found in heart, muscle</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ALP</td>
+                                        <td>40-130</td>
+                                        <td>U/L</td>
+                                        <td>Bone and liver isoforms</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bilirubin</td>
+                                        <td>3-20</td>
+                                        <td>µmol/L</td>
+                                        <td>Conjugated vs unconjugated</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Albumin</td>
+                                        <td>35-50</td>
+                                        <td>g/L</td>
+                                        <td>Reflects synthetic function</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <div class="section-header">
+                            <div class="section-icon">🎯</div>
+                            <h2>Step-by-Step LFT Interpretation</h2>
+                        </div>
+
+                        <div class="assessment-flow">
+                            <div class="flow-step">
+                                <h4>Step 1: Identify the Pattern</h4>
+                                <p>Hepatocellular (ALT/AST high, ALP normal) vs Cholestatic (ALP high, ALT/AST normal/mild) vs Mixed pattern</p>
+                            </div>
+                            <div class="flow-step">
+                                <h4>Step 2: Assess Severity</h4>
+                                <p>Mild (<2x normal), Moderate (2-5x), Severe (>5x normal). Very high ALT (>1000) suggests acute hepatocellular necrosis</p>
+                            </div>
+                            <div class="flow-step">
+                                <h4>Step 3: Look at Synthetic Function</h4>
+                                <p>Albumin and PT/INR reflect liver's synthetic capacity. Low albumin with raised liver enzymes is concerning</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <div class="section-header">
+                            <div class="section-icon">🧩</div>
+                            <h2>Common LFT Patterns and Their Meaning</h2>
+                        </div>
+
+                        <div class="interpretation-grid">
+                            <div class="interpretation-item">
+                                <h4>Acute Hepatitis Pattern</h4>
+                                <p><strong>Pattern:</strong> Very high ALT/AST (>500), Normal/mildly raised ALP<br>
+                                <strong>Think:</strong> Viral hepatitis, paracetamol toxicity, ischaemic hepatitis<br>
+                                <strong>Action:</strong> Urgent assessment, hepatitis screen, medication review</p>
+                            </div>
+                            <div class="interpretation-item">
+                                <h4>Cholestatic Pattern</h4>
+                                <p><strong>Pattern:</strong> High ALP (>2x normal), Normal/mildly raised ALT<br>
+                                <strong>Think:</strong> Gallstones, drug-induced, primary biliary cholangitis<br>
+                                <strong>Action:</strong> USS abdomen, medication review, consider MRCP</p>
+                            </div>
+                            <div class="interpretation-item">
+                                <h4>Chronic Liver Disease</h4>
+                                <p><strong>Pattern:</strong> Mildly abnormal enzymes, Low albumin, Prolonged PT<br>
+                                <strong>Think:</strong> Cirrhosis, chronic hepatitis<br>
+                                <strong>Action:</strong> Alcohol history, hepatitis screen, consider referral</p>
+                            </div>
+                        </div>
+
+                        <div class="clinical-pearl">
+                            <h3>Clinical Pearl</h3>
+                            <p><strong>"The AST:ALT Ratio Rule":</strong> AST:ALT ratio >2 in the context of liver disease strongly suggests alcohol-related liver disease. This simple ratio can be more diagnostic than absolute values.</p>
+                        </div>
+                    </div>
+
+                    <div class="references-section">
+                        <h3>🔗 Key Resources for Liver Function Tests</h3>
+                        <div class="guideline-grid">
+                            <div class="guideline-item">
+                                <strong>NICE Clinical Knowledge Summaries</strong><br>
+                                <em>Abnormal liver function tests</em> - 2024<br>
+                                <a href="https://cks.nice.org.uk/topics/abnormal-liver-function-tests/">Access Guidelines</a>
+                            </div>
+                            <div class="guideline-item">
+                                <strong>British Society of Gastroenterology</strong><br>
+                                <em>Liver disease guidelines</em> - 2024<br>
+                                <a href="#">Access Guidelines</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CHAPTER DIVIDER -->
+        <div class="chapter-divider">
+            <h1 class="chapter-divider-title">Chapter 4</h1>
+            <p class="chapter-divider-subtitle">Urea & Electrolytes</p>
+        </div>
+
+        <!-- CHAPTER 4: Urea & Electrolytes -->
+        <div class="book-chapter">
+            <div class="textbook-page">
+                <div class="page-header">
+                    <h1>Urea & Electrolytes</h1>
+                    <div class="subtitle">A Structured Approach to Kidney Function and Electrolyte Assessment</div>
+                </div>
+
+                <div class="content">
+                    <div class="section">
+                        <div class="section-header">
+                            <div class="section-icon">🫘</div>
+                            <h2>Introduction: The Kidney's Report Card</h2>
+                        </div>
+                        <p>Urea and electrolytes testing provides a window into kidney function, fluid balance, and electrolyte homeostasis. Modern eGFR calculations have revolutionised how we assess kidney function, but understanding the full U&E picture requires systematic interpretation of multiple parameters.</p>
+
+                        <div class="clinical-pearl">
+                            <h3>Clinical Pearl</h3>
+                            <p><strong>"eGFR Tells You Where, Creatinine Tells You How Fast":</strong> eGFR gives you the chronic picture - what stage of CKD. Rising creatinine tells you about acute changes. Both matter for different reasons.</p>
+                        </div>
+
+                        <div class="reference-range-table">
+                            <h4>Essential U&E Reference Ranges</h4>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Test</th>
+                                        <th>Normal Range</th>
+                                        <th>Units</th>
+                                        <th>Critical Values</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Creatinine</td>
+                                        <td>60-110 (men)<br>45-90 (women)</td>
+                                        <td>µmol/L</td>
+                                        <td>>500 urgent referral</td>
+                                    </tr>
+                                    <tr>
+                                        <td>eGFR</td>
+                                        <td>>90</td>
+                                        <td>mL/min/1.73m²</td>
+                                        <td><15 consider RRT</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Urea</td>
+                                        <td>3.0-8.0</td>
+                                        <td>mmol/L</td>
+                                        <td>>30 concerning</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sodium</td>
+                                        <td>135-145</td>
+                                        <td>mmol/L</td>
+                                        <td><125 or >155</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Potassium</td>
+                                        <td>3.5-5.0</td>
+                                        <td>mmol/L</td>
+                                        <td><2.5 or >6.0</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <div class="section-header">
+                            <div class="section-icon">🎯</div>
+                            <h2>Acute Kidney Injury Recognition</h2>
+                        </div>
+
+                        <div class="red-flag-grid">
+                            <div class="red-flag-item">
+                                <strong>AKI Stage 1</strong><br>
+                                Creatinine rise >26 µmol/L in 48h or >1.5x baseline
+                            </div>
+                            <div class="red-flag-item">
+                                <strong>AKI Stage 2</strong><br>
+                                Creatinine 2-3x baseline - needs urgent review
+                            </div>
+                            <div class="red-flag-item">
+                                <strong>AKI Stage 3</strong><br>
+                                Creatinine >3x baseline - emergency referral
+                            </div>
+                        </div>
+
+                        <div class="clinical-pearl">
+                            <h3>Clinical Pearl</h3>
+                            <p><strong>"The Urea:Creatinine Ratio Reveals the Story":</strong> Normal ratio ~10:1. High ratio (>20:1) suggests pre-renal cause (dehydration, heart failure). Normal ratio with raised creatinine suggests intrinsic renal disease.</p>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <div class="section-header">
+                            <div class="section-icon">⚡</div>
+                            <h2>Electrolyte Emergencies</h2>
+                        </div>
+
+                        <div class="critical-values">
+                            <h3>Dangerous Electrolyte Levels</h3>
+                            <ul>
+                                <li><strong>Sodium <125 mmol/L:</strong> Confusion, seizures possible</li>
+                                <li><strong>Sodium >155 mmol/L:</strong> Severe dehydration, brain damage risk</li>
+                                <li><strong>Potassium <2.5 mmol/L:</strong> Cardiac arrhythmias, paralysis</li>
+                                <li><strong>Potassium >6.0 mmol/L:</strong> Cardiac arrest risk - ECG immediately</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="references-section">
+                        <h3>🔗 Key Resources for Kidney Function</h3>
+                        <div class="guideline-grid">
+                            <div class="guideline-item">
+                                <strong>NICE Guideline NG203</strong><br>
+                                <em>Chronic kidney disease: assessment and management</em> - 2024<br>
+                                <a href="https://www.nice.org.uk/guidance/ng203">Access Guidelines</a>
+                            </div>
+                            <div class="guideline-item">
+                                <strong>NICE Guideline NG148</strong><br>
+                                <em>Acute kidney injury</em> - 2024<br>
+                                <a href="https://www.nice.org.uk/guidance/ng148">Access Guidelines</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="medical-textbook-scripts.js"></script>
+</body>
+</html>

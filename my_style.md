@@ -1,0 +1,11 @@
+I had a gentleman booked in for a telephone appointment as he wanted me to discuss his latest endocrinology report. He had been sent to the endocrinologist after a fertility clinic appointment noted that he had very low testosterone and very high LH and FSH. Due to this abnormality, they decided to do genetic tests and found that he was an XXY Klinefelter syndrome patient. The patient was a little bit stressed because he did not understand what this meant, and it took a bit of explaining to him that this was not something that had happened to him but something he was born with.
+
+He then went on to ask whether he had gotten this from his father, because he hadn’t noticed any problems with his parents or relatives. I went on to explain to him that this was not a condition you inherit, but rather a sporadic genetic event which is not passed down, and usually parents are not carriers.
+
+We went on to discuss the other findings in his letter, which included that a specialist nurse would contact him about testosterone replacement and that he had been referred for genetic counselling. Another important part of the letter was that the endocrinologist had requested the GPs to prescribe some alendronic acid because his DEXA scan had shown a Z-score of -3.2, indicating osteoporosis.
+
+We discussed his bone brittleness and the plan to start alendronic acid, as well as calcium and vitamin D. But I sensed over the phone that he was rushed and seemed a little bit agitated. I asked him whether there was any issue that seemed to be worrying him, and he mentioned that he was actually midway through preparing for his trip to Pakistan later that day, for which he would be gone for three weeks.
+
+On hearing this, I decided that we wouldn’t start the alendronic acid or any other medication, as the patient wouldn’t be able to absorb any more information while his mind was distracted. We agreed that he would rebook an appointment with a GP to discuss commencing alendronic acid, as it was an important discussion given the side effects, which needed to be explained properly. I also felt that he might forget some of the information, so I deemed it unsafe to prescribe any medication until he returned.
+
+I explained this to him, and he was happy to come back for a follow-up when he returns.
