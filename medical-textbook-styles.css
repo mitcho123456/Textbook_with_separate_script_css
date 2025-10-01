@@ -1,4 +1,5 @@
 /* Medical Textbook Styles - Universal CSS for All Chapters */
+/* Created by Dr Michael Banovic MBBS MSc IM(Edin) MRCGP */
 
 * {
     margin: 0;
@@ -82,30 +83,37 @@ body {
     background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
     color: white;
     padding: 20px;
+    padding-left: 60px;
     border-radius: 10px;
     margin: 20px 0;
-    border-left: 5px solid #e74c3c;
+    border-left: 5px solid #ffd700;
     position: relative;
 }
 
 .clinical-pearl::before {
-    content: "💎";
+    content: "★";
     position: absolute;
-    top: -10px;
+    top: 15px;
     left: 15px;
-    background: white;
+    background: #ffd700;
+    color: #8e44ad;
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.2em;
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 35px;
+    text-align: center;
 }
 
 .clinical-pearl h3 {
     margin-bottom: 10px;
     font-size: 1.1em;
+    color: white;
+    font-weight: bold;
 }
 
 .visual-element {
@@ -145,18 +153,20 @@ body {
     background: #fff5f5;
     border-left: 4px solid #e53e3e;
     padding: 15px;
+    padding-left: 50px;
     border-radius: 5px;
     display: block;
     position: relative;
-    padding-top: 45px;
 }
 
 .red-flag-item::before {
-    content: "⚠️";
+    content: "▲";
     position: absolute;
     top: 15px;
     left: 15px;
-    font-size: 1.2em;
+    font-size: 1.3em;
+    color: #e53e3e;
+    font-weight: bold;
 }
 
 .assessment-flow {
@@ -446,199 +456,315 @@ body {
     background: linear-gradient(135deg, #ffeaa7, #fab1a0);
 }
 
-/* Print Styles for PDF Generation */
+/* Print Styles for PDF Generation - Optimized for wkhtmltopdf */
 @media print {
     @page {
         size: A4;
-        margin: 0.75in;
+        margin: 15mm;
     }
-    
+
     body {
-        background: white !important;
-        color: black !important;
-        font-size: 10pt;
-        line-height: 1.3;
+        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%) !important;
+        color: #2c3e50 !important;
+        font-family: 'Georgia', serif !important;
+        font-size: 11pt;
+        line-height: 1.6;
     }
     
     .textbook-page {
-        box-shadow: none !important;
-        border-radius: 0 !important;
-        max-width: none !important;
-        margin: 0 !important;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1) !important;
+        border-radius: 10px !important;
+        max-width: 100% !important;
+        margin: 10mm auto !important;
         background: white !important;
+        overflow: hidden !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
     }
-    
+
     .page-header {
-        background: #667eea !important;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
         color: white !important;
-        padding: 20px !important;
+        padding: 30px !important;
+        text-align: center !important;
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
     }
     
     .page-header h1 {
-        font-size: 24pt !important;
-        margin-bottom: 8pt !important;
+        font-size: 2.5em !important;
+        margin-bottom: 10px !important;
+        font-weight: 300 !important;
     }
-    
+
     .page-header .subtitle {
-        font-size: 14pt !important;
+        font-size: 1.2em !important;
+        opacity: 0.9 !important;
+        font-style: italic !important;
     }
-    
+
     .content {
-        padding: 20px !important;
+        padding: 40px !important;
     }
     
     .section {
-        margin-bottom: 20px !important;
+        margin-bottom: 40px !important;
         page-break-inside: avoid;
     }
-    
+
     .section h2 {
-        font-size: 16pt !important;
-        margin-bottom: 10pt !important;
+        font-size: 1.8em !important;
+        margin-bottom: 15px !important;
+        color: #2c3e50 !important;
+        font-weight: 600 !important;
     }
-    
+
     .section-header {
-        margin-bottom: 12pt !important;
-        padding-bottom: 6pt !important;
+        display: flex !important;
+        align-items: center !important;
+        margin-bottom: 20px !important;
+        padding-bottom: 10px !important;
+        border-bottom: 3px solid #3498db !important;
     }
-    
+
     .section-icon {
-        width: 30px !important;
-        height: 30px !important;
-        font-size: 12pt !important;
-    }
-    
-    .clinical-pearl {
-        background: #f093fb !important;
+        width: 40px !important;
+        height: 40px !important;
+        border-radius: 50% !important;
+        background: linear-gradient(135deg, #3498db, #2980b9) !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        margin-right: 15px !important;
         color: white !important;
-        padding: 12pt !important;
-        margin: 12pt 0 !important;
+        font-size: 1.2em !important;
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
     }
     
+    .clinical-pearl {
+        background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%) !important;
+        color: white !important;
+        padding: 20px !important;
+        padding-left: 60px !important;
+        margin: 20px 0 !important;
+        border-left: 5px solid #ffd700 !important;
+        border-radius: 10px !important;
+        position: relative !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    .clinical-pearl::before {
+        content: "★" !important;
+        position: absolute !important;
+        top: 15px !important;
+        left: 15px !important;
+        background: #ffd700 !important;
+        color: #8e44ad !important;
+        border-radius: 50% !important;
+        width: 35px !important;
+        height: 35px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        font-size: 1.5em !important;
+        font-weight: bold !important;
+        line-height: 35px !important;
+        text-align: center !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
     .clinical-pearl h3 {
-        font-size: 11pt !important;
-        margin-bottom: 6pt !important;
+        font-size: 1.1em !important;
+        margin-bottom: 10px !important;
+        color: white !important;
+        font-weight: bold !important;
     }
     
     .visual-element {
         background: #f8f9fa !important;
-        border: 1px solid #dee2e6 !important;
-        padding: 12pt !important;
-        margin: 12pt 0 !important;
+        border: 2px solid #e9ecef !important;
+        border-radius: 10px !important;
+        padding: 20px !important;
+        margin: 20px 0 !important;
+        text-align: center !important;
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
     }
     
     .reference-range-table {
-        font-size: 9pt !important;
-        margin: 10pt 0 !important;
+        width: 100% !important;
+        border-collapse: collapse !important;
+        margin: 20px 0 !important;
+        background: white !important;
+        border-radius: 8px !important;
+        overflow: hidden !important;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
     }
-    
+
     .reference-range-table th {
-        background: #3498db !important;
+        background: linear-gradient(135deg, #3498db, #2980b9) !important;
         color: white !important;
-        padding: 6pt !important;
+        padding: 12px !important;
+        text-align: left !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    .reference-range-table td {
+        padding: 10px 12px !important;
+        border-bottom: 1px solid #ecf0f1 !important;
+    }
+
+    .reference-range-table tr:nth-child(even) {
+        background: #f8f9fa !important;
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
     }
     
-    .reference-range-table td {
-        padding: 4pt 6pt !important;
-        border-bottom: 1px solid #ddd !important;
-    }
-    
     .interpretation-grid, .parameter-grid, .risk-factors-visual {
-        display: block !important;
-        columns: 2;
-        column-gap: 20px;
-        column-fill: balance;
+        display: grid !important;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
+        gap: 20px !important;
+        margin: 20px 0 !important;
     }
-    
+
     .interpretation-item, .parameter-card, .risk-factor {
-        break-inside: avoid;
-        margin-bottom: 10pt !important;
-        padding: 8pt !important;
-        display: inline-block;
-        width: 100%;
+        background: white !important;
+        border-radius: 10px !important;
+        padding: 20px !important;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1) !important;
+        border-left: 4px solid #3498db !important;
+        break-inside: avoid !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    .interpretation-item h4, .parameter-card h4 {
+        color: #2c3e50 !important;
+        margin-bottom: 10px !important;
+        font-size: 1.1em !important;
     }
     
     .two-column {
-        display: block !important;
-        columns: 2;
-        column-gap: 20px;
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        gap: 30px !important;
+        margin: 20px 0 !important;
     }
-    
+
     .highlight-box {
-        background: #f8f9fa !important;
-        border: 1px solid #dee2e6 !important;
-        padding: 8pt !important;
-        margin: 8pt 0 !important;
+        background: #e8f4f8 !important;
+        border: 1px solid #3498db !important;
+        border-radius: 8px !important;
+        padding: 15px !important;
+        margin: 15px 0 !important;
         break-inside: avoid;
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
     }
     
     .red-flag-grid {
-        display: block !important;
-        columns: 2;
-        column-gap: 15px;
+        display: grid !important;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) !important;
+        gap: 15px !important;
+        margin: 20px 0 !important;
     }
-    
+
     .red-flag-item {
         background: #fff5f5 !important;
-        border-left: 3px solid #e53e3e !important;
-        padding: 8pt !important;
-        margin-bottom: 6pt !important;
-        break-inside: avoid;
-        display: inline-block;
-        width: 100%;
+        border-left: 4px solid #e53e3e !important;
+        border-radius: 5px !important;
+        padding: 15px !important;
+        padding-left: 50px !important;
+        position: relative !important;
+        break-inside: avoid !important;
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
     }
+
+    .red-flag-item::before {
+        content: "▲" !important;
+        position: absolute !important;
+        top: 15px !important;
+        left: 15px !important;
+        font-size: 1.3em !important;
+        color: #e53e3e !important;
+        font-weight: bold !important;
+    }
     
     .assessment-flow {
-        display: block !important;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 20px !important;
     }
-    
+
     .flow-step {
         background: white !important;
-        border: 1px solid #3498db !important;
-        padding: 10pt !important;
-        margin-bottom: 8pt !important;
-        break-inside: avoid;
+        border: 2px solid #3498db !important;
+        border-radius: 10px !important;
+        padding: 20px !important;
+        position: relative !important;
+        break-inside: avoid !important;
     }
-    
+
     .flow-step::after {
+        content: "↓" !important;
+        position: absolute !important;
+        bottom: -15px !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        background: #3498db !important;
+        color: white !important;
+        width: 30px !important;
+        height: 30px !important;
+        border-radius: 50% !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        font-weight: bold !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    .flow-step:last-child::after {
         display: none !important;
     }
     
     .references-section {
         background: #f8f9fa !important;
-        border: 1px solid #dee2e6 !important;
-        padding: 15pt !important;
-        margin: 15pt 0 !important;
+        border: 2px solid #e9ecef !important;
+        border-radius: 10px !important;
+        padding: 25px !important;
+        margin: 30px 0 !important;
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
     }
-    
-    .guideline-grid {
-        display: block !important;
-        columns: 2;
-        column-gap: 15px;
+
+    .references-section h3 {
+        color: #2c3e50 !important;
+        margin-bottom: 20px !important;
+        font-size: 1.5em !important;
     }
-    
+
+    .guideline-grid {
+        display: grid !important;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
+        gap: 20px !important;
+        margin: 20px 0 !important;
+    }
+
     .guideline-item {
         background: white !important;
-        border-left: 2px solid #3498db !important;
-        padding: 8pt !important;
-        margin-bottom: 8pt !important;
-        break-inside: avoid;
-        display: inline-block;
-        width: 100%;
+        border-left: 4px solid #3498db !important;
+        border-radius: 8px !important;
+        padding: 20px !important;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
+        break-inside: avoid !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
     }
     
     .page-number {
@@ -652,11 +778,18 @@ body {
     }
     
     .critical-values {
-        background: #ff6b6b !important;
+        background: linear-gradient(135deg, #ff6b6b, #ee5a52) !important;
         color: white !important;
-        padding: 12pt !important;
+        padding: 20px !important;
+        border-radius: 10px !important;
+        margin: 20px 0 !important;
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
+    }
+
+    .critical-values h3 {
+        margin-bottom: 15px !important;
+        font-size: 1.3em !important;
     }
     
     /* Force page breaks */

@@ -1,0 +1,40 @@
+{
+  "name": "BloodTestApp",
+  "displayName": "Blood Test Interpretation",
+  "expo": {
+    "name": "Blood Test Interpretation",
+    "slug": "blood-test-interpretation",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#667eea"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.drmbanovic.bloodtestapp",
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#667eea"
+      },
+      "package": "com.drmbanovic.bloodtestapp",
+      "versionCode": 1
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "author": "Dr Michael Banovic MBBS MSc IM(Edin) MRCGP",
+      "description": "Comprehensive blood test interpretation guide for primary care physicians"
+    }
+  }
+}
